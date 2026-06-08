@@ -58,7 +58,7 @@ p {
 }
 
 h1 {
-  max-width: 760px;
+  max-width: 790px;
   margin-bottom: 0;
   font-size: 30px;
   line-height: 1.28;
@@ -137,24 +137,45 @@ h2 {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 12px;
   margin-top: 18px;
 }
 
-.secondary-button {
-  height: 36px;
-  border: 1px solid var(--accent);
+.view-switch,
+.segmented {
+  display: inline-flex;
+  gap: 4px;
+  padding: 4px;
+  border: 1px solid var(--line);
   border-radius: 8px;
-  background: #fff;
-  color: var(--accent);
-  padding: 0 13px;
+  background: #f8fafc;
+}
+
+.view-tab,
+.segment {
+  height: 34px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--muted);
   cursor: pointer;
   font-size: 14px;
   font-weight: 700;
 }
 
-.secondary-button:hover {
-  background: var(--soft);
+.view-tab {
+  min-width: 120px;
+  padding: 0 12px;
+}
+
+.segment {
+  min-width: 76px;
+}
+
+.view-tab.active,
+.segment.active {
+  background: var(--accent);
+  color: #fff;
 }
 
 .data-badge {
@@ -217,12 +238,15 @@ h2 {
   font-weight: 700;
 }
 
-.content-grid,
-.detail-section {
+.view-page {
+  display: grid;
+  gap: 16px;
+}
+
+.content-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
-  margin-bottom: 16px;
 }
 
 .panel {
@@ -294,9 +318,19 @@ h2 {
   line-height: 1.55;
 }
 
+.servant-groups {
+  display: grid;
+  gap: 18px;
+}
+
+.servant-group h4 {
+  margin: 0 0 10px;
+  font-size: 15px;
+}
+
 .servant-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 10px;
 }
 
@@ -310,7 +344,7 @@ h2 {
 
 .servant-card strong {
   display: block;
-  font-size: 24px;
+  font-size: 23px;
 }
 
 .chart-head,
@@ -324,14 +358,14 @@ h2 {
 }
 
 .chart-controls label {
-  min-width: 150px;
+  min-width: 170px;
 }
 
 .trend-chart {
   display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-columns: repeat(12, minmax(0, 1fr));
   align-items: end;
-  gap: 12px;
+  gap: 8px;
   min-height: 250px;
   padding-top: 10px;
 }
@@ -356,32 +390,6 @@ h2 {
 .chart-bar .value {
   color: var(--ink);
   font-weight: 700;
-}
-
-.segmented {
-  display: inline-flex;
-  gap: 4px;
-  padding: 4px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: #f8fafc;
-}
-
-.segment {
-  min-width: 76px;
-  height: 34px;
-  border: 0;
-  border-radius: 6px;
-  background: transparent;
-  color: var(--muted);
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: 700;
-}
-
-.segment.active {
-  background: var(--accent);
-  color: #fff;
 }
 
 .table-wrap {
@@ -423,8 +431,7 @@ th {
 
   .filter-panel,
   .player-hero,
-  .content-grid,
-  .detail-section {
+  .content-grid {
     grid-template-columns: 1fr;
   }
 
@@ -439,6 +446,10 @@ th {
 
   .chart-controls {
     flex-direction: column;
+  }
+
+  .trend-chart {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
   h1 {
@@ -457,8 +468,9 @@ th {
     grid-template-columns: 1fr;
   }
 
+  .view-switch,
   .segmented {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
   }
 }
