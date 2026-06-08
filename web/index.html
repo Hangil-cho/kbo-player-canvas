@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>KBO Player Lab</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">KBO Player Lab</p>
+          <h1>선수의 기록, 리그 내 위치, 변화 이유를 함께 보는 분석 페이지</h1>
+        </div>
+        <a class="quiet-link" href="../docs/PROJECT_BRIEF.md">프로젝트 기준 문서</a>
+      </header>
+
+      <section class="filter-panel" aria-label="선수 필터">
+        <label>
+          <span>이름 검색</span>
+          <input id="searchInput" type="search" placeholder="예: 김도영, 박영현" />
+        </label>
+        <label>
+          <span>팀명</span>
+          <select id="teamFilter"></select>
+        </label>
+        <label>
+          <span>포지션</span>
+          <select id="positionFilter"></select>
+        </label>
+        <label>
+          <span>선수 선택</span>
+          <select id="playerSelect"></select>
+        </label>
+      </section>
+
+      <section class="player-hero">
+        <div>
+          <p class="team" id="teamLine"></p>
+          <h2 id="playerName"></h2>
+          <p class="summary" id="summaryText"></p>
+          <div class="hero-actions">
+            <button id="detailToggle" class="secondary-button" type="button">상세보기</button>
+            <span id="dataBadge" class="data-badge"></span>
+          </div>
+        </div>
+        <div class="profile-placeholder">
+          <span id="uniformNumber"></span>
+        </div>
+      </section>
+
+      <section class="metric-grid" id="metricGrid" aria-label="핵심 지표"></section>
+
+      <section class="content-grid">
+        <article class="panel">
+          <div class="panel-head">
+            <div>
+              <h3>리그 내 위치</h3>
+              <p id="leagueContext">대표 지표 5개</p>
+            </div>
+          </div>
+          <div id="leagueBars" class="bars"></div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head">
+            <div>
+              <h3>성적 변화 이유</h3>
+              <p>초기 해설 요약</p>
+            </div>
+          </div>
+          <ul id="insightList" class="insights"></ul>
+        </article>
+      </section>
+
+      <section id="detailSection" class="detail-section" hidden>
+        <article class="panel">
+          <div class="panel-head">
+            <div>
+              <h3>상세 리그 내 위치</h3>
+              <p id="detailContext">서번트형 상세지표와 변화 원인</p>
+            </div>
+          </div>
+          <div id="servantGrid" class="servant-grid"></div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head">
+            <div>
+              <h3>상세 분석</h3>
+              <p>상세 지표 기준 해석</p>
+            </div>
+          </div>
+          <ul id="detailInsightList" class="insights"></ul>
+        </article>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head chart-head">
+          <div>
+            <h3>성적 흐름</h3>
+            <p>연도별/월별 전환과 지표 선택</p>
+          </div>
+          <div class="chart-controls">
+            <label>
+              <span>기간</span>
+              <select id="trendMode">
+                <option value="season">연도별</option>
+                <option value="month">월별</option>
+              </select>
+            </label>
+            <label>
+              <span>지표</span>
+              <select id="metricSelect"></select>
+            </label>
+          </div>
+        </div>
+        <div id="trendChart" class="trend-chart"></div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head table-head">
+          <div>
+            <h3>기록표</h3>
+            <p id="tableContext">기본/상세/수비·WAR 전환</p>
+          </div>
+          <div class="segmented" role="group" aria-label="기록표 보기 전환">
+            <button class="segment active" type="button" data-table="basic">기본</button>
+            <button class="segment" type="button" data-table="advanced">상세</button>
+            <button class="segment" type="button" data-table="value">수비·WAR</button>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead id="statHead"></thead>
+            <tbody id="statRows"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
