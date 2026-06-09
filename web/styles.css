@@ -15,6 +15,10 @@
   box-sizing: border-box;
 }
 
+[hidden] {
+  display: none !important;
+}
+
 body {
   margin: 0;
   background: var(--bg);
@@ -60,7 +64,7 @@ p {
 h1 {
   max-width: 790px;
   margin-bottom: 0;
-  font-size: 30px;
+  font-size: 32px;
   line-height: 1.28;
 }
 
