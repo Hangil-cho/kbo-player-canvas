@@ -1,17 +1,10 @@
-# 데이터 수집 가이드
+# Data Collection Guide
 
-## 오늘 만든 1차 수집 방식
+## 현재 수집 범위
 
-`src/collect_kbo_official.py`는 KBO 공식 기록실의 공개 표를 읽어서 CSV로 저장합니다.
+현재 자동 수집 대상은 KBO 공식 기록실의 공개 표로 제한한다.
 
-저장 위치:
-
-```text
-data/raw/
-data/processed/
-```
-
-현재 수집 대상:
+수집 대상:
 
 - 타자 기본기록 1
 - 타자 기본기록 2
@@ -22,21 +15,29 @@ data/processed/
 - 수비 기록
 - 주루 기록
 
-## 실행 방법
+제외 대상:
 
-Codex가 실행해도 되고, 사용자가 직접 실행할 수도 있습니다.
+- Statiz 자동 크롤링
+- Naver Sports 숨은 API
+- KBO 로그인 필요 문자중계
+- 영상, 캡처, 오디오
+- PTS/ABS 원천 데이터
+
+제외 대상은 정식 허락, API, 라이선스가 확인되면 별도 소스로 추가한다.
+
+## 실행 방법
 
 ```text
 python src/collect_kbo_official.py
 ```
 
-Codex 런타임을 쓸 때는 아래 Python을 사용합니다.
+Codex 번들 Python으로 실행할 때:
 
 ```text
 C:\Users\gks12\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe src\collect_kbo_official.py
 ```
 
-## 생성되는 파일
+## 생성 파일
 
 원본 수집 CSV:
 
@@ -52,24 +53,39 @@ data/raw/kbo_runner_basic_2026.csv
 data/raw/kbo_official_combined_2026.csv
 ```
 
-관심 선수 매칭 결과:
+처리 CSV:
 
 ```text
+data/processed/kbo_official_column_inventory_2026.csv
+data/processed/kbo_official_metric_values_2026.csv
+data/processed/player_metric_values.csv
 data/processed/kbo_target_players_snapshot_2026.csv
 data/processed/kbo_target_players_missing_2026.csv
 ```
 
-## 지금 방식의 한계
+## 처리 방식
 
-KBO 공식 기록실의 일부 페이지는 순위/규정 기준 첫 화면 중심입니다.
+1. KBO 공식 표를 원본 그대로 `data/raw`에 저장한다.
+2. 각 표의 컬럼을 `metric_catalog.csv`의 `metric_id`와 매핑한다.
+3. 매핑된 지표를 long format으로 변환한다.
+4. 대상 선수 10명과 매칭되는 행은 `player_metric_values.csv`에 저장한다.
+5. 매칭되지 않은 선수는 missing report에 남긴다.
 
-그래서 모든 선수가 항상 잡히지는 않습니다. 예를 들어 불펜 투수나 타석/이닝 표본이 적은 선수는 기본 순위 표에서 누락될 수 있습니다.
+## 현재 한계
+
+- 현재 수집은 공개 랭킹 표의 첫 페이지 중심이다.
+- 일부 대상 선수는 규정/순위 조건 때문에 표에 없을 수 있다.
+- 선수 상세 페이지 또는 전체 페이지 수집은 다음 단계에서 보강한다.
+- KBO 공식 기록실에 없는 WAR, wRC+, ERA+, RAA는 자동 수집하지 않는다.
+- PTS/ABS와 문자중계는 라이선스 확인 전까지 자동 수집하지 않는다.
 
 ## 다음 보강 작업
 
-1. 선수 상세 페이지의 `playerId`를 확보합니다.
-2. 선수별 연도별 통산/시즌 기록을 상세 페이지에서 가져옵니다.
-3. Statiz에서 WAR, RAA, wRC+, ERA+ 등 세이버 지표를 보강합니다.
-4. 수집된 CSV를 기준으로 웹 화면의 데모 데이터를 실데이터로 교체합니다.
-5. 팔각도, 릴리스, 타구속도 같은 트래킹 지표는 공개 출처 확인 후 별도 파일로 관리합니다.
+1. KBO 공식 기록실의 페이지네이션 처리
+2. 선수 상세 페이지의 `pcode` 수집
+3. 월별 기록 수집
+4. 상황별 기록 수집
+5. 리그 내 상위 n% 계산
+6. 웹용 JSON 생성
+7. 공식 허락 또는 라이선스가 있는 PTS/문자중계 소스 추가
 

@@ -79,3 +79,69 @@ first_pitch_strike_pct,초구 스트라이크율,F-Strike %,pitch_tracking,drive
 csw_pct,CSW%,CSW%,pitch_tracking,driver,percent,true,desc,by_pitching_role,manual_or_tracking,루킹 스트라이크와 헛스윙을 합친 비율
 called_strike_pct,루킹 스트라이크율,Called Strike %,pitch_tracking,driver,percent,true,desc,by_pitching_role,manual_or_tracking,투구 중 루킹 스트라이크 비율
 swinging_strike_pct,헛스윙 스트라이크율,SwStr%,pitch_tracking,driver,percent,true,desc,by_pitching_role,manual_or_tracking,투구 중 헛스윙 스트라이크 비율
+hitter_games,타자 경기,G,batting,context,count,context,context,league_hitter,kbo,타자로 출전한 경기 수
+total_bases,루타,TB,batting,result,count,true,desc,league_hitter,kbo,안타로 만들어낸 총 루타
+hitter_bb,볼넷,BB,batting,driver,count,true,desc,league_hitter,kbo,타자가 얻은 볼넷 수
+hitter_ibb,고의4구,IBB,batting,context,count,context,context,league_hitter,kbo,고의4구 수
+hitter_hbp,사구,HBP,batting,context,count,true,desc,league_hitter,kbo,몸에 맞는 공으로 출루한 횟수
+hitter_so,삼진,SO,batting,driver,count,false,asc,league_hitter,kbo,타자가 당한 삼진 수
+hitter_gdp,병살타,GDP,batting,result,count,false,asc,league_hitter,kbo,타자가 친 병살타 수
+sacrifice_hits,희생번트,SAC,batting,context,count,context,context,league_hitter,kbo,희생번트 수
+sacrifice_flies,희생플라이,SF,batting,context,count,context,context,league_hitter,kbo,희생플라이 수
+multi_hit,멀티히트,MH,batting,result,count,true,desc,league_hitter,kbo,한 경기 2안타 이상 경기 수
+risp_avg,득점권 타율,RISP,batting,result,rate,true,desc,league_hitter,kbo,득점권 상황 타율
+pinch_hit_avg,대타 타율,PH-BA,batting,result,rate,true,desc,league_hitter,kbo,대타 상황 타율
+extra_base_hits,장타,XBH,batting,result,count,true,desc,league_hitter,kbo,2루타 이상 장타 수
+ground_outs,땅볼 아웃,GO,batting,context,count,context,context,league_hitter,kbo,땅볼 아웃 수
+air_outs,뜬공 아웃,AO,batting,context,count,context,context,league_hitter,kbo,뜬공 아웃 수
+ground_air_ratio,땅볼/뜬공 비율,GO/AO,batting,context,ratio,context,context,league_hitter,kbo,땅볼 아웃 대비 뜬공 아웃 비율
+game_winning_rbi,결승타,GW RBI,batting,result,count,true,desc,league_hitter,kbo,결승 타점 수
+pitches_per_pa,타석당 투구수,P/PA,plate_discipline,context,ratio,context,context,league_hitter,kbo,타석당 상대 투구 수
+xr,추정 득점,XR,batting,value,run,true,desc,league_hitter,kbo,공격 이벤트 기반 추정 득점
+gpa,GPA,GPA,batting,value,rate,true,desc,league_hitter,kbo,타자의 종합 공격 생산성 지표
+pitcher_wins,승,W,pitching,result,count,true,desc,by_pitching_role,kbo,투수 승리 수
+pitcher_losses,패,L,pitching,result,count,false,asc,by_pitching_role,kbo,투수 패전 수
+pitcher_win_pct,승률,WPCT,pitching,result,rate,true,desc,by_pitching_role,kbo,투수 승률
+pitcher_hits_allowed,피안타,H,pitching,driver,count,false,asc,by_pitching_role,kbo,투수가 허용한 안타 수
+pitcher_home_runs_allowed,피홈런,HR,pitching,driver,count,false,asc,by_pitching_role,kbo,투수가 허용한 홈런 수
+pitcher_walks,볼넷,BB,pitching,driver,count,false,asc,by_pitching_role,kbo,투수가 허용한 볼넷 수
+pitcher_hbp_allowed,사구,HBP,pitching,context,count,false,asc,by_pitching_role,kbo,투수가 허용한 몸에 맞는 공 수
+pitcher_strikeouts,탈삼진,SO,pitching,result,count,true,desc,by_pitching_role,kbo,투수가 잡은 삼진 수
+pitcher_runs,실점,R,pitching,result,count,false,asc,by_pitching_role,kbo,투수 실점 수
+pitcher_earned_runs,자책점,ER,pitching,result,count,false,asc,by_pitching_role,kbo,투수 자책점 수
+complete_games,완투,CG,pitching,result,count,true,desc,starter_pitcher,kbo,선발 투수가 경기를 끝까지 던진 횟수
+shutouts,완봉,SHO,pitching,result,count,true,desc,starter_pitcher,kbo,완봉승 또는 완봉 경기 수
+blown_saves,블론세이브,BSV,pitching,result,count,false,asc,reliever_pitcher,kbo,세이브 기회를 지키지 못한 횟수
+total_batters_faced,상대 타자,TBF,pitching,context,count,context,context,by_pitching_role,kbo,투수가 상대한 타자 수
+pitch_count,투구수,NP,pitching,context,count,context,context,by_pitching_role,kbo,투수가 던진 공 수
+opponent_avg,피타율,AVG,pitching,result,rate,false,asc,by_pitching_role,kbo,상대 타자의 타율 허용 수준
+doubles_allowed,피2루타,2B,pitching,driver,count,false,asc,by_pitching_role,kbo,투수가 허용한 2루타 수
+triples_allowed,피3루타,3B,pitching,driver,count,false,asc,by_pitching_role,kbo,투수가 허용한 3루타 수
+pitcher_sac_allowed,희생번트 허용,SAC,pitching,context,count,context,context,by_pitching_role,kbo,투수 기록상 희생번트 허용 수
+pitcher_sf_allowed,희생플라이 허용,SF,pitching,context,count,context,context,by_pitching_role,kbo,투수 기록상 희생플라이 허용 수
+intentional_walks_allowed,고의4구 허용,IBB,pitching,context,count,false,asc,by_pitching_role,kbo,투수가 허용한 고의4구 수
+wild_pitches,폭투,WP,pitching,result,count,false,asc,by_pitching_role,kbo,투수 폭투 수
+balks,보크,BK,pitching,result,count,false,asc,by_pitching_role,kbo,투수 보크 수
+starter_wins,선발승,Wgs,pitching,result,count,true,desc,starter_pitcher,kbo,선발 등판으로 기록한 승리 수
+relief_wins,구원승,Wgr,pitching,result,count,true,desc,reliever_pitcher,kbo,구원 등판으로 기록한 승리 수
+games_finished,경기 종료,GF,pitching,context,count,context,context,reliever_pitcher,kbo,투수가 경기를 끝낸 횟수
+save_opportunities,세이브 기회,SVO,pitching,context,count,context,context,reliever_pitcher,kbo,세이브 상황 등판 기회
+relief_touch_success,터프 세이브,TS,pitching,result,count,true,desc,reliever_pitcher,kbo,고난도 구원 성공 지표
+pitcher_gdp,유도 병살,GDP,pitching,result,count,true,desc,by_pitching_role,kbo,투수가 유도한 병살타 수
+pitcher_go,땅볼 아웃 유도,GO,pitching,context,count,context,context,by_pitching_role,kbo,투수가 유도한 땅볼 아웃 수
+pitcher_ao,뜬공 아웃 유도,AO,pitching,context,count,context,context,by_pitching_role,kbo,투수가 유도한 뜬공 아웃 수
+pitcher_go_ao,땅볼/뜬공 유도 비율,GO/AO,pitching,context,ratio,context,context,by_pitching_role,kbo,땅볼 아웃 대비 뜬공 아웃 유도 비율
+defense_games,수비 경기,G,defense,context,count,context,context,by_position,kbo,수비로 출전한 경기 수
+defense_starts,수비 선발,GS,defense,context,count,context,context,by_position,kbo,수비 선발 출장 수
+pickoffs,견제사/견제아웃,PKO,defense,result,count,true,desc,by_position,kbo,수비 기록의 견제 아웃 수
+putouts,자살,PO,defense,result,count,true,desc,by_position,kbo,수비수가 직접 아웃 처리한 횟수
+assists,보살,A,defense,result,count,true,desc,by_position,kbo,수비수가 송구 등으로 아웃에 기여한 횟수
+double_plays,병살 참여,DP,defense,result,count,true,desc,by_position,kbo,병살 플레이 참여 수
+passed_balls,포일,PB,defense,result,count,false,asc,catcher,kbo,포수 포일 수
+stolen_bases_allowed,도루 허용,SB,defense,result,count,false,asc,catcher,kbo,포수 또는 배터리가 허용한 도루 수
+caught_stealing_allowed,도루 저지,CS,defense,result,count,true,desc,catcher,kbo,포수 또는 배터리가 저지한 도루 수
+catcher_cs_pct,도루 저지율,CS%,defense,result,percent,true,desc,catcher,kbo,도루 시도 대비 저지율
+runner_games,주루 경기,G,running,context,count,context,context,league_runner,kbo,주루 기록 집계 경기 수
+steal_attempts,도루 시도,SBA,running,context,count,context,context,league_runner,kbo,도루 성공과 실패를 합친 시도 수
+out_on_base,주루사,OOB,running,result,count,false,asc,league_runner,kbo,베이스러닝 중 아웃된 횟수
+pickoff_outs,견제사,PKO,running,result,count,false,asc,league_runner,kbo,주자로 있다가 견제에 아웃된 횟수

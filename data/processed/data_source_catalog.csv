@@ -1,0 +1,11 @@
+source_id,source_name,source_type,collection_mode,commercial_status,use_in_project,allowed_data,blocked_data,next_action,notes
+kbo_official_records,KBO 공식 기록실,official_public_html,automated_low_volume,conditional_review,yes_for_prototype,"선수/팀 기록 표의 수치 데이터, 시즌/월/상황별 공식 기록","영상, 이미지, 캡처, 로그인 필요 데이터, 대량 재배포용 원본 테이블","출처 표기와 요청량 제한을 지키고 광고 공개 전 권리 확인","공식 페이지에 공개된 기록이지만 명시적 오픈 라이선스는 확인 필요"
+kbo_official_scoreboard,KBO 스코어보드,official_public_html,automated_low_volume,conditional_review,later_for_game_summary,"경기 일정, 점수, 이닝별 스코어, 경기 상태 요약","문자중계 상세 내용, 로그인 필요 영역","박스스코어/경기 요약용으로만 제한 검토","공개 스코어보드 표는 가능 후보이나 상세 문자중계와 분리"
+kbo_live_commentary,KBO 문자중계,official_login_or_interactive,do_not_collect_without_permission,permission_required,no,"권리 허락 후 play-by-play 이벤트 데이터","무단 로그인 우회, 실시간 상세 중계 복제","KBO/KBOP 또는 공식 데이터 사업자에 이용 문의","상세 문자중계는 상업 공개 전 별도 허락 필요"
+kbo_video_archive,KBO 영상/캡처,official_paid_rights,paid_license,paid_license_required,no,"구매 계약으로 허락받은 영상 구간 및 출처 표기","무단 영상, 캡처 이미지, 오디오, 하이라이트 재게시","필요 시 KBOP 영상 구매 절차 진행","KBO가 영상 구매 절차와 출처 표기 기준을 별도 안내"
+statiz,Statiz,commercial_website,do_not_crawl,excluded,no,"수동 입력 또는 정식 제휴/허락받은 지표만 가능","자동 크롤링, 원본 표 재배포","크롤링 제외 유지, API/제휴 여부만 별도 확인","WAR/wRC+/ERA+ 대체는 직접 계산 또는 허락받은 데이터로 처리"
+naver_sports_gamecenter,네이버 스포츠 게임센터,commercial_platform,do_not_collect_without_permission,permission_required,no,"정식 API/제휴 계약이 있는 경우에만 사용","숨은 API 호출, 자동 수집, 문자중계 복제","네이버 또는 권리자 API/제휴 가능성 확인","네이버 약관상 무단 자동화 수집은 부적합"
+research_abs_github,ABS 연구 공개 GitHub 데이터,research_dataset,manual_review_only,license_unclear,no,"명시 라이선스와 상업 이용 허락이 확인된 경우 일부 참고","라이선스 불명 데이터의 상업 서비스 편입","라이선스 파일/저자 허락 확인 전 사용 금지","논문은 Naver Sports 기반 pitch 데이터 공개를 언급하지만 상업 이용 허락은 별도 문제"
+licensed_pts_provider,PTS/ABS 공식 또는 라이선스 제공자,licensed_api_or_csv,contract_required,license_required,later_if_licensed,"구속, 구종, 투구 위치, 릴리스, 무브먼트, 타구 추적 데이터","계약 없는 PTS/ABS 원천 데이터","KBO/KBOP/스포츠투아이/공식 제공자 문의","4번 핵심 분석에 가장 중요하지만 라이선스가 선행되어야 함"
+manual_evidence_links,기사/영상/인터뷰 링크 메타데이터,manual_entry,manual,conditional_review,yes,"제목, URL, 출처명, 관련 지표, 짧은 메모","기사 전문 복제, 영상 캡처, 긴 인용","출처 링크 중심으로 수동 입력","선수 변화 이유를 설명하는 보조 근거로 활용"
+user_manual_csv,사용자 수동 CSV,manual_entry,manual,allowed,yes,"직접 입력한 지표, 출처 메모, 확인 상태","출처 불명 또는 무단 복제 데이터","수작업 데이터 폴더와 processed CSV 연결","고급 지표는 초기에 수동 보강 경로가 현실적"

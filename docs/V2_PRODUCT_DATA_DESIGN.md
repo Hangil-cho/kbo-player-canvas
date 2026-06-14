@@ -679,19 +679,21 @@ data/processed/players_master.csv
 
 - 대표 지표 보기 화면을 실데이터로 채운다.
 
-### Step 4. Statiz 지표를 보강한다
+### Step 4. 공식/라이선스/수동 보강 지표를 분리한다
 
-우선 수집:
+Statiz는 자동 크롤링하지 않는다.
 
-- WAR
-- wRC+
-- ERA+
-- RAA 계열
-- 타격, 주루, 수비 가치
+우선 분류:
+
+- KBO 공식 기록으로 직접 계산 가능한 지표
+- 공식 API 또는 라이선스 계약이 필요한 지표
+- 사용자가 수동 CSV로 입력할 지표
+- 기사/영상 링크를 근거로만 남길 지표
 
 목표:
 
-- 상세 지표 보기와 WAR 관련 기록표를 채운다.
+- 상세 지표 보기와 변화 원인 분석에 쓸 수 있는 데이터만 안전하게 붙인다.
+- WAR, wRC+, ERA+, RAA 계열은 정식 허락 또는 계산 방식이 확인될 때까지 `수집 전` 또는 `수동 보강 필요`로 둔다.
 
 ### Step 5. long format으로 정규화한다
 
@@ -797,10 +799,9 @@ data/processed/player_driver_analysis.csv
 1. `metric_catalog.csv` 초안 생성
 2. `metric_driver_map.csv` 초안 생성
 3. `players_master.csv` 생성
-4. KBO/Statiz 실제 수집 가능 컬럼 재확인
+4. KBO 공식 기록과 라이선스 가능한 외부 데이터 컬럼 재확인
 5. 수집 코드 수정
 6. `player_metric_values.csv` 생성
 7. 대표 지표 화면을 실데이터로 교체
 8. 상세 지표 화면을 실데이터로 교체
 9. 변화 원인 분석 v1 생성
-
