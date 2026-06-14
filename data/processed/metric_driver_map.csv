@@ -1,0 +1,73 @@
+outcome_metric_id,driver_metric_id,player_type,relationship_type,expected_driver_move_for_better_outcome,weight,required_sample_size,analysis_note
+ops,obp,hitter,direct_component,increase,1.00,50,OPS의 직접 구성 요소
+ops,slg,hitter,direct_component,increase,1.00,50,OPS의 직접 구성 요소
+ops,hitter_bb_k,hitter,driver,increase,0.55,50,볼넷과 삼진 관리가 출루와 타석 품질에 연결됨
+ops,wrc_plus,hitter,related_result,increase,0.70,50,공격 생산력 전반을 함께 확인
+obp,avg,hitter,direct_component,increase,0.45,50,안타 증가는 출루율 상승 요인
+obp,hitter_bb_pct,hitter,driver,increase,0.75,50,볼넷률 증가는 출루율 상승 요인
+obp,hitter_k_pct,hitter,driver,decrease,0.45,50,삼진률 하락은 인플레이 기회 증가와 연결
+obp,babip,hitter,context,context,0.35,50,인플레이 결과 변동 여부 확인
+slg,iso,hitter,driver,increase,0.85,50,순장타율은 장타율 변화의 핵심 후보
+slg,home_runs,hitter,driver,increase,0.55,50,홈런 증가는 장타율 상승 요인
+slg,hr_pa,hitter,driver,increase,0.75,50,타석당 홈런 비율은 장타 생산성 후보
+slg,avg_exit_velocity,hitter,tracking_driver,increase,0.65,40,타구속도 상승은 장타 생산과 연결 가능
+slg,hard_hit_pct,hitter,tracking_driver,increase,0.70,40,강한 타구 비율 상승은 장타 생산과 연결 가능
+slg,launch_angle_avg,hitter,tracking_context,context,0.35,40,발사각 변화는 타구 성격 변화 확인용
+slg,barrel_pct,hitter,tracking_driver,increase,0.75,40,배럴 비율은 장타 품질 후보
+wrc_plus,ops,hitter,related_result,increase,0.90,50,wRC+와 OPS 흐름을 함께 확인
+wrc_plus,hitter_bb_pct,hitter,driver,increase,0.50,50,볼넷 생산은 공격 가치 상승 후보
+wrc_plus,hitter_k_pct,hitter,driver,decrease,0.45,50,삼진 억제는 공격 기회 유지 후보
+wrc_plus,iso,hitter,driver,increase,0.65,50,장타력은 득점 생산성 상승 후보
+wrc_plus,babip,hitter,context,context,0.30,50,인플레이 결과 변동을 분리 확인
+avg,hitter_k_pct,hitter,driver,decrease,0.45,50,삼진률 감소는 타율 개선 후보
+avg,babip,hitter,context,context,0.55,50,BABIP 변화는 타율 변동의 큰 맥락
+avg,contact_pct,hitter,tracking_driver,increase,0.50,40,컨택률 상승은 안타 기회 증가 후보
+avg,whiff_pct,hitter,tracking_driver,decrease,0.45,40,헛스윙 감소는 컨택 개선 후보
+hitter_bb_k,hitter_bb_pct,hitter,direct_component,increase,0.80,50,볼넷률 상승은 볼삼비 개선 요인
+hitter_bb_k,hitter_k_pct,hitter,direct_component,decrease,0.80,50,삼진률 하락은 볼삼비 개선 요인
+hitter_bb_k,zone_contact_pct,hitter,tracking_driver,increase,0.45,40,존 컨택률 상승은 삼진 억제 후보
+war,wrc_plus,hitter,value_component,increase,0.65,50,타격 생산성은 야수 WAR의 핵심 구성
+war,batting_raa,hitter,value_component,increase,0.80,50,타격 득점 기여가 WAR에 반영
+war,baserunning_raa,hitter,value_component,increase,0.45,30,주루 득점 기여가 WAR에 반영
+war,defense_raa,hitter,value_component,increase,0.60,30,수비 득점 기여가 WAR에 반영
+war,position_games,hitter,context,context,0.30,30,포지션 변화가 WAR 해석에 필요
+defense_raa,fielding_pct,hitter,related_result,increase,0.35,30,기본 수비율과 함께 확인
+defense_raa,errors,hitter,related_result,decrease,0.35,30,실책 감소 여부 확인
+defense_raa,defense_innings,hitter,context,context,0.25,30,수비 표본 확인
+baserunning_raa,sb_pct,hitter,related_result,increase,0.45,20,도루 효율 확인
+baserunning_raa,sb,hitter,context,increase,0.25,20,주루 시도량 확인
+baserunning_raa,cs,hitter,context,decrease,0.25,20,도루 실패와 주루 손실 확인
+era,whip,pitcher,driver,decrease,0.80,10,출루 허용 감소는 ERA 개선 후보
+era,pitcher_k_bb,pitcher,driver,increase,0.75,10,삼진과 볼넷 균형 개선은 ERA 개선 후보
+era,pitcher_k_pct,pitcher,driver,increase,0.55,10,탈삼진률 상승은 실점 억제 후보
+era,pitcher_bb_pct,pitcher,driver,decrease,0.55,10,볼넷률 하락은 주자 누적 억제 후보
+era,hr9,pitcher,driver,decrease,0.60,10,피홈런 감소는 실점 억제 후보
+era,fip,pitcher,related_result,decrease,0.70,10,FIP와 ERA 차이를 함께 확인
+era,babip_allowed,pitcher,context,context,0.45,10,인플레이 결과와 수비 영향을 분리 확인
+era,lob_pct,pitcher,context,context,0.35,10,잔루율 변동은 ERA 변동 맥락
+era,opponent_ops,pitcher,driver,decrease,0.65,10,상대 타자 생산 억제 확인
+era_plus,era,pitcher,direct_component,decrease,0.90,10,ERA+는 리그 보정 ERA 계열
+era_plus,fip,pitcher,driver,decrease,0.60,10,수비 영향이 적은 책임 지표 확인
+whip,h9,pitcher,direct_component,decrease,0.55,10,피안타 허용 감소는 WHIP 개선 요인
+whip,pitcher_bb_pct,pitcher,direct_component,decrease,0.65,10,볼넷률 하락은 WHIP 개선 요인
+whip,zone_pct,pitcher,tracking_context,context,0.35,10,존 비율 변화와 제구 흐름 확인
+whip,first_pitch_strike_pct,pitcher,tracking_driver,increase,0.45,10,초구 스트라이크는 유리한 카운트 형성 후보
+pitcher_k_bb,pitcher_k_pct,pitcher,direct_component,increase,0.80,10,탈삼진률 상승은 K/BB 개선 요인
+pitcher_k_bb,pitcher_bb_pct,pitcher,direct_component,decrease,0.80,10,볼넷률 하락은 K/BB 개선 요인
+pitcher_k_bb,csw_pct,pitcher,tracking_driver,increase,0.55,10,CSW 상승은 구위와 제구 개선 후보
+pitcher_k_bb,swinging_strike_pct,pitcher,tracking_driver,increase,0.50,10,헛스윙 스트라이크 증가는 탈삼진 후보
+pitcher_k_bb,first_pitch_strike_pct,pitcher,tracking_driver,increase,0.40,10,초구 스트라이크는 볼넷 감소 후보
+war,era_plus,pitcher,value_component,increase,0.70,10,실점 억제 성과가 투수 WAR에 연결
+war,ip,pitcher,value_component,increase,0.65,10,이닝 소화는 투수 가치의 핵심 요소
+war,fip,pitcher,value_component,decrease,0.60,10,수비 독립 책임 지표 확인
+war,pitcher_k_bb,pitcher,value_component,increase,0.50,10,삼진 볼넷 균형은 투수 가치 후보
+ip,ip_per_start,pitcher,direct_component,increase,0.70,5,선발 투수의 경기당 이닝 확인
+ip,qs,pitcher,related_result,increase,0.50,5,선발 투수의 안정적 소화력 확인
+pitcher_k_pct,avg_velocity,pitcher,tracking_driver,increase,0.45,10,구속 증가는 탈삼진 증가 후보
+pitcher_k_pct,pitch_type_count,pitcher,tracking_context,context,0.25,10,구종 다양성 변화 확인
+pitcher_k_pct,vertical_movement,pitcher,tracking_context,context,0.35,10,수직 무브먼트 변화 확인
+pitcher_k_pct,horizontal_movement,pitcher,tracking_context,context,0.35,10,수평 무브먼트 변화 확인
+opponent_ops,avg_velocity,pitcher,tracking_driver,increase,0.35,10,구속 변화와 피장타 억제 흐름 확인
+opponent_ops,pitch_type_count,pitcher,tracking_context,context,0.25,10,구종 구성 변화 확인
+opponent_ops,release_height,pitcher,tracking_context,context,0.25,10,릴리스 변화 확인
+opponent_ops,arm_angle,pitcher,tracking_context,context,0.25,10,팔각도 변화 확인

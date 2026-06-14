@@ -1,0 +1,81 @@
+metric_id,metric_name_kr,metric_name_en,metric_group,metric_kind,unit,higher_is_better,rank_direction,default_comparison_group,source_priority,description
+pa,타석,PA,batting,context,count,context,context,league_hitter,kbo,타자가 타석에 들어선 횟수
+ab,타수,AB,batting,context,count,context,context,league_hitter,kbo,공식 타율 계산에 쓰이는 타격 기회
+runs,득점,R,batting,result,count,true,desc,league_hitter,kbo,선수가 홈을 밟은 횟수
+hits,안타,H,batting,result,count,true,desc,league_hitter,kbo,안타 수
+doubles,2루타,2B,batting,result,count,true,desc,league_hitter,kbo,2루타 수
+triples,3루타,3B,batting,result,count,true,desc,league_hitter,kbo,3루타 수
+home_runs,홈런,HR,batting,result,count,true,desc,league_hitter,kbo,홈런 수
+rbi,타점,RBI,batting,result,count,true,desc,league_hitter,kbo,타자가 만들어낸 타점
+avg,타율,AVG,batting,result,rate,true,desc,league_hitter,kbo,타수 대비 안타 비율
+obp,출루율,OBP,batting,direct_component,rate,true,desc,league_hitter,kbo,타석에서 출루한 비율
+slg,장타율,SLG,batting,direct_component,rate,true,desc,league_hitter,kbo,타수당 루타 생산력
+ops,OPS,OPS,batting,result,rate,true,desc,league_hitter,kbo,출루율과 장타율의 합
+hitter_bb_k,볼삼비,BB/K,batting,result,ratio,true,desc,league_hitter,kbo,타자의 볼넷 대비 삼진 관리 지표
+hitter_bb_pct,볼넷률,BB%,batting,driver,percent,true,desc,league_hitter,kbo,타석 대비 볼넷 비율
+hitter_k_pct,삼진률,K%,batting,driver,percent,false,asc,league_hitter,kbo,타석 대비 삼진 비율
+iso,순장타율,ISO,batting,driver,rate,true,desc,league_hitter,statiz,장타율에서 타율을 뺀 순수 장타력
+babip,BABIP,BABIP,batting,context,rate,context,context,league_hitter,statiz,인플레이 타구가 안타가 된 비율
+hr_pa,타석당 홈런,HR/PA,batting,driver,rate,true,desc,league_hitter,kbo,타석 대비 홈런 생산 비율
+wrc_plus,wRC+,wRC+,batting,result,index,true,desc,league_hitter,statiz,리그와 구장 환경을 보정한 공격 생산력
+batting_raa,타격 RAA,Batting RAA,batting,value,run,true,desc,league_hitter,statiz,평균 대비 타격 득점 기여
+sb,도루,SB,running,result,count,true,desc,league_runner,kbo,도루 성공 수
+cs,도루 실패,CS,running,result,count,false,asc,league_runner,kbo,도루 실패 수
+sb_pct,도루 성공률,SB%,running,result,percent,true,desc,league_runner,kbo,도루 시도 대비 성공률
+baserunning_raa,주루 RAA,Baserunning RAA,running,value,run,true,desc,league_runner,statiz,평균 대비 주루 득점 기여
+fielding_pct,수비율,Fielding %,defense,result,rate,true,desc,by_position,kbo,수비 기회 대비 실책을 제외한 처리 비율
+errors,실책,E,defense,result,count,false,asc,by_position,kbo,수비 실책 수
+defense_innings,수비 이닝,Defensive Innings,defense,context,inning,context,context,by_position,kbo,수비로 출전한 이닝
+position_games,포지션 경기,Position Games,defense,context,count,context,context,by_position,kbo,포지션별 출전 경기 수
+defense_raa,수비 RAA,Defense RAA,defense,value,run,true,desc,by_position,statiz,평균 대비 수비 득점 기여
+war,WAR,WAR,value,result,win,true,desc,by_role,statiz,대체 선수 대비 승리 기여
+avg_exit_velocity,평균 타구속도,Avg EV,batted_ball,driver,kmh,true,desc,league_hitter,manual_or_tracking,타구의 평균 속도
+hard_hit_pct,하드힛 비율,Hard Hit %,batted_ball,driver,percent,true,desc,league_hitter,manual_or_tracking,강한 타구 비율
+launch_angle_avg,평균 발사각,Avg LA,batted_ball,context,degree,context,context,league_hitter,manual_or_tracking,타구가 떠오른 평균 각도
+barrel_pct,배럴 비율,Barrel %,batted_ball,driver,percent,true,desc,league_hitter,manual_or_tracking,좋은 타구속도와 발사각 조합 비율
+pull_pct,당겨친 타구 비율,Pull %,batted_ball,context,percent,context,context,league_hitter,manual_or_tracking,당겨친 타구 비중
+gb_pct,땅볼 비율,GB%,batted_ball,context,percent,context,context,league_hitter,manual_or_tracking,땅볼 타구 비중
+fb_pct,뜬공 비율,FB%,batted_ball,context,percent,context,context,league_hitter,manual_or_tracking,뜬공 타구 비중
+contact_pct,컨택률,Contact %,plate_discipline,driver,percent,true,desc,league_hitter,manual_or_tracking,스윙 대비 맞힌 비율
+whiff_pct,헛스윙률,Whiff %,plate_discipline,driver,percent,false,asc,league_hitter,manual_or_tracking,스윙 대비 헛스윙 비율
+swing_pct,스윙률,Swing %,plate_discipline,context,percent,context,context,league_hitter,manual_or_tracking,투구에 스윙한 비율
+zone_contact_pct,존 컨택률,Zone Contact %,plate_discipline,driver,percent,true,desc,league_hitter,manual_or_tracking,스트라이크존 안 공을 맞힌 비율
+games_pitched,등판,G,pitching,context,count,context,context,league_pitcher,kbo,투수 등판 경기 수
+games_started,선발 등판,GS,pitching,context,count,context,context,starter_pitcher,kbo,선발 투수로 등판한 경기 수
+ip,이닝,IP,pitching,result,inning,true,desc,by_pitching_role,kbo,투수가 책임진 아웃카운트 기반 이닝
+era,방어율,ERA,pitching,result,rate,false,asc,by_pitching_role,kbo,9이닝당 자책점
+whip,WHIP,WHIP,pitching,result,rate,false,asc,by_pitching_role,kbo,이닝당 허용 출루
+pitcher_k_bb,K/BB,K/BB,pitching,result,ratio,true,desc,by_pitching_role,kbo,볼넷 대비 탈삼진
+pitcher_k_pct,탈삼진률,K%,pitching,driver,percent,true,desc,by_pitching_role,kbo,상대한 타자 대비 탈삼진 비율
+pitcher_bb_pct,볼넷률,BB%,pitching,driver,percent,false,asc,by_pitching_role,kbo,상대한 타자 대비 볼넷 비율
+k_minus_bb_pct,K-BB%,K-BB%,pitching,driver,percent,true,desc,by_pitching_role,statiz,탈삼진률에서 볼넷률을 뺀 지표
+k9,9이닝당 탈삼진,K/9,pitching,driver,rate,true,desc,by_pitching_role,kbo,9이닝당 탈삼진
+bb9,9이닝당 볼넷,BB/9,pitching,driver,rate,false,asc,by_pitching_role,kbo,9이닝당 볼넷 허용
+h9,9이닝당 피안타,H/9,pitching,driver,rate,false,asc,by_pitching_role,kbo,9이닝당 피안타 허용
+hr9,9이닝당 피홈런,HR/9,pitching,driver,rate,false,asc,by_pitching_role,kbo,9이닝당 피홈런 허용
+fip,FIP,FIP,pitching,driver,rate,false,asc,by_pitching_role,statiz,수비 영향이 적은 투수 책임 지표
+era_plus,ERA+,ERA+,pitching,result,index,true,desc,by_pitching_role,statiz,리그와 구장 환경을 보정한 방어율 지표
+babip_allowed,피BABIP,BABIP Allowed,pitching,context,rate,context,context,by_pitching_role,statiz,투수가 허용한 인플레이 타구 안타 비율
+lob_pct,잔루율,LOB%,pitching,context,percent,context,context,by_pitching_role,statiz,출루 주자를 실점시키지 않은 비율
+opponent_ops,피OPS,Opponent OPS,pitching,result,rate,false,asc,by_pitching_role,kbo,상대 타자의 OPS 허용 수준
+saves,세이브,SV,pitching,result,count,true,desc,reliever_pitcher,kbo,마무리 상황에서 승리를 지킨 횟수
+holds,홀드,HLD,pitching,result,count,true,desc,reliever_pitcher,kbo,불펜 투수가 리드를 유지한 횟수
+qs,퀄리티스타트,QS,pitching,result,count,true,desc,starter_pitcher,kbo,6이닝 이상 3자책 이하 선발 경기 수
+ip_per_start,선발 경기당 이닝,IP/GS,pitching,result,inning,true,desc,starter_pitcher,kbo,선발 등판당 평균 이닝
+leverage_index,레버리지,LI,pitching,context,index,context,context,reliever_pitcher,manual_or_tracking,등판 상황의 중요도
+avg_velocity,평균 구속,Avg Velocity,pitch_tracking,driver,kmh,true,desc,by_pitching_role,manual_or_tracking,투구 평균 구속
+max_velocity,최고 구속,Max Velocity,pitch_tracking,driver,kmh,true,desc,by_pitching_role,manual_or_tracking,투구 최고 구속
+pitch_type_count,구종 수,Pitch Type Count,pitch_tracking,context,count,context,context,by_pitching_role,manual_or_tracking,실전에서 활용한 구종 수
+fastball_pct,직구 비율,Fastball %,pitch_tracking,context,percent,context,context,by_pitching_role,manual_or_tracking,직구 계열 투구 비율
+breakingball_pct,변화구 비율,Breaking Ball %,pitch_tracking,context,percent,context,context,by_pitching_role,manual_or_tracking,슬라이더 커브 등 변화구 비율
+offspeed_pct,오프스피드 비율,Offspeed %,pitch_tracking,context,percent,context,context,by_pitching_role,manual_or_tracking,체인지업 스플리터 등 오프스피드 구종 비율
+release_height,릴리스 높이,Release Height,pitch_tracking,context,cm,context,context,by_pitching_role,manual_or_tracking,공을 놓는 평균 높이
+release_side,릴리스 좌우 위치,Release Side,pitch_tracking,context,cm,context,context,by_pitching_role,manual_or_tracking,공을 놓는 좌우 위치
+arm_angle,팔각도,Arm Angle,pitch_tracking,context,degree,context,context,by_pitching_role,manual_or_tracking,투구 시 팔이 나오는 각도
+vertical_movement,수직 무브먼트,Vertical Movement,pitch_tracking,driver,cm,context,context,by_pitching_role,manual_or_tracking,투구의 수직 방향 움직임
+horizontal_movement,수평 무브먼트,Horizontal Movement,pitch_tracking,driver,cm,context,context,by_pitching_role,manual_or_tracking,투구의 수평 방향 움직임
+zone_pct,존 비율,Zone %,pitch_tracking,driver,percent,true,desc,by_pitching_role,manual_or_tracking,스트라이크존에 들어간 투구 비율
+first_pitch_strike_pct,초구 스트라이크율,F-Strike %,pitch_tracking,driver,percent,true,desc,by_pitching_role,manual_or_tracking,첫 공을 스트라이크로 시작한 비율
+csw_pct,CSW%,CSW%,pitch_tracking,driver,percent,true,desc,by_pitching_role,manual_or_tracking,루킹 스트라이크와 헛스윙을 합친 비율
+called_strike_pct,루킹 스트라이크율,Called Strike %,pitch_tracking,driver,percent,true,desc,by_pitching_role,manual_or_tracking,투구 중 루킹 스트라이크 비율
+swinging_strike_pct,헛스윙 스트라이크율,SwStr%,pitch_tracking,driver,percent,true,desc,by_pitching_role,manual_or_tracking,투구 중 헛스윙 스트라이크 비율

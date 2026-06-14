@@ -1,0 +1,11 @@
+player_id,player_name,team,team_id,player_type,position_group,primary_position,role_group,bats,throws,debut_year,active_from,active_to,kbo_url,statiz_url,data_status,notes
+park_younghyun,박영현,kt wiz,kt,pitcher,pitcher,RP,reliever_closer,needs_check,needs_check,needs_check,needs_check,,needs_check,needs_check,manual_seed,사용자 지정 10인 대상 선수 마무리 투수
+so_hyeongjun,소형준,kt wiz,kt,pitcher,pitcher,SP,starter,needs_check,needs_check,needs_check,needs_check,,needs_check,needs_check,manual_seed,사용자 지정 10인 대상 선수 선발 투수
+choi_wonjun,최원준,kt wiz,kt,hitter,outfielder,OF,outfielder,needs_check,needs_check,needs_check,needs_check,,needs_check,needs_check,manual_seed,사용자 지정 10인 대상 선수 외야수
+ahn_hyunmin,안현민,kt wiz,kt,hitter,outfielder,OF,outfielder,needs_check,needs_check,needs_check,needs_check,,needs_check,needs_check,manual_seed,사용자 지정 10인 대상 선수 외야수
+won_taein,원태인,삼성 라이온즈,samsung,pitcher,pitcher,SP,starter,needs_check,needs_check,needs_check,needs_check,,needs_check,needs_check,manual_seed,사용자 지정 10인 대상 선수 선발 투수
+park_seonghan,박성한,SSG 랜더스,ssg,hitter,infielder,IF,infielder,needs_check,needs_check,needs_check,needs_check,,needs_check,needs_check,manual_seed,사용자 지정 10인 대상 선수 내야수
+kim_joowon,김주원,NC 다이노스,nc,hitter,infielder,IF,infielder,needs_check,needs_check,needs_check,needs_check,,needs_check,needs_check,manual_seed,사용자 지정 10인 대상 선수 내야수
+kim_jinuk,김진욱,롯데 자이언츠,lotte,pitcher,pitcher,SP,starter,needs_check,needs_check,needs_check,needs_check,,needs_check,needs_check,manual_seed,사용자 지정 10인 대상 선수 선발 투수
+kim_doyoung,김도영,KIA 타이거즈,kia,hitter,infielder,IF,infielder,needs_check,needs_check,needs_check,needs_check,,needs_check,needs_check,manual_seed,사용자 지정 10인 대상 선수 내야수
+sim_woojun,심우준,한화 이글스,hanwha,hitter,infielder,IF,infielder,needs_check,needs_check,needs_check,needs_check,,needs_check,needs_check,manual_seed,사용자 지정 10인 대상 선수 내야수

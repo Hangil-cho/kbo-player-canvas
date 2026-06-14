@@ -2,5 +2,8 @@ data/raw/*.csv
 data/processed/*.csv
 !data/raw/.gitkeep
 !data/processed/.gitkeep
+!data/processed/metric_catalog.csv
+!data/processed/metric_driver_map.csv
+!data/processed/players_master.csv
 work/
 __pycache__/
