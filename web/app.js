@@ -11,7 +11,7 @@ const teamLine = document.querySelector("#teamLine");
 const summaryText = document.querySelector("#summaryText");
 const uniformNumber = document.querySelector("#uniformNumber");
 const metricGrid = document.querySelector("#metricGrid");
-const leagueBars = document.querySelector("#leagueBars");
+const leagueCards = document.querySelector("#leagueCards");
 const insightList = document.querySelector("#insightList");
 const servantGroups = document.querySelector("#servantGroups");
 const detailInsightList = document.querySelector("#detailInsightList");
@@ -21,10 +21,13 @@ const metricSelect = document.querySelector("#metricSelect");
 const trendChart = document.querySelector("#trendChart");
 const statHead = document.querySelector("#statHead");
 const statRows = document.querySelector("#statRows");
+const detailStatHead = document.querySelector("#detailStatHead");
+const detailStatRows = document.querySelector("#detailStatRows");
 const leagueContext = document.querySelector("#leagueContext");
 const detailContext = document.querySelector("#detailContext");
 const dataBadge = document.querySelector("#dataBadge");
 const tableContext = document.querySelector("#tableContext");
+const detailTableContext = document.querySelector("#detailTableContext");
 const summaryView = document.querySelector("#summaryView");
 const detailView = document.querySelector("#detailView");
 
@@ -33,6 +36,7 @@ let currentPlayer = null;
 let currentTable = "basic";
 
 async function init() {
+  document.body.dataset.view = "summary";
   renderLoading();
   try {
     const response = await fetch(DATA_URL, { cache: "no-store" });
@@ -64,6 +68,7 @@ function bindEvents() {
       button.classList.add("active");
       summaryView.hidden = view !== "summary";
       detailView.hidden = view !== "detail";
+      document.body.dataset.view = view;
     });
   });
 
@@ -156,7 +161,7 @@ function renderPlayer(player) {
     )
     .join("");
 
-  renderBars(player.league);
+  renderLeagueCards(player.league);
   insightList.innerHTML = player.insights.map((item) => `<li>${escapeHtml(item)}</li>`).join("");
   renderServantGroups(player);
   detailInsightList.innerHTML = player.detailInsights.map((item) => `<li>${escapeHtml(item)}</li>`).join("");
@@ -166,13 +171,14 @@ function renderPlayer(player) {
     .join("");
   renderTrend(player);
   renderTable(player);
+  renderDetailTable(player);
 }
 
-function renderBars(items) {
-  leagueBars.innerHTML = items
+function renderLeagueCards(items) {
+  leagueCards.innerHTML = items
     .map((item) => {
       const width = Number.isFinite(Number(item.value)) ? Number(item.value) : 0;
-      return `<div class="bar-row"><div class="bar-label"><span>${escapeHtml(item.label)} <em>${escapeHtml(item.rawValue)}</em></span><strong>${escapeHtml(item.rankLabel)}</strong></div><div class="bar-track"><div class="bar-fill" style="width: ${width}%"></div></div></div>`;
+      return `<article class="rank-card"><div class="rank-card-top"><span>${escapeHtml(item.label)}</span><strong>${escapeHtml(item.rankLabel)}</strong></div><div class="rank-value">${escapeHtml(item.rawValue)}</div><div class="bar-track"><div class="bar-fill" style="width: ${width}%"></div></div></article>`;
     })
     .join("");
 }
@@ -206,6 +212,25 @@ function renderTable(player) {
   tableContext.textContent = player.type === "hitter" ? "KBO 공식 타격·주루·수비 기록" : "KBO 공식 투구·역할 기록";
 }
 
+function renderDetailTable(player) {
+  if (!player) return;
+  const advanced = player.tables.advanced || player.tables.basic;
+  const value = player.tables.value || { headers: [], rows: [] };
+  const headers = [...advanced.headers, ...value.headers.slice(1)];
+  const rowCount = Math.max(advanced.rows.length, value.rows.length);
+  const rows = Array.from({ length: rowCount }, (_item, index) => {
+    const left = advanced.rows[index] || [];
+    const right = value.rows[index] || [];
+    return [...left, ...right.slice(1)];
+  });
+  detailStatHead.innerHTML = `<tr>${headers.map((header) => `<th>${escapeHtml(header)}</th>`).join("")}</tr>`;
+  detailStatRows.innerHTML = rows
+    .map((row) => `<tr>${row.map((cell) => `<td>${escapeHtml(String(cell ?? ""))}</td>`).join("")}</tr>`)
+    .join("");
+  detailTableContext.textContent =
+    player.type === "hitter" ? "타석 접근·주루·수비 지표 연결" : "투구 결과·역할·제구 지표 연결";
+}
+
 function renderServantGroups(player) {
   servantGroups.innerHTML = player.servantGroups
     .map(
@@ -227,7 +252,7 @@ function renderLoading() {
   uniformNumber.textContent = "KBO";
   dataBadge.textContent = "";
   metricGrid.innerHTML = "";
-  leagueBars.innerHTML = "";
+  leagueCards.innerHTML = "";
   insightList.innerHTML = "";
   servantGroups.innerHTML = "";
   detailInsightList.innerHTML = "";
@@ -235,6 +260,8 @@ function renderLoading() {
   trendChart.innerHTML = "";
   statHead.innerHTML = "";
   statRows.innerHTML = "";
+  detailStatHead.innerHTML = "";
+  detailStatRows.innerHTML = "";
 }
 
 function renderLoadError(error) {
@@ -250,7 +277,7 @@ function renderEmpty() {
   summaryText.textContent = "이름, 팀명, 포지션 조건을 넓히면 선수 목록이 다시 표시됩니다.";
   uniformNumber.textContent = "-";
   metricGrid.innerHTML = "";
-  leagueBars.innerHTML = "";
+  leagueCards.innerHTML = "";
   insightList.innerHTML = "";
   servantGroups.innerHTML = "";
   detailInsightList.innerHTML = "";
@@ -258,6 +285,8 @@ function renderEmpty() {
   trendChart.innerHTML = "";
   statHead.innerHTML = "";
   statRows.innerHTML = "";
+  detailStatHead.innerHTML = "";
+  detailStatRows.innerHTML = "";
 }
 
 function formatTrendValue(key, value) {

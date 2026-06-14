@@ -10,8 +10,8 @@
     <main class="shell">
       <header class="topbar">
         <div>
-          <p class="eyebrow">KBO 선수 리포트</p>
-          <h1>KBO Player Canvas</h1>
+          <p class="eyebrow">KBO Player Canvas</p>
+          <h1>선수 기록과 변화 흐름</h1>
         </div>
         <a class="quiet-link" href="../docs/PROJECT_BRIEF.md">프로젝트 기준 문서</a>
       </header>
@@ -36,42 +36,65 @@
       </section>
 
       <section class="player-hero">
-        <div>
+        <div class="hero-copy">
           <p class="team" id="teamLine"></p>
           <h2 id="playerName"></h2>
           <p class="summary" id="summaryText"></p>
-          <div class="hero-actions">
-            <div class="view-switch" role="group" aria-label="분석 화면 전환">
-              <button class="view-tab active" type="button" data-view="summary">대표 지표 보기</button>
-              <button class="view-tab" type="button" data-view="detail">상세 분석 보기</button>
-            </div>
-            <span id="dataBadge" class="data-badge"></span>
-          </div>
+          <span id="dataBadge" class="data-badge"></span>
         </div>
-        <div class="profile-placeholder">
+        <div class="profile-tile">
           <span id="uniformNumber"></span>
         </div>
       </section>
 
-      <section class="metric-grid" id="metricGrid" aria-label="선수 핵심 카드"></section>
+      <section class="metric-grid" id="metricGrid" aria-label="공통 대표 지표"></section>
+
+      <nav class="view-nav" aria-label="분석 화면 전환">
+        <button class="view-tab active" type="button" data-view="summary">대표 지표 보기</button>
+        <button class="view-tab" type="button" data-view="detail">상세 분석 보기</button>
+      </nav>
 
       <section id="summaryView" class="view-page">
-        <section class="content-grid">
-          <article class="panel">
-            <div class="panel-head">
+        <section class="summary-rank-panel">
+          <div class="section-head">
+            <div>
+              <p class="section-kicker">리그 내 위치</p>
+              <h3>대표 지표 5개 기준</h3>
+            </div>
+            <p id="leagueContext">KBO 공식 기록 기준</p>
+          </div>
+          <div id="leagueCards" class="rank-card-grid"></div>
+        </section>
+
+        <section class="summary-main-grid">
+          <article class="panel trend-panel">
+            <div class="panel-head chart-head">
               <div>
-                <h3>리그 내 위치</h3>
-                <p id="leagueContext">대표 지표 기준</p>
+                <h3>성적 흐름</h3>
+                <p>연도별 또는 최근 12개월 기준</p>
+              </div>
+              <div class="chart-controls">
+                <label>
+                  <span>기간</span>
+                  <select id="trendMode">
+                    <option value="season">연도별</option>
+                    <option value="month">월별 최근 12개월</option>
+                  </select>
+                </label>
+                <label>
+                  <span>지표</span>
+                  <select id="metricSelect"></select>
+                </label>
               </div>
             </div>
-            <div id="leagueBars" class="bars"></div>
+            <div id="trendChart" class="trend-chart"></div>
           </article>
 
-          <article class="panel">
+          <article class="panel insight-panel">
             <div class="panel-head">
               <div>
-                <h3>성적 변화 이유</h3>
-                <p>초기 해설 요약</p>
+                <h3>대표 지표 해석</h3>
+                <p>현재 기록과 흐름 요약</p>
               </div>
             </div>
             <ul id="insightList" class="insights"></ul>
@@ -79,33 +102,10 @@
         </section>
 
         <section class="panel">
-          <div class="panel-head chart-head">
-            <div>
-              <h3>성적 흐름</h3>
-              <p>연도별 또는 최근 12개월 흐름</p>
-            </div>
-            <div class="chart-controls">
-              <label>
-                <span>기간</span>
-                <select id="trendMode">
-                  <option value="season">연도별</option>
-                  <option value="month">월별 최근 12개월</option>
-                </select>
-              </label>
-              <label>
-                <span>지표</span>
-                <select id="metricSelect"></select>
-              </label>
-            </div>
-          </div>
-          <div id="trendChart" class="trend-chart"></div>
-        </section>
-
-        <section class="panel">
           <div class="panel-head table-head">
             <div>
               <h3>기록표</h3>
-              <p id="tableContext">기본/상세/수비·WAR 전환</p>
+              <p id="tableContext">시즌 전체 기록</p>
             </div>
             <div class="segmented" role="group" aria-label="기록표 보기 전환">
               <button class="segment active" type="button" data-table="basic">기본</button>
@@ -123,22 +123,23 @@
       </section>
 
       <section id="detailView" class="view-page" hidden>
-        <section class="panel">
-          <div class="panel-head">
+        <section class="detail-rank-panel">
+          <div class="section-head">
             <div>
-              <h3>상세 리그 내 위치</h3>
-              <p id="detailContext">서번트형 세부 지표</p>
+              <p class="section-kicker">상세 리그 내 위치</p>
+              <h3>성적을 만든 세부 지표</h3>
             </div>
+            <p id="detailContext">KBO 공식 상세 기록 기준</p>
           </div>
           <div id="servantGroups" class="servant-groups"></div>
         </section>
 
-        <section class="content-grid">
+        <section class="detail-analysis-grid">
           <article class="panel">
             <div class="panel-head">
               <div>
                 <h3>상세 분석</h3>
-                <p>세부 지표 기준 해석</p>
+                <p>무엇이 기록 변화를 만들었는지 보기 위한 해석</p>
               </div>
             </div>
             <ul id="detailInsightList" class="insights"></ul>
@@ -147,12 +148,27 @@
           <article class="panel">
             <div class="panel-head">
               <div>
-                <h3>다음 데이터 연결 포인트</h3>
-                <p>실데이터 수집 시 우선 확인할 항목</p>
+                <h3>추가 데이터 연결 포인트</h3>
+                <p>다음 단계에서 붙일 추적·가치 지표</p>
               </div>
             </div>
             <ul id="dataNeedList" class="insights"></ul>
           </article>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head table-head">
+            <div>
+              <h3>상세 지표 기록표</h3>
+              <p id="detailTableContext">성적 변화 이유와 연결해서 볼 지표</p>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead id="detailStatHead"></thead>
+              <tbody id="detailStatRows"></tbody>
+            </table>
+          </div>
         </section>
       </section>
     </main>
