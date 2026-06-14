@@ -292,12 +292,21 @@ h2 {
 .bar-label {
   display: flex;
   justify-content: space-between;
+  gap: 12px;
   color: #344054;
   font-size: 14px;
 }
 
 .bar-label strong {
   color: var(--ink);
+  white-space: nowrap;
+}
+
+.bar-label em {
+  margin-left: 6px;
+  color: var(--muted);
+  font-style: normal;
+  font-weight: 700;
 }
 
 .bar-track {
@@ -389,6 +398,14 @@ h2 {
   min-height: 20px;
   border-radius: 8px 8px 2px 2px;
   background: linear-gradient(180deg, var(--accent-3), #75a7ff);
+}
+
+.chart-bar.empty .column {
+  background: #d8dee8;
+}
+
+.chart-bar.empty .value {
+  color: var(--muted);
 }
 
 .chart-bar .value {

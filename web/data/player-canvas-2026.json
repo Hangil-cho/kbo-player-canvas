@@ -1,0 +1,7051 @@
+{
+  "meta": {
+    "season": 2026,
+    "generatedAt": "2026-06-14T17:54:58",
+    "source": "KBO official public records",
+    "playerCount": 10,
+    "metricRowCount": 7364
+  },
+  "players": [
+    {
+      "id": "park_younghyun",
+      "name": "박영현",
+      "type": "pitcher",
+      "team": "kt wiz",
+      "teamShort": "KT",
+      "position": "마무리 투수",
+      "positionGroup": "마무리 투수",
+      "roleGroup": "reliever_closer",
+      "profileCode": "ID 52060",
+      "kboPlayerId": 52060,
+      "kboDetailUrl": "https://www.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=52060",
+      "dataBadge": "KBO 공식 기록 · 2026-06-14 수집",
+      "summary": "박영현의 현재 공식 기록은 ERA 3.03, WHIP 1.28, 이닝 29.7입니다. 투구 결과와 월별·상황별 흐름을 함께 보도록 연결했습니다.",
+      "metrics": [
+        {
+          "metricId": "era",
+          "label": "방어율",
+          "value": "3.03",
+          "note": "공식 기록"
+        },
+        {
+          "metricId": "ip",
+          "label": "이닝",
+          "value": "29.7",
+          "note": "공식 기록"
+        },
+        {
+          "metricId": "whip",
+          "label": "WHIP",
+          "value": "1.28",
+          "note": "공식 기록"
+        },
+        {
+          "metricId": "pitcher_strikeouts",
+          "label": "탈삼진",
+          "value": "29",
+          "note": "공식 기록"
+        },
+        {
+          "metricId": "pitcher_k_bb",
+          "label": "K/BB",
+          "value": "1.93",
+          "note": "공식 기록"
+        }
+      ],
+      "league": [
+        {
+          "metricId": "era",
+          "label": "방어율",
+          "value": null,
+          "rankLabel": "비교 준비중",
+          "rawValue": "3.03"
+        },
+        {
+          "metricId": "ip",
+          "label": "이닝",
+          "value": null,
+          "rankLabel": "비교 준비중",
+          "rawValue": "29.7"
+        },
+        {
+          "metricId": "whip",
+          "label": "WHIP",
+          "value": null,
+          "rankLabel": "비교 준비중",
+          "rawValue": "1.28"
+        },
+        {
+          "metricId": "pitcher_strikeouts",
+          "label": "탈삼진",
+          "value": null,
+          "rankLabel": "비교 준비중",
+          "rawValue": "29"
+        },
+        {
+          "metricId": "pitcher_k_bb",
+          "label": "K/BB",
+          "value": null,
+          "rankLabel": "비교 준비중",
+          "rawValue": "1.93"
+        }
+      ],
+      "leagueContext": "KBO 공식 공개 기록 기반 · 수집된 리그 표본 기준",
+      "detailContext": "KBO 선수 상세 월별·상황별 기록 기준",
+      "chartMetrics": [
+        {
+          "key": "era",
+          "label": "방어율"
+        },
+        {
+          "key": "ip",
+          "label": "이닝"
+        },
+        {
+          "key": "whip",
+          "label": "WHIP"
+        },
+        {
+          "key": "pitcher_strikeouts",
+          "label": "탈삼진"
+        },
+        {
+          "key": "pitcher_k_bb",
+          "label": "K/BB"
+        }
+      ],
+      "seasons": [
+        {
+          "era": 3.03,
+          "ip": 29.666666666666668,
+          "whip": null,
+          "pitcher_strikeouts": 29.0,
+          "pitcher_k_bb": 1.9333333333333333,
+          "season": 2026,
+          "label": "2026"
+        },
+        {
+          "era": 3.39,
+          "ip": 69.0,
+          "whip": null,
+          "pitcher_strikeouts": 77.0,
+          "pitcher_k_bb": 2.264705882352941,
+          "season": 2025,
+          "label": "2025"
+        },
+        {
+          "era": 3.52,
+          "ip": 76.66666666666667,
+          "whip": null,
+          "pitcher_strikeouts": 87.0,
+          "pitcher_k_bb": 3.9545454545454546,
+          "season": 2024,
+          "label": "2024"
+        },
+        {
+          "era": 2.75,
+          "ip": 75.33333333333333,
+          "whip": null,
+          "pitcher_strikeouts": 79.0,
+          "pitcher_k_bb": 3.4347826086956523,
+          "season": 2023,
+          "label": "2023"
+        },
+        {
+          "era": 3.66,
+          "ip": 51.66666666666666,
+          "whip": null,
+          "pitcher_strikeouts": 55.0,
+          "pitcher_k_bb": 2.75,
+          "season": 2022,
+          "label": "2022"
+        }
+      ],
+      "months": [
+        {
+          "era": null,
+          "ip": null,
+          "whip": null,
+          "pitcher_strikeouts": null,
+          "pitcher_k_bb": null,
+          "label": "25.07",
+          "periodValue": "2025-07",
+          "hasData": false
+        },
+        {
+          "era": null,
+          "ip": null,
+          "whip": null,
+          "pitcher_strikeouts": null,
+          "pitcher_k_bb": null,
+          "label": "25.08",
+          "periodValue": "2025-08",
+          "hasData": false
+        },
+        {
+          "era": null,
+          "ip": null,
+          "whip": null,
+          "pitcher_strikeouts": null,
+          "pitcher_k_bb": null,
+          "label": "25.09",
+          "periodValue": "2025-09",
+          "hasData": false
+        },
+        {
+          "era": null,
+          "ip": null,
+          "whip": null,
+          "pitcher_strikeouts": null,
+          "pitcher_k_bb": null,
+          "label": "25.10",
+          "periodValue": "2025-10",
+          "hasData": false
+        },
+        {
+          "era": null,
+          "ip": null,
+          "whip": null,
+          "pitcher_strikeouts": null,
+          "pitcher_k_bb": null,
+          "label": "25.11",
+          "periodValue": "2025-11",
+          "hasData": false
+        },
+        {
+          "era": null,
+          "ip": null,
+          "whip": null,
+          "pitcher_strikeouts": null,
+          "pitcher_k_bb": null,
+          "label": "25.12",
+          "periodValue": "2025-12",
+          "hasData": false
+        },
+        {
+          "era": null,
+          "ip": null,
+          "whip": null,
+          "pitcher_strikeouts": null,
+          "pitcher_k_bb": null,
+          "label": "26.01",
+          "periodValue": "2026-01",
+          "hasData": false
+        },
+        {
+          "era": null,
+          "ip": null,
+          "whip": null,
+          "pitcher_strikeouts": null,
+          "pitcher_k_bb": null,
+          "label": "26.02",
+          "periodValue": "2026-02",
+          "hasData": false
+        },
+        {
+          "era": 0.0,
+          "ip": 2.6666666666666665,
+          "whip": null,
+          "pitcher_strikeouts": 2.0,
+          "pitcher_k_bb": 1.0,
+          "label": "26.03",
+          "periodValue": "2026-03",
+          "hasData": true
+        },
+        {
+          "era": 3.18,
+          "ip": 11.333333333333334,
+          "whip": null,
+          "pitcher_strikeouts": 7.0,
+          "pitcher_k_bb": 3.5,
+          "label": "26.04",
+          "periodValue": "2026-04",
+          "hasData": true
+        },
+        {
+          "era": 3.48,
+          "ip": 10.333333333333334,
+          "whip": null,
+          "pitcher_strikeouts": 15.0,
+          "pitcher_k_bb": 2.142857142857143,
+          "label": "26.05",
+          "periodValue": "2026-05",
+          "hasData": true
+        },
+        {
+          "era": 3.38,
+          "ip": 5.333333333333333,
+          "whip": null,
+          "pitcher_strikeouts": 5.0,
+          "pitcher_k_bb": 1.25,
+          "label": "26.06",
+          "periodValue": "2026-06",
+          "hasData": true
+        }
+      ],
+      "tables": {
+        "basic": {
+          "headers": [
+            "시즌",
+            "방어율",
+            "이닝",
+            "WHIP",
+            "탈삼진",
+            "볼넷",
+            "K/BB",
+            "세이브"
+          ],
+          "rows": [
+            [
+              2026,
+              "3.03",
+              "29.7",
+              "미수집",
+              "29",
+              "15",
+              "1.93",
+              "15"
+            ],
+            [
+              2025,
+              "3.39",
+              "69.0",
+              "미수집",
+              "77",
+              "34",
+              "2.26",
+              "35"
+            ],
+            [
+              2024,
+              "3.52",
+              "76.7",
+              "미수집",
+              "87",
+              "22",
+              "3.95",
+              "25"
+            ],
+            [
+              2023,
+              "2.75",
+              "75.3",
+              "미수집",
+              "79",
+              "23",
+              "3.43",
+              "4"
+            ],
+            [
+              2022,
+              "3.66",
+              "51.7",
+              "미수집",
+              "55",
+              "20",
+              "2.75",
+              "0"
+            ]
+          ]
+        },
+        "advanced": {
+          "headers": [
+            "시즌",
+            "상대 타자",
+            "투구수",
+            "피타율",
+            "퀄리티스타트",
+            "블론세이브",
+            "폭투",
+            "보크"
+          ],
+          "rows": [
+            [
+              2026,
+              "127",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2025,
+              "305",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2024,
+              "310",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2023,
+              "308",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2022,
+              "219",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ]
+          ]
+        },
+        "value": {
+          "headers": [
+            "시즌",
+            "등판",
+            "선발 등판",
+            "세이브",
+            "홀드",
+            "퀄리티스타트",
+            "승",
+            "패",
+            "WAR"
+          ],
+          "rows": [
+            [
+              2026,
+              "26",
+              "미수집",
+              "15",
+              "0",
+              "미수집",
+              "4",
+              "0",
+              "공식 미제공"
+            ],
+            [
+              2025,
+              "67",
+              "미수집",
+              "35",
+              "1",
+              "미수집",
+              "5",
+              "6",
+              "공식 미제공"
+            ],
+            [
+              2024,
+              "66",
+              "미수집",
+              "25",
+              "0",
+              "미수집",
+              "10",
+              "2",
+              "공식 미제공"
+            ],
+            [
+              2023,
+              "68",
+              "미수집",
+              "4",
+              "32",
+              "미수집",
+              "3",
+              "3",
+              "공식 미제공"
+            ],
+            [
+              2022,
+              "52",
+              "미수집",
+              "0",
+              "2",
+              "미수집",
+              "0",
+              "1",
+              "공식 미제공"
+            ]
+          ]
+        }
+      },
+      "servantGroups": [
+        {
+          "title": "실점 억제",
+          "items": [
+            {
+              "label": "방어율",
+              "value": "3.03",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "WHIP",
+              "value": "1.28",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "피타율",
+              "value": ".215",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "자책점",
+              "value": "10",
+              "note": "KBO 공식 기록"
+            }
+          ]
+        },
+        {
+          "title": "구위 결과",
+          "items": [
+            {
+              "label": "탈삼진",
+              "value": "29",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "K/BB",
+              "value": "1.93",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "K/9",
+              "value": "8.80",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "피홈런",
+              "value": "2",
+              "note": "KBO 공식 기록"
+            }
+          ]
+        },
+        {
+          "title": "역할",
+          "items": [
+            {
+              "label": "등판",
+              "value": "26",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "선발 등판",
+              "value": "미수집",
+              "note": "미수집"
+            },
+            {
+              "label": "이닝",
+              "value": "29.7",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "세이브",
+              "value": "15",
+              "note": "KBO 공식 기록"
+            }
+          ]
+        },
+        {
+          "title": "제구",
+          "items": [
+            {
+              "label": "볼넷",
+              "value": "15",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "BB/9",
+              "value": "4.55",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "폭투",
+              "value": "2",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "보크",
+              "value": "0",
+              "note": "KBO 공식 기록"
+            }
+          ]
+        },
+        {
+          "title": "상황별",
+          "items": [
+            {
+              "label": "주자상황별",
+              "value": "만루 .000",
+              "note": "피안타율 최저"
+            },
+            {
+              "label": "볼카운트별",
+              "value": "0-1 .000",
+              "note": "피안타율 최저"
+            },
+            {
+              "label": "이닝별",
+              "value": "8회 .167",
+              "note": "피안타율 최저"
+            },
+            {
+              "label": "타순별",
+              "value": "1번타자 .000",
+              "note": "피안타율 최저"
+            }
+          ]
+        }
+      ],
+      "insights": [
+        "박영현은 대표 지표 기준으로 ERA 3.03, K/BB 1.93를 기록 중입니다.",
+        "전년 대비 era는 -0.36 변했고, 방향은 개선입니다.",
+        "최근 월별 흐름은 26.05 대비 26.06에 -0.10 변화했고, 방향은 개선입니다."
+      ],
+      "detailInsights": [
+        "박영현의 상세 화면은 KBO 공식 월별 합계와 상황별 피안타 기록을 기준으로 구성했습니다.",
+        "주자상황별 피안타율은 만루 구간에서 .000로 가장 낮습니다.",
+        "구종, 무브먼트, 릴리스, 팔각도는 현재 공식 수집 범위에 없어 표시하지 않고, 추후 PTS/ABS 라이선스 데이터로 보강합니다."
+      ],
+      "dataNeeds": [
+        "구종, 구속, 무브먼트, 릴리스는 허가된 PTS/ABS 데이터 필요",
+        "팔각도와 익스텐션은 공식/라이선스 데이터 확인 필요",
+        "WAR, ERA+, RAA는 공식 기록실에 없어 자동 수집하지 않음"
+      ]
+    },
+    {
+      "id": "so_hyeongjun",
+      "name": "소형준",
+      "type": "pitcher",
+      "team": "kt wiz",
+      "teamShort": "KT",
+      "position": "선발 투수",
+      "positionGroup": "선발 투수",
+      "roleGroup": "starter",
+      "profileCode": "ID 50030",
+      "kboPlayerId": 50030,
+      "kboDetailUrl": "https://www.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=50030",
+      "dataBadge": "KBO 공식 기록 · 2026-06-14 수집",
+      "summary": "소형준의 현재 공식 기록은 ERA 3.69, WHIP 1.33, 이닝 39.0입니다. 투구 결과와 월별·상황별 흐름을 함께 보도록 연결했습니다.",
+      "metrics": [
+        {
+          "metricId": "era",
+          "label": "방어율",
+          "value": "3.69",
+          "note": "공식 기록"
+        },
+        {
+          "metricId": "ip",
+          "label": "이닝",
+          "value": "39.0",
+          "note": "공식 기록"
+        },
+        {
+          "metricId": "whip",
+          "label": "WHIP",
+          "value": "1.33",
+          "note": "공식 기록"
+        },
+        {
+          "metricId": "pitcher_strikeouts",
+          "label": "탈삼진",
+          "value": "37",
+          "note": "공식 기록"
+        },
+        {
+          "metricId": "pitcher_k_bb",
+          "label": "K/BB",
+          "value": "4.11",
+          "note": "공식 기록"
+        }
+      ],
+      "league": [
+        {
+          "metricId": "era",
+          "label": "방어율",
+          "value": null,
+          "rankLabel": "비교 준비중",
+          "rawValue": "3.69"
+        },
+        {
+          "metricId": "ip",
+          "label": "이닝",
+          "value": null,
+          "rankLabel": "비교 준비중",
+          "rawValue": "39.0"
+        },
+        {
+          "metricId": "whip",
+          "label": "WHIP",
+          "value": null,
+          "rankLabel": "비교 준비중",
+          "rawValue": "1.33"
+        },
+        {
+          "metricId": "pitcher_strikeouts",
+          "label": "탈삼진",
+          "value": null,
+          "rankLabel": "비교 준비중",
+          "rawValue": "37"
+        },
+        {
+          "metricId": "pitcher_k_bb",
+          "label": "K/BB",
+          "value": null,
+          "rankLabel": "비교 준비중",
+          "rawValue": "4.11"
+        }
+      ],
+      "leagueContext": "KBO 공식 공개 기록 기반 · 수집된 리그 표본 기준",
+      "detailContext": "KBO 선수 상세 월별·상황별 기록 기준",
+      "chartMetrics": [
+        {
+          "key": "era",
+          "label": "방어율"
+        },
+        {
+          "key": "ip",
+          "label": "이닝"
+        },
+        {
+          "key": "whip",
+          "label": "WHIP"
+        },
+        {
+          "key": "pitcher_strikeouts",
+          "label": "탈삼진"
+        },
+        {
+          "key": "pitcher_k_bb",
+          "label": "K/BB"
+        }
+      ],
+      "seasons": [
+        {
+          "era": 3.69,
+          "ip": 39.0,
+          "whip": null,
+          "pitcher_strikeouts": 37.0,
+          "pitcher_k_bb": 4.111111111111111,
+          "season": 2026,
+          "label": "2026"
+        },
+        {
+          "era": 3.3,
+          "ip": 147.33333333333334,
+          "whip": null,
+          "pitcher_strikeouts": 123.0,
+          "pitcher_k_bb": 4.241379310344827,
+          "season": 2025,
+          "label": "2025"
+        },
+        {
+          "era": 3.24,
+          "ip": 8.333333333333334,
+          "whip": null,
+          "pitcher_strikeouts": 3.0,
+          "pitcher_k_bb": 3.0,
+          "season": 2024,
+          "label": "2024"
+        },
+        {
+          "era": 11.45,
+          "ip": 11.0,
+          "whip": null,
+          "pitcher_strikeouts": 4.0,
+          "pitcher_k_bb": 1.3333333333333333,
+          "season": 2023,
+          "label": "2023"
+        },
+        {
+          "era": 3.05,
+          "ip": 171.33333333333334,
+          "whip": null,
+          "pitcher_strikeouts": 117.0,
+          "pitcher_k_bb": 3.0,
+          "season": 2022,
+          "label": "2022"
+        },
+        {
+          "era": 4.16,
+          "ip": 119.0,
+          "whip": null,
+          "pitcher_strikeouts": 85.0,
+          "pitcher_k_bb": 1.6666666666666667,
+          "season": 2021,
+          "label": "2021"
+        },
+        {
+          "era": 3.86,
+          "ip": 133.0,
+          "whip": null,
+          "pitcher_strikeouts": 92.0,
+          "pitcher_k_bb": 2.0444444444444443,
+          "season": 2020,
+          "label": "2020"
+        }
+      ],
+      "months": [
+        {
+          "era": null,
+          "ip": null,
+          "whip": null,
+          "pitcher_strikeouts": null,
+          "pitcher_k_bb": null,
+          "label": "25.07",
+          "periodValue": "2025-07",
+          "hasData": false
+        },
+        {
+          "era": null,
+          "ip": null,
+          "whip": null,
+          "pitcher_strikeouts": null,
+          "pitcher_k_bb": null,
+          "label": "25.08",
+          "periodValue": "2025-08",
+          "hasData": false
+        },
+        {
+          "era": null,
+          "ip": null,
+          "whip": null,
+          "pitcher_strikeouts": null,
+          "pitcher_k_bb": null,
+          "label": "25.09",
+          "periodValue": "2025-09",
+          "hasData": false
+        },
+        {
+          "era": null,
+          "ip": null,
+          "whip": null,
+          "pitcher_strikeouts": null,
+          "pitcher_k_bb": null,
+          "label": "25.10",
+          "periodValue": "2025-10",
+          "hasData": false
+        },
+        {
+          "era": null,
+          "ip": null,
+          "whip": null,
+          "pitcher_strikeouts": null,
+          "pitcher_k_bb": null,
+          "label": "25.11",
+          "periodValue": "2025-11",
+          "hasData": false
+        },
+        {
+          "era": null,
+          "ip": null,
+          "whip": null,
+          "pitcher_strikeouts": null,
+          "pitcher_k_bb": null,
+          "label": "25.12",
+          "periodValue": "2025-12",
+          "hasData": false
+        },
+        {
+          "era": null,
+          "ip": null,
+          "whip": null,
+          "pitcher_strikeouts": null,
+          "pitcher_k_bb": null,
+          "label": "26.01",
+          "periodValue": "2026-01",
+          "hasData": false
+        },
+        {
+          "era": null,
+          "ip": null,
+          "whip": null,
+          "pitcher_strikeouts": null,
+          "pitcher_k_bb": null,
+          "label": "26.02",
+          "periodValue": "2026-02",
+          "hasData": false
+        },
+        {
+          "era": 9.0,
+          "ip": 3.0,
+          "whip": null,
+          "pitcher_strikeouts": 1.0,
+          "pitcher_k_bb": 0.5,
+          "label": "26.03",
+          "periodValue": "2026-03",
+          "hasData": true
+        },
+        {
+          "era": 3.3,
+          "ip": 30.0,
+          "whip": null,
+          "pitcher_strikeouts": 30.0,
+          "pitcher_k_bb": 5.0,
+          "label": "26.04",
+          "periodValue": "2026-04",
+          "hasData": true
+        },
+        {
+          "era": 3.0,
+          "ip": 6.0,
+          "whip": null,
+          "pitcher_strikeouts": 6.0,
+          "pitcher_k_bb": 6.0,
+          "label": "26.05",
+          "periodValue": "2026-05",
+          "hasData": true
+        },
+        {
+          "era": null,
+          "ip": null,
+          "whip": null,
+          "pitcher_strikeouts": null,
+          "pitcher_k_bb": null,
+          "label": "26.06",
+          "periodValue": "2026-06",
+          "hasData": false
+        }
+      ],
+      "tables": {
+        "basic": {
+          "headers": [
+            "시즌",
+            "방어율",
+            "이닝",
+            "WHIP",
+            "탈삼진",
+            "볼넷",
+            "K/BB",
+            "세이브"
+          ],
+          "rows": [
+            [
+              2026,
+              "3.69",
+              "39.0",
+              "미수집",
+              "37",
+              "9",
+              "4.11",
+              "0"
+            ],
+            [
+              2025,
+              "3.30",
+              "147.3",
+              "미수집",
+              "123",
+              "29",
+              "4.24",
+              "1"
+            ],
+            [
+              2024,
+              "3.24",
+              "8.3",
+              "미수집",
+              "3",
+              "1",
+              "3.00",
+              "0"
+            ],
+            [
+              2023,
+              "11.45",
+              "11.0",
+              "미수집",
+              "4",
+              "3",
+              "1.33",
+              "0"
+            ],
+            [
+              2022,
+              "3.05",
+              "171.3",
+              "미수집",
+              "117",
+              "39",
+              "3.00",
+              "0"
+            ],
+            [
+              2021,
+              "4.16",
+              "119.0",
+              "미수집",
+              "85",
+              "51",
+              "1.67",
+              "0"
+            ],
+            [
+              2020,
+              "3.86",
+              "133.0",
+              "미수집",
+              "92",
+              "45",
+              "2.04",
+              "0"
+            ]
+          ]
+        },
+        "advanced": {
+          "headers": [
+            "시즌",
+            "상대 타자",
+            "투구수",
+            "피타율",
+            "퀄리티스타트",
+            "블론세이브",
+            "폭투",
+            "보크"
+          ],
+          "rows": [
+            [
+              2026,
+              "168",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2025,
+              "617",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2024,
+              "30",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2023,
+              "59",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2022,
+              "703",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2021,
+              "521",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2020,
+              "572",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ]
+          ]
+        },
+        "value": {
+          "headers": [
+            "시즌",
+            "등판",
+            "선발 등판",
+            "세이브",
+            "홀드",
+            "퀄리티스타트",
+            "승",
+            "패",
+            "WAR"
+          ],
+          "rows": [
+            [
+              2026,
+              "7",
+              "미수집",
+              "0",
+              "0",
+              "미수집",
+              "3",
+              "0",
+              "공식 미제공"
+            ],
+            [
+              2025,
+              "26",
+              "미수집",
+              "1",
+              "0",
+              "미수집",
+              "10",
+              "7",
+              "공식 미제공"
+            ],
+            [
+              2024,
+              "6",
+              "미수집",
+              "0",
+              "0",
+              "미수집",
+              "2",
+              "0",
+              "공식 미제공"
+            ],
+            [
+              2023,
+              "3",
+              "미수집",
+              "0",
+              "0",
+              "미수집",
+              "0",
+              "0",
+              "공식 미제공"
+            ],
+            [
+              2022,
+              "27",
+              "미수집",
+              "0",
+              "0",
+              "미수집",
+              "13",
+              "6",
+              "공식 미제공"
+            ],
+            [
+              2021,
+              "24",
+              "미수집",
+              "0",
+              "0",
+              "미수집",
+              "7",
+              "7",
+              "공식 미제공"
+            ],
+            [
+              2020,
+              "26",
+              "미수집",
+              "0",
+              "0",
+              "미수집",
+              "13",
+              "6",
+              "공식 미제공"
+            ]
+          ]
+        }
+      },
+      "servantGroups": [
+        {
+          "title": "실점 억제",
+          "items": [
+            {
+              "label": "방어율",
+              "value": "3.69",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "WHIP",
+              "value": "1.33",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "피타율",
+              "value": ".283",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "자책점",
+              "value": "16",
+              "note": "KBO 공식 기록"
+            }
+          ]
+        },
+        {
+          "title": "구위 결과",
+          "items": [
+            {
+              "label": "탈삼진",
+              "value": "37",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "K/BB",
+              "value": "4.11",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "K/9",
+              "value": "8.54",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "피홈런",
+              "value": "2",
+              "note": "KBO 공식 기록"
+            }
+          ]
+        },
+        {
+          "title": "역할",
+          "items": [
+            {
+              "label": "등판",
+              "value": "7",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "선발 등판",
+              "value": "미수집",
+              "note": "미수집"
+            },
+            {
+              "label": "이닝",
+              "value": "39.0",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "세이브",
+              "value": "0",
+              "note": "KBO 공식 기록"
+            }
+          ]
+        },
+        {
+          "title": "제구",
+          "items": [
+            {
+              "label": "볼넷",
+              "value": "9",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "BB/9",
+              "value": "2.08",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "폭투",
+              "value": "0",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "보크",
+              "value": "0",
+              "note": "KBO 공식 기록"
+            }
+          ]
+        },
+        {
+          "title": "상황별",
+          "items": [
+            {
+              "label": "주자상황별",
+              "value": "1,2루 .100",
+              "note": "피안타율 최저"
+            },
+            {
+              "label": "볼카운트별",
+              "value": "0-2 .125",
+              "note": "피안타율 최저"
+            },
+            {
+              "label": "이닝별",
+              "value": "3회 .222",
+              "note": "피안타율 최저"
+            },
+            {
+              "label": "타순별",
+              "value": "2번타자 .150",
+              "note": "피안타율 최저"
+            }
+          ]
+        }
+      ],
+      "insights": [
+        "소형준은 대표 지표 기준으로 ERA 3.69, K/BB 4.11를 기록 중입니다.",
+        "전년 대비 era는 +0.39 변했고, 방향은 하락입니다.",
+        "최근 월별 흐름은 26.04 대비 26.05에 -0.30 변화했고, 방향은 개선입니다."
+      ],
+      "detailInsights": [
+        "소형준의 상세 화면은 KBO 공식 월별 합계와 상황별 피안타 기록을 기준으로 구성했습니다.",
+        "주자상황별 피안타율은 1,2루 구간에서 .100로 가장 낮습니다.",
+        "구종, 무브먼트, 릴리스, 팔각도는 현재 공식 수집 범위에 없어 표시하지 않고, 추후 PTS/ABS 라이선스 데이터로 보강합니다."
+      ],
+      "dataNeeds": [
+        "구종, 구속, 무브먼트, 릴리스는 허가된 PTS/ABS 데이터 필요",
+        "팔각도와 익스텐션은 공식/라이선스 데이터 확인 필요",
+        "WAR, ERA+, RAA는 공식 기록실에 없어 자동 수집하지 않음"
+      ]
+    },
+    {
+      "id": "choi_wonjun",
+      "name": "최원준",
+      "type": "hitter",
+      "team": "kt wiz",
+      "teamShort": "KT",
+      "position": "외야수",
+      "positionGroup": "외야수",
+      "roleGroup": "outfielder",
+      "profileCode": "ID 66606",
+      "kboPlayerId": 66606,
+      "kboDetailUrl": "https://www.koreabaseball.com/Record/Player/HitterDetail/Basic.aspx?playerId=66606",
+      "dataBadge": "KBO 공식 기록 · 2026-06-14 수집",
+      "summary": "최원준의 현재 공식 기록은 OPS .993, 타율 .384, 출루율 .458입니다. 타격 결과와 함께 주루·수비 기록을 같이 보도록 연결했습니다.",
+      "metrics": [
+        {
+          "metricId": "avg",
+          "label": "타율",
+          "value": ".384",
+          "note": "상위 20%"
+        },
+        {
+          "metricId": "obp",
+          "label": "출루율",
+          "value": ".458",
+          "note": "상위 40%"
+        },
+        {
+          "metricId": "slg",
+          "label": "장타율",
+          "value": ".535",
+          "note": "상위 40%"
+        },
+        {
+          "metricId": "ops",
+          "label": "OPS",
+          "value": ".993",
+          "note": "상위 20%"
+        },
+        {
+          "metricId": "hitter_bb_k",
+          "label": "볼삼비",
+          "value": "0.79",
+          "note": "상위 80%"
+        }
+      ],
+      "league": [
+        {
+          "metricId": "avg",
+          "label": "타율",
+          "value": 81,
+          "rankLabel": "상위 20%",
+          "rawValue": ".384"
+        },
+        {
+          "metricId": "obp",
+          "label": "출루율",
+          "value": 61,
+          "rankLabel": "상위 40%",
+          "rawValue": ".458"
+        },
+        {
+          "metricId": "slg",
+          "label": "장타율",
+          "value": 61,
+          "rankLabel": "상위 40%",
+          "rawValue": ".535"
+        },
+        {
+          "metricId": "ops",
+          "label": "OPS",
+          "value": 81,
+          "rankLabel": "상위 20%",
+          "rawValue": ".993"
+        },
+        {
+          "metricId": "hitter_bb_k",
+          "label": "볼삼비",
+          "value": 21,
+          "rankLabel": "상위 80%",
+          "rawValue": "0.79"
+        }
+      ],
+      "leagueContext": "KBO 공식 공개 기록 기반 · 수집된 리그 표본 기준",
+      "detailContext": "KBO 선수 상세 월별·상황별 기록 기준",
+      "chartMetrics": [
+        {
+          "key": "avg",
+          "label": "타율"
+        },
+        {
+          "key": "obp",
+          "label": "출루율"
+        },
+        {
+          "key": "slg",
+          "label": "장타율"
+        },
+        {
+          "key": "ops",
+          "label": "OPS"
+        },
+        {
+          "key": "hitter_bb_k",
+          "label": "볼삼비"
+        }
+      ],
+      "seasons": [
+        {
+          "avg": 0.384,
+          "obp": 0.458,
+          "slg": 0.535,
+          "ops": 0.9930000000000001,
+          "hitter_bb_k": 0.7906976744186046,
+          "season": 2026,
+          "label": "2026"
+        },
+        {
+          "avg": 0.242,
+          "obp": 0.289,
+          "slg": 0.332,
+          "ops": 0.621,
+          "hitter_bb_k": 0.323943661971831,
+          "season": 2025,
+          "label": "2025"
+        },
+        {
+          "avg": 0.292,
+          "obp": 0.371,
+          "slg": 0.42,
+          "ops": 0.7909999999999999,
+          "hitter_bb_k": 0.7575757575757576,
+          "season": 2024,
+          "label": "2024"
+        },
+        {
+          "avg": 0.255,
+          "obp": 0.341,
+          "slg": 0.331,
+          "ops": 0.672,
+          "hitter_bb_k": 0.7948717948717948,
+          "season": 2023,
+          "label": "2023"
+        },
+        {
+          "avg": 0.295,
+          "obp": 0.37,
+          "slg": 0.372,
+          "ops": 0.742,
+          "hitter_bb_k": 0.8970588235294118,
+          "season": 2021,
+          "label": "2021"
+        },
+        {
+          "avg": 0.326,
+          "obp": 0.387,
+          "slg": 0.421,
+          "ops": 0.808,
+          "hitter_bb_k": 0.9428571428571428,
+          "season": 2020,
+          "label": "2020"
+        },
+        {
+          "avg": 0.198,
+          "obp": 0.261,
+          "slg": 0.284,
+          "ops": 0.5449999999999999,
+          "hitter_bb_k": 0.3137254901960784,
+          "season": 2019,
+          "label": "2019"
+        },
+        {
+          "avg": 0.272,
+          "obp": 0.324,
+          "slg": 0.364,
+          "ops": 0.688,
+          "hitter_bb_k": 0.3448275862068966,
+          "season": 2018,
+          "label": "2018"
+        },
+        {
+          "avg": 0.308,
+          "obp": 0.351,
+          "slg": 0.462,
+          "ops": 0.813,
+          "hitter_bb_k": 0.5,
+          "season": 2017,
+          "label": "2017"
+        },
+        {
+          "avg": 0.458,
+          "obp": 0.458,
+          "slg": 0.625,
+          "ops": 1.083,
+          "hitter_bb_k": 0.0,
+          "season": 2016,
+          "label": "2016"
+        }
+      ],
+      "months": [
+        {
+          "avg": null,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": null,
+          "label": "25.07",
+          "periodValue": "2025-07",
+          "hasData": false
+        },
+        {
+          "avg": null,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": null,
+          "label": "25.08",
+          "periodValue": "2025-08",
+          "hasData": false
+        },
+        {
+          "avg": null,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": null,
+          "label": "25.09",
+          "periodValue": "2025-09",
+          "hasData": false
+        },
+        {
+          "avg": null,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": null,
+          "label": "25.10",
+          "periodValue": "2025-10",
+          "hasData": false
+        },
+        {
+          "avg": null,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": null,
+          "label": "25.11",
+          "periodValue": "2025-11",
+          "hasData": false
+        },
+        {
+          "avg": null,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": null,
+          "label": "25.12",
+          "periodValue": "2025-12",
+          "hasData": false
+        },
+        {
+          "avg": null,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": null,
+          "label": "26.01",
+          "periodValue": "2026-01",
+          "hasData": false
+        },
+        {
+          "avg": null,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": null,
+          "label": "26.02",
+          "periodValue": "2026-02",
+          "hasData": false
+        },
+        {
+          "avg": 0.308,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": 3.0,
+          "label": "26.03",
+          "periodValue": "2026-03",
+          "hasData": true
+        },
+        {
+          "avg": 0.314,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": 0.5714285714285714,
+          "label": "26.04",
+          "periodValue": "2026-04",
+          "hasData": true
+        },
+        {
+          "avg": 0.45,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": 1.1666666666666667,
+          "label": "26.05",
+          "periodValue": "2026-05",
+          "hasData": true
+        },
+        {
+          "avg": 0.419,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": 0.5555555555555556,
+          "label": "26.06",
+          "periodValue": "2026-06",
+          "hasData": true
+        }
+      ],
+      "tables": {
+        "basic": {
+          "headers": [
+            "시즌",
+            "타율",
+            "출루율",
+            "장타율",
+            "OPS",
+            "안타",
+            "홈런",
+            "볼삼비",
+            "도루"
+          ],
+          "rows": [
+            [
+              2026,
+              ".384",
+              ".458",
+              ".535",
+              ".993",
+              "99",
+              "5",
+              "0.79",
+              "15"
+            ],
+            [
+              2025,
+              ".242",
+              ".289",
+              ".332",
+              ".621",
+              "100",
+              "6",
+              "0.32",
+              "26"
+            ],
+            [
+              2024,
+              ".292",
+              ".371",
+              ".420",
+              ".791",
+              "128",
+              "9",
+              "0.76",
+              "21"
+            ],
+            [
+              2023,
+              ".255",
+              ".341",
+              ".331",
+              ".672",
+              "61",
+              "1",
+              "0.79",
+              "13"
+            ],
+            [
+              2021,
+              ".295",
+              ".370",
+              ".372",
+              ".742",
+              "174",
+              "4",
+              "0.90",
+              "40"
+            ],
+            [
+              2020,
+              ".326",
+              ".387",
+              ".421",
+              ".808",
+              "117",
+              "2",
+              "0.94",
+              "14"
+            ],
+            [
+              2019,
+              ".198",
+              ".261",
+              ".284",
+              ".545",
+              "46",
+              "1",
+              "0.31",
+              "8"
+            ],
+            [
+              2018,
+              ".272",
+              ".324",
+              ".364",
+              ".688",
+              "82",
+              "4",
+              "0.34",
+              "10"
+            ],
+            [
+              2017,
+              ".308",
+              ".351",
+              ".462",
+              ".813",
+              "48",
+              "3",
+              "0.50",
+              "3"
+            ],
+            [
+              2016,
+              ".458",
+              ".458",
+              ".625",
+              "1.083",
+              "11",
+              "1",
+              "0.00",
+              "1"
+            ]
+          ]
+        },
+        "advanced": {
+          "headers": [
+            "시즌",
+            "타석",
+            "볼넷",
+            "삼진",
+            "타석당 투구수",
+            "순장타율",
+            "GPA",
+            "추정 득점"
+          ],
+          "rows": [
+            [
+              2026,
+              "302",
+              "34",
+              "43",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2025,
+              "449",
+              "23",
+              "71",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2024,
+              "508",
+              "50",
+              "66",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2023,
+              "274",
+              "31",
+              "39",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2021,
+              "668",
+              "61",
+              "68",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2020,
+              "412",
+              "33",
+              "35",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2019,
+              "255",
+              "16",
+              "51",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2018,
+              "331",
+              "20",
+              "58",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2017,
+              "174",
+              "10",
+              "20",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2016,
+              "25",
+              "0",
+              "3",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ]
+          ]
+        },
+        "value": {
+          "headers": [
+            "시즌",
+            "도루",
+            "도루 실패",
+            "도루 성공률",
+            "실책",
+            "수비율",
+            "자살",
+            "보살",
+            "WAR"
+          ],
+          "rows": [
+            [
+              2026,
+              "15",
+              "6",
+              "71.4%",
+              "3",
+              "미수집",
+              "미수집",
+              "미수집",
+              "공식 미제공"
+            ],
+            [
+              2025,
+              "26",
+              "8",
+              "76.5%",
+              "3",
+              "미수집",
+              "미수집",
+              "미수집",
+              "공식 미제공"
+            ],
+            [
+              2024,
+              "21",
+              "9",
+              "70.0%",
+              "4",
+              "미수집",
+              "미수집",
+              "미수집",
+              "공식 미제공"
+            ],
+            [
+              2023,
+              "13",
+              "5",
+              "72.2%",
+              "8",
+              "미수집",
+              "미수집",
+              "미수집",
+              "공식 미제공"
+            ],
+            [
+              2021,
+              "40",
+              "13",
+              "75.5%",
+              "7",
+              "미수집",
+              "미수집",
+              "미수집",
+              "공식 미제공"
+            ],
+            [
+              2020,
+              "14",
+              "3",
+              "82.4%",
+              "4",
+              "미수집",
+              "미수집",
+              "미수집",
+              "공식 미제공"
+            ],
+            [
+              2019,
+              "8",
+              "4",
+              "66.7%",
+              "6",
+              "미수집",
+              "미수집",
+              "미수집",
+              "공식 미제공"
+            ],
+            [
+              2018,
+              "10",
+              "4",
+              "71.4%",
+              "14",
+              "미수집",
+              "미수집",
+              "미수집",
+              "공식 미제공"
+            ],
+            [
+              2017,
+              "3",
+              "2",
+              "60.0%",
+              "6",
+              "미수집",
+              "미수집",
+              "미수집",
+              "공식 미제공"
+            ],
+            [
+              2016,
+              "1",
+              "1",
+              "50.0%",
+              "2",
+              "미수집",
+              "미수집",
+              "미수집",
+              "공식 미제공"
+            ]
+          ]
+        }
+      },
+      "servantGroups": [
+        {
+          "title": "타격 결과",
+          "items": [
+            {
+              "label": "타율",
+              "value": ".384",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "출루율",
+              "value": ".458",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "장타율",
+              "value": ".535",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "OPS",
+              "value": ".993",
+              "note": "KBO 공식 기록"
+            }
+          ]
+        },
+        {
+          "title": "타석 접근",
+          "items": [
+            {
+              "label": "볼넷",
+              "value": "34",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "삼진",
+              "value": "43",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "볼삼비",
+              "value": "0.79",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "타석당 투구수",
+              "value": "3.88",
+              "note": "KBO 공식 기록"
+            }
+          ]
+        },
+        {
+          "title": "주루",
+          "items": [
+            {
+              "label": "도루",
+              "value": "15",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "도루 실패",
+              "value": "6",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "도루 성공률",
+              "value": "71.4%",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "주루사",
+              "value": "3",
+              "note": "KBO 공식 기록"
+            }
+          ]
+        },
+        {
+          "title": "수비",
+          "items": [
+            {
+              "label": "실책",
+              "value": "3",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "수비율",
+              "value": ".989",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "자살",
+              "value": "86",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "보살",
+              "value": "1",
+              "note": "KBO 공식 기록"
+            }
+          ]
+        },
+        {
+          "title": "상황별",
+          "items": [
+            {
+              "label": "주자상황별",
+              "value": "만루 .625",
+              "note": "타율 최고"
+            },
+            {
+              "label": "볼카운트별",
+              "value": "1-1 .550",
+              "note": "타율 최고"
+            },
+            {
+              "label": "이닝별",
+              "value": "9회 .526",
+              "note": "타율 최고"
+            },
+            {
+              "label": "타순별",
+              "value": "1번타자 .386",
+              "note": "타율 최고"
+            }
+          ]
+        }
+      ],
+      "insights": [
+        "최원준은 대표 지표 기준으로 OPS .993를 기록 중입니다.",
+        "전년 대비 ops는 +.372 변했고, 방향은 개선입니다.",
+        "월별 합계는 KBO 일자별 기록의 각 월 합계 행을 사용했습니다."
+      ],
+      "detailInsights": [
+        "최원준의 상세 화면은 KBO 공식 월별 합계와 상황별 타격 기록을 기준으로 구성했습니다.",
+        "주자상황별 타율은 만루 구간에서 .625로 가장 높습니다.",
+        "타구속도, 하드힛, wRC+, WAR는 현재 공식 수집 범위에 없어 표시하지 않고, 추후 허가된 데이터로 보강합니다."
+      ],
+      "dataNeeds": [
+        "WAR, wRC+, RAA는 공식 기록실에 없어 자동 수집하지 않음",
+        "타구속도, 하드힛, 배럴은 허가된 트래킹 데이터 필요",
+        "수비 범위와 송구 지표는 공식/라이선스 데이터 확인 필요"
+      ]
+    },
+    {
+      "id": "ahn_hyunmin",
+      "name": "안현민",
+      "type": "hitter",
+      "team": "kt wiz",
+      "teamShort": "KT",
+      "position": "외야수",
+      "positionGroup": "외야수",
+      "roleGroup": "outfielder",
+      "profileCode": "ID 52001",
+      "kboPlayerId": 52001,
+      "kboDetailUrl": "https://www.koreabaseball.com/Record/Player/HitterDetail/Basic.aspx?playerId=52001",
+      "dataBadge": "KBO 공식 기록 · 2026-06-14 수집",
+      "summary": "안현민의 현재 공식 기록은 OPS 1.161, 타율 .365, 출루율 .507입니다. 타격 결과와 함께 주루·수비 기록을 같이 보도록 연결했습니다.",
+      "metrics": [
+        {
+          "metricId": "avg",
+          "label": "타율",
+          "value": ".365",
+          "note": "상위 40%"
+        },
+        {
+          "metricId": "obp",
+          "label": "출루율",
+          "value": ".507",
+          "note": "상위 20%"
+        },
+        {
+          "metricId": "slg",
+          "label": "장타율",
+          "value": ".654",
+          "note": "상위 20%"
+        },
+        {
+          "metricId": "ops",
+          "label": "OPS",
+          "value": "1.161",
+          "note": "상위 20%"
+        },
+        {
+          "metricId": "hitter_bb_k",
+          "label": "볼삼비",
+          "value": "0.75",
+          "note": "상위 80%"
+        }
+      ],
+      "league": [
+        {
+          "metricId": "avg",
+          "label": "타율",
+          "value": 61,
+          "rankLabel": "상위 40%",
+          "rawValue": ".365"
+        },
+        {
+          "metricId": "obp",
+          "label": "출루율",
+          "value": 81,
+          "rankLabel": "상위 20%",
+          "rawValue": ".507"
+        },
+        {
+          "metricId": "slg",
+          "label": "장타율",
+          "value": 81,
+          "rankLabel": "상위 20%",
+          "rawValue": ".654"
+        },
+        {
+          "metricId": "ops",
+          "label": "OPS",
+          "value": 81,
+          "rankLabel": "상위 20%",
+          "rawValue": "1.161"
+        },
+        {
+          "metricId": "hitter_bb_k",
+          "label": "볼삼비",
+          "value": 21,
+          "rankLabel": "상위 80%",
+          "rawValue": "0.75"
+        }
+      ],
+      "leagueContext": "KBO 공식 공개 기록 기반 · 수집된 리그 표본 기준",
+      "detailContext": "KBO 선수 상세 월별·상황별 기록 기준",
+      "chartMetrics": [
+        {
+          "key": "avg",
+          "label": "타율"
+        },
+        {
+          "key": "obp",
+          "label": "출루율"
+        },
+        {
+          "key": "slg",
+          "label": "장타율"
+        },
+        {
+          "key": "ops",
+          "label": "OPS"
+        },
+        {
+          "key": "hitter_bb_k",
+          "label": "볼삼비"
+        }
+      ],
+      "seasons": [
+        {
+          "avg": 0.365,
+          "obp": 0.507,
+          "slg": 0.654,
+          "ops": 1.161,
+          "hitter_bb_k": 0.75,
+          "season": 2026,
+          "label": "2026"
+        },
+        {
+          "avg": 0.334,
+          "obp": 0.448,
+          "slg": 0.57,
+          "ops": 1.018,
+          "hitter_bb_k": 1.0416666666666667,
+          "season": 2025,
+          "label": "2025"
+        },
+        {
+          "avg": 0.2,
+          "obp": 0.276,
+          "slg": 0.4,
+          "ops": 0.676,
+          "hitter_bb_k": 0.2,
+          "season": 2024,
+          "label": "2024"
+        }
+      ],
+      "months": [
+        {
+          "avg": null,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": null,
+          "label": "25.07",
+          "periodValue": "2025-07",
+          "hasData": false
+        },
+        {
+          "avg": null,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": null,
+          "label": "25.08",
+          "periodValue": "2025-08",
+          "hasData": false
+        },
+        {
+          "avg": null,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": null,
+          "label": "25.09",
+          "periodValue": "2025-09",
+          "hasData": false
+        },
+        {
+          "avg": null,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": null,
+          "label": "25.10",
+          "periodValue": "2025-10",
+          "hasData": false
+        },
+        {
+          "avg": null,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": null,
+          "label": "25.11",
+          "periodValue": "2025-11",
+          "hasData": false
+        },
+        {
+          "avg": null,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": null,
+          "label": "25.12",
+          "periodValue": "2025-12",
+          "hasData": false
+        },
+        {
+          "avg": null,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": null,
+          "label": "26.01",
+          "periodValue": "2026-01",
+          "hasData": false
+        },
+        {
+          "avg": null,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": null,
+          "label": "26.02",
+          "periodValue": "2026-02",
+          "hasData": false
+        },
+        {
+          "avg": 0.364,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": 4.0,
+          "label": "26.03",
+          "periodValue": "2026-03",
+          "hasData": true
+        },
+        {
+          "avg": 0.366,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": 0.5333333333333333,
+          "label": "26.04",
+          "periodValue": "2026-04",
+          "hasData": true
+        },
+        {
+          "avg": null,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": null,
+          "label": "26.05",
+          "periodValue": "2026-05",
+          "hasData": false
+        },
+        {
+          "avg": null,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": null,
+          "label": "26.06",
+          "periodValue": "2026-06",
+          "hasData": false
+        }
+      ],
+      "tables": {
+        "basic": {
+          "headers": [
+            "시즌",
+            "타율",
+            "출루율",
+            "장타율",
+            "OPS",
+            "안타",
+            "홈런",
+            "볼삼비",
+            "도루"
+          ],
+          "rows": [
+            [
+              2026,
+              ".365",
+              ".507",
+              ".654",
+              "1.161",
+              "19",
+              "3",
+              "0.75",
+              "1"
+            ],
+            [
+              2025,
+              ".334",
+              ".448",
+              ".570",
+              "1.018",
+              "132",
+              "22",
+              "1.04",
+              "7"
+            ],
+            [
+              2024,
+              ".200",
+              ".276",
+              ".400",
+              ".676",
+              "5",
+              "1",
+              "0.20",
+              "0"
+            ]
+          ]
+        },
+        "advanced": {
+          "headers": [
+            "시즌",
+            "타석",
+            "볼넷",
+            "삼진",
+            "타석당 투구수",
+            "순장타율",
+            "GPA",
+            "추정 득점"
+          ],
+          "rows": [
+            [
+              2026,
+              "67",
+              "12",
+              "16",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2025,
+              "482",
+              "75",
+              "72",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2024,
+              "29",
+              "2",
+              "10",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ]
+          ]
+        },
+        "value": {
+          "headers": [
+            "시즌",
+            "도루",
+            "도루 실패",
+            "도루 성공률",
+            "실책",
+            "수비율",
+            "자살",
+            "보살",
+            "WAR"
+          ],
+          "rows": [
+            [
+              2026,
+              "1",
+              "0",
+              "100.0%",
+              "0",
+              "미수집",
+              "미수집",
+              "미수집",
+              "공식 미제공"
+            ],
+            [
+              2025,
+              "7",
+              "1",
+              "87.5%",
+              "8",
+              "미수집",
+              "미수집",
+              "미수집",
+              "공식 미제공"
+            ],
+            [
+              2024,
+              "0",
+              "0",
+              "미수집",
+              "0",
+              "미수집",
+              "미수집",
+              "미수집",
+              "공식 미제공"
+            ]
+          ]
+        }
+      },
+      "servantGroups": [
+        {
+          "title": "타격 결과",
+          "items": [
+            {
+              "label": "타율",
+              "value": ".365",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "출루율",
+              "value": ".507",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "장타율",
+              "value": ".654",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "OPS",
+              "value": "1.161",
+              "note": "KBO 공식 기록"
+            }
+          ]
+        },
+        {
+          "title": "타석 접근",
+          "items": [
+            {
+              "label": "볼넷",
+              "value": "12",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "삼진",
+              "value": "16",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "볼삼비",
+              "value": "0.75",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "타석당 투구수",
+              "value": "미수집",
+              "note": "미수집"
+            }
+          ]
+        },
+        {
+          "title": "주루",
+          "items": [
+            {
+              "label": "도루",
+              "value": "1",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "도루 실패",
+              "value": "0",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "도루 성공률",
+              "value": "100.0%",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "주루사",
+              "value": "1",
+              "note": "KBO 공식 기록"
+            }
+          ]
+        },
+        {
+          "title": "수비",
+          "items": [
+            {
+              "label": "실책",
+              "value": "0",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "수비율",
+              "value": "미수집",
+              "note": "미수집"
+            },
+            {
+              "label": "자살",
+              "value": "미수집",
+              "note": "미수집"
+            },
+            {
+              "label": "보살",
+              "value": "미수집",
+              "note": "미수집"
+            }
+          ]
+        },
+        {
+          "title": "상황별",
+          "items": [
+            {
+              "label": "주자상황별",
+              "value": "만루 1.000",
+              "note": "타율 최고"
+            },
+            {
+              "label": "볼카운트별",
+              "value": "0-1 .600",
+              "note": "타율 최고"
+            },
+            {
+              "label": "이닝별",
+              "value": "1회 .545",
+              "note": "타율 최고"
+            },
+            {
+              "label": "타순별",
+              "value": "3번타자 .365",
+              "note": "타율 최고"
+            }
+          ]
+        }
+      ],
+      "insights": [
+        "안현민은 대표 지표 기준으로 OPS 1.161를 기록 중입니다.",
+        "전년 대비 ops는 +.143 변했고, 방향은 개선입니다.",
+        "월별 합계는 KBO 일자별 기록의 각 월 합계 행을 사용했습니다."
+      ],
+      "detailInsights": [
+        "안현민의 상세 화면은 KBO 공식 월별 합계와 상황별 타격 기록을 기준으로 구성했습니다.",
+        "주자상황별 타율은 만루 구간에서 1.000로 가장 높습니다.",
+        "타구속도, 하드힛, wRC+, WAR는 현재 공식 수집 범위에 없어 표시하지 않고, 추후 허가된 데이터로 보강합니다."
+      ],
+      "dataNeeds": [
+        "WAR, wRC+, RAA는 공식 기록실에 없어 자동 수집하지 않음",
+        "타구속도, 하드힛, 배럴은 허가된 트래킹 데이터 필요",
+        "수비 범위와 송구 지표는 공식/라이선스 데이터 확인 필요"
+      ]
+    },
+    {
+      "id": "won_taein",
+      "name": "원태인",
+      "type": "pitcher",
+      "team": "삼성 라이온즈",
+      "teamShort": "삼성",
+      "position": "선발 투수",
+      "positionGroup": "선발 투수",
+      "roleGroup": "starter",
+      "profileCode": "ID 69446",
+      "kboPlayerId": 69446,
+      "kboDetailUrl": "https://www.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=69446",
+      "dataBadge": "KBO 공식 기록 · 2026-06-14 수집",
+      "summary": "원태인의 현재 공식 기록은 ERA 3.95, WHIP 1.35, 이닝 57.0입니다. 투구 결과와 월별·상황별 흐름을 함께 보도록 연결했습니다.",
+      "metrics": [
+        {
+          "metricId": "era",
+          "label": "방어율",
+          "value": "3.95",
+          "note": "공식 기록"
+        },
+        {
+          "metricId": "ip",
+          "label": "이닝",
+          "value": "57.0",
+          "note": "공식 기록"
+        },
+        {
+          "metricId": "whip",
+          "label": "WHIP",
+          "value": "1.35",
+          "note": "공식 기록"
+        },
+        {
+          "metricId": "pitcher_strikeouts",
+          "label": "탈삼진",
+          "value": "48",
+          "note": "공식 기록"
+        },
+        {
+          "metricId": "pitcher_k_bb",
+          "label": "K/BB",
+          "value": "3.20",
+          "note": "공식 기록"
+        }
+      ],
+      "league": [
+        {
+          "metricId": "era",
+          "label": "방어율",
+          "value": null,
+          "rankLabel": "비교 준비중",
+          "rawValue": "3.95"
+        },
+        {
+          "metricId": "ip",
+          "label": "이닝",
+          "value": null,
+          "rankLabel": "비교 준비중",
+          "rawValue": "57.0"
+        },
+        {
+          "metricId": "whip",
+          "label": "WHIP",
+          "value": null,
+          "rankLabel": "비교 준비중",
+          "rawValue": "1.35"
+        },
+        {
+          "metricId": "pitcher_strikeouts",
+          "label": "탈삼진",
+          "value": null,
+          "rankLabel": "비교 준비중",
+          "rawValue": "48"
+        },
+        {
+          "metricId": "pitcher_k_bb",
+          "label": "K/BB",
+          "value": null,
+          "rankLabel": "비교 준비중",
+          "rawValue": "3.20"
+        }
+      ],
+      "leagueContext": "KBO 공식 공개 기록 기반 · 수집된 리그 표본 기준",
+      "detailContext": "KBO 선수 상세 월별·상황별 기록 기준",
+      "chartMetrics": [
+        {
+          "key": "era",
+          "label": "방어율"
+        },
+        {
+          "key": "ip",
+          "label": "이닝"
+        },
+        {
+          "key": "whip",
+          "label": "WHIP"
+        },
+        {
+          "key": "pitcher_strikeouts",
+          "label": "탈삼진"
+        },
+        {
+          "key": "pitcher_k_bb",
+          "label": "K/BB"
+        }
+      ],
+      "seasons": [
+        {
+          "era": 3.95,
+          "ip": 57.0,
+          "whip": null,
+          "pitcher_strikeouts": 48.0,
+          "pitcher_k_bb": 3.2,
+          "season": 2026,
+          "label": "2026"
+        },
+        {
+          "era": 3.24,
+          "ip": 166.66666666666666,
+          "whip": null,
+          "pitcher_strikeouts": 108.0,
+          "pitcher_k_bb": 4.0,
+          "season": 2025,
+          "label": "2025"
+        },
+        {
+          "era": 3.66,
+          "ip": 159.66666666666666,
+          "whip": null,
+          "pitcher_strikeouts": 119.0,
+          "pitcher_k_bb": 2.8333333333333335,
+          "season": 2024,
+          "label": "2024"
+        },
+        {
+          "era": 3.24,
+          "ip": 150.0,
+          "whip": null,
+          "pitcher_strikeouts": 102.0,
+          "pitcher_k_bb": 3.0,
+          "season": 2023,
+          "label": "2023"
+        },
+        {
+          "era": 3.92,
+          "ip": 165.33333333333334,
+          "whip": null,
+          "pitcher_strikeouts": 130.0,
+          "pitcher_k_bb": 3.4210526315789473,
+          "season": 2022,
+          "label": "2022"
+        },
+        {
+          "era": 3.06,
+          "ip": 158.66666666666666,
+          "whip": null,
+          "pitcher_strikeouts": 129.0,
+          "pitcher_k_bb": 2.5294117647058822,
+          "season": 2021,
+          "label": "2021"
+        },
+        {
+          "era": 4.89,
+          "ip": 140.0,
+          "whip": null,
+          "pitcher_strikeouts": 78.0,
+          "pitcher_k_bb": 1.3928571428571428,
+          "season": 2020,
+          "label": "2020"
+        },
+        {
+          "era": 4.82,
+          "ip": 112.0,
+          "whip": null,
+          "pitcher_strikeouts": 68.0,
+          "pitcher_k_bb": 1.7435897435897436,
+          "season": 2019,
+          "label": "2019"
+        }
+      ],
+      "months": [
+        {
+          "era": null,
+          "ip": null,
+          "whip": null,
+          "pitcher_strikeouts": null,
+          "pitcher_k_bb": null,
+          "label": "25.07",
+          "periodValue": "2025-07",
+          "hasData": false
+        },
+        {
+          "era": null,
+          "ip": null,
+          "whip": null,
+          "pitcher_strikeouts": null,
+          "pitcher_k_bb": null,
+          "label": "25.08",
+          "periodValue": "2025-08",
+          "hasData": false
+        },
+        {
+          "era": null,
+          "ip": null,
+          "whip": null,
+          "pitcher_strikeouts": null,
+          "pitcher_k_bb": null,
+          "label": "25.09",
+          "periodValue": "2025-09",
+          "hasData": false
+        },
+        {
+          "era": null,
+          "ip": null,
+          "whip": null,
+          "pitcher_strikeouts": null,
+          "pitcher_k_bb": null,
+          "label": "25.10",
+          "periodValue": "2025-10",
+          "hasData": false
+        },
+        {
+          "era": null,
+          "ip": null,
+          "whip": null,
+          "pitcher_strikeouts": null,
+          "pitcher_k_bb": null,
+          "label": "25.11",
+          "periodValue": "2025-11",
+          "hasData": false
+        },
+        {
+          "era": null,
+          "ip": null,
+          "whip": null,
+          "pitcher_strikeouts": null,
+          "pitcher_k_bb": null,
+          "label": "25.12",
+          "periodValue": "2025-12",
+          "hasData": false
+        },
+        {
+          "era": null,
+          "ip": null,
+          "whip": null,
+          "pitcher_strikeouts": null,
+          "pitcher_k_bb": null,
+          "label": "26.01",
+          "periodValue": "2026-01",
+          "hasData": false
+        },
+        {
+          "era": null,
+          "ip": null,
+          "whip": null,
+          "pitcher_strikeouts": null,
+          "pitcher_k_bb": null,
+          "label": "26.02",
+          "periodValue": "2026-02",
+          "hasData": false
+        },
+        {
+          "era": null,
+          "ip": null,
+          "whip": null,
+          "pitcher_strikeouts": null,
+          "pitcher_k_bb": null,
+          "label": "26.03",
+          "periodValue": "2026-03",
+          "hasData": false
+        },
+        {
+          "era": 4.11,
+          "ip": 15.333333333333334,
+          "whip": null,
+          "pitcher_strikeouts": 9.0,
+          "pitcher_k_bb": 2.25,
+          "label": "26.04",
+          "periodValue": "2026-04",
+          "hasData": true
+        },
+        {
+          "era": 3.3,
+          "ip": 30.0,
+          "whip": null,
+          "pitcher_strikeouts": 29.0,
+          "pitcher_k_bb": 3.625,
+          "label": "26.05",
+          "periodValue": "2026-05",
+          "hasData": true
+        },
+        {
+          "era": 5.4,
+          "ip": 11.666666666666666,
+          "whip": null,
+          "pitcher_strikeouts": 10.0,
+          "pitcher_k_bb": 3.3333333333333335,
+          "label": "26.06",
+          "periodValue": "2026-06",
+          "hasData": true
+        }
+      ],
+      "tables": {
+        "basic": {
+          "headers": [
+            "시즌",
+            "방어율",
+            "이닝",
+            "WHIP",
+            "탈삼진",
+            "볼넷",
+            "K/BB",
+            "세이브"
+          ],
+          "rows": [
+            [
+              2026,
+              "3.95",
+              "57.0",
+              "미수집",
+              "48",
+              "15",
+              "3.20",
+              "0"
+            ],
+            [
+              2025,
+              "3.24",
+              "166.7",
+              "미수집",
+              "108",
+              "27",
+              "4.00",
+              "0"
+            ],
+            [
+              2024,
+              "3.66",
+              "159.7",
+              "미수집",
+              "119",
+              "42",
+              "2.83",
+              "0"
+            ],
+            [
+              2023,
+              "3.24",
+              "150.0",
+              "미수집",
+              "102",
+              "34",
+              "3.00",
+              "0"
+            ],
+            [
+              2022,
+              "3.92",
+              "165.3",
+              "미수집",
+              "130",
+              "38",
+              "3.42",
+              "0"
+            ],
+            [
+              2021,
+              "3.06",
+              "158.7",
+              "미수집",
+              "129",
+              "51",
+              "2.53",
+              "0"
+            ],
+            [
+              2020,
+              "4.89",
+              "140.0",
+              "미수집",
+              "78",
+              "56",
+              "1.39",
+              "0"
+            ],
+            [
+              2019,
+              "4.82",
+              "112.0",
+              "미수집",
+              "68",
+              "39",
+              "1.74",
+              "0"
+            ]
+          ]
+        },
+        "advanced": {
+          "headers": [
+            "시즌",
+            "상대 타자",
+            "투구수",
+            "피타율",
+            "퀄리티스타트",
+            "블론세이브",
+            "폭투",
+            "보크"
+          ],
+          "rows": [
+            [
+              2026,
+              "247",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2025,
+              "671",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2024,
+              "670",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2023,
+              "634",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2022,
+              "700",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2021,
+              "655",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2020,
+              "626",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2019,
+              "493",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ]
+          ]
+        },
+        "value": {
+          "headers": [
+            "시즌",
+            "등판",
+            "선발 등판",
+            "세이브",
+            "홀드",
+            "퀄리티스타트",
+            "승",
+            "패",
+            "WAR"
+          ],
+          "rows": [
+            [
+              2026,
+              "10",
+              "미수집",
+              "0",
+              "0",
+              "미수집",
+              "2",
+              "5",
+              "공식 미제공"
+            ],
+            [
+              2025,
+              "27",
+              "미수집",
+              "0",
+              "0",
+              "미수집",
+              "12",
+              "4",
+              "공식 미제공"
+            ],
+            [
+              2024,
+              "28",
+              "미수집",
+              "0",
+              "0",
+              "미수집",
+              "15",
+              "6",
+              "공식 미제공"
+            ],
+            [
+              2023,
+              "26",
+              "미수집",
+              "0",
+              "0",
+              "미수집",
+              "7",
+              "7",
+              "공식 미제공"
+            ],
+            [
+              2022,
+              "27",
+              "미수집",
+              "0",
+              "0",
+              "미수집",
+              "10",
+              "8",
+              "공식 미제공"
+            ],
+            [
+              2021,
+              "26",
+              "미수집",
+              "0",
+              "0",
+              "미수집",
+              "14",
+              "7",
+              "공식 미제공"
+            ],
+            [
+              2020,
+              "27",
+              "미수집",
+              "0",
+              "0",
+              "미수집",
+              "6",
+              "10",
+              "공식 미제공"
+            ],
+            [
+              2019,
+              "26",
+              "미수집",
+              "0",
+              "2",
+              "미수집",
+              "4",
+              "8",
+              "공식 미제공"
+            ]
+          ]
+        }
+      },
+      "servantGroups": [
+        {
+          "title": "실점 억제",
+          "items": [
+            {
+              "label": "방어율",
+              "value": "3.95",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "WHIP",
+              "value": "1.35",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "피타율",
+              "value": ".278",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "자책점",
+              "value": "25",
+              "note": "KBO 공식 기록"
+            }
+          ]
+        },
+        {
+          "title": "구위 결과",
+          "items": [
+            {
+              "label": "탈삼진",
+              "value": "48",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "K/BB",
+              "value": "3.20",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "K/9",
+              "value": "7.58",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "피홈런",
+              "value": "3",
+              "note": "KBO 공식 기록"
+            }
+          ]
+        },
+        {
+          "title": "역할",
+          "items": [
+            {
+              "label": "등판",
+              "value": "10",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "선발 등판",
+              "value": "미수집",
+              "note": "미수집"
+            },
+            {
+              "label": "이닝",
+              "value": "57.0",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "세이브",
+              "value": "0",
+              "note": "KBO 공식 기록"
+            }
+          ]
+        },
+        {
+          "title": "제구",
+          "items": [
+            {
+              "label": "볼넷",
+              "value": "15",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "BB/9",
+              "value": "2.37",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "폭투",
+              "value": "0",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "보크",
+              "value": "0",
+              "note": "KBO 공식 기록"
+            }
+          ]
+        },
+        {
+          "title": "상황별",
+          "items": [
+            {
+              "label": "주자상황별",
+              "value": "만루 .000",
+              "note": "피안타율 최저"
+            },
+            {
+              "label": "볼카운트별",
+              "value": "2-0 .000",
+              "note": "피안타율 최저"
+            },
+            {
+              "label": "이닝별",
+              "value": "3회 .094",
+              "note": "피안타율 최저"
+            },
+            {
+              "label": "타순별",
+              "value": "4번타자 .130",
+              "note": "피안타율 최저"
+            }
+          ]
+        }
+      ],
+      "insights": [
+        "원태인은 대표 지표 기준으로 ERA 3.95, K/BB 3.20를 기록 중입니다.",
+        "전년 대비 era는 +0.71 변했고, 방향은 하락입니다.",
+        "최근 월별 흐름은 26.05 대비 26.06에 +2.10 변화했고, 방향은 하락입니다."
+      ],
+      "detailInsights": [
+        "원태인의 상세 화면은 KBO 공식 월별 합계와 상황별 피안타 기록을 기준으로 구성했습니다.",
+        "주자상황별 피안타율은 만루 구간에서 .000로 가장 낮습니다.",
+        "구종, 무브먼트, 릴리스, 팔각도는 현재 공식 수집 범위에 없어 표시하지 않고, 추후 PTS/ABS 라이선스 데이터로 보강합니다."
+      ],
+      "dataNeeds": [
+        "구종, 구속, 무브먼트, 릴리스는 허가된 PTS/ABS 데이터 필요",
+        "팔각도와 익스텐션은 공식/라이선스 데이터 확인 필요",
+        "WAR, ERA+, RAA는 공식 기록실에 없어 자동 수집하지 않음"
+      ]
+    },
+    {
+      "id": "park_seonghan",
+      "name": "박성한",
+      "type": "hitter",
+      "team": "SSG 랜더스",
+      "teamShort": "SSG",
+      "position": "내야수",
+      "positionGroup": "내야수",
+      "roleGroup": "infielder",
+      "profileCode": "ID 67893",
+      "kboPlayerId": 67893,
+      "kboDetailUrl": "https://www.koreabaseball.com/Record/Player/HitterDetail/Basic.aspx?playerId=67893",
+      "dataBadge": "KBO 공식 기록 · 2026-06-14 수집",
+      "summary": "박성한의 현재 공식 기록은 OPS .929, 타율 .355, 출루율 .459입니다. 타격 결과와 함께 주루·수비 기록을 같이 보도록 연결했습니다.",
+      "metrics": [
+        {
+          "metricId": "avg",
+          "label": "타율",
+          "value": ".355",
+          "note": "상위 40%"
+        },
+        {
+          "metricId": "obp",
+          "label": "출루율",
+          "value": ".459",
+          "note": "상위 20%"
+        },
+        {
+          "metricId": "slg",
+          "label": "장타율",
+          "value": ".470",
+          "note": "상위 80%"
+        },
+        {
+          "metricId": "ops",
+          "label": "OPS",
+          "value": ".929",
+          "note": "상위 60%"
+        },
+        {
+          "metricId": "hitter_bb_k",
+          "label": "볼삼비",
+          "value": "1.64",
+          "note": "상위 40%"
+        }
+      ],
+      "league": [
+        {
+          "metricId": "avg",
+          "label": "타율",
+          "value": 61,
+          "rankLabel": "상위 40%",
+          "rawValue": ".355"
+        },
+        {
+          "metricId": "obp",
+          "label": "출루율",
+          "value": 81,
+          "rankLabel": "상위 20%",
+          "rawValue": ".459"
+        },
+        {
+          "metricId": "slg",
+          "label": "장타율",
+          "value": 21,
+          "rankLabel": "상위 80%",
+          "rawValue": ".470"
+        },
+        {
+          "metricId": "ops",
+          "label": "OPS",
+          "value": 41,
+          "rankLabel": "상위 60%",
+          "rawValue": ".929"
+        },
+        {
+          "metricId": "hitter_bb_k",
+          "label": "볼삼비",
+          "value": 61,
+          "rankLabel": "상위 40%",
+          "rawValue": "1.64"
+        }
+      ],
+      "leagueContext": "KBO 공식 공개 기록 기반 · 수집된 리그 표본 기준",
+      "detailContext": "KBO 선수 상세 월별·상황별 기록 기준",
+      "chartMetrics": [
+        {
+          "key": "avg",
+          "label": "타율"
+        },
+        {
+          "key": "obp",
+          "label": "출루율"
+        },
+        {
+          "key": "slg",
+          "label": "장타율"
+        },
+        {
+          "key": "ops",
+          "label": "OPS"
+        },
+        {
+          "key": "hitter_bb_k",
+          "label": "볼삼비"
+        }
+      ],
+      "seasons": [
+        {
+          "avg": 0.355,
+          "obp": 0.459,
+          "slg": 0.47,
+          "ops": 0.929,
+          "hitter_bb_k": 1.6428571428571428,
+          "season": 2026,
+          "label": "2026"
+        },
+        {
+          "avg": 0.274,
+          "obp": 0.384,
+          "slg": 0.381,
+          "ops": 0.765,
+          "hitter_bb_k": 0.8494623655913979,
+          "season": 2025,
+          "label": "2025"
+        },
+        {
+          "avg": 0.301,
+          "obp": 0.38,
+          "slg": 0.411,
+          "ops": 0.7909999999999999,
+          "hitter_bb_k": 0.7441860465116279,
+          "season": 2024,
+          "label": "2024"
+        },
+        {
+          "avg": 0.266,
+          "obp": 0.347,
+          "slg": 0.366,
+          "ops": 0.713,
+          "hitter_bb_k": 1.0357142857142858,
+          "season": 2023,
+          "label": "2023"
+        },
+        {
+          "avg": 0.298,
+          "obp": 0.375,
+          "slg": 0.374,
+          "ops": 0.749,
+          "hitter_bb_k": 0.7407407407407407,
+          "season": 2022,
+          "label": "2022"
+        },
+        {
+          "avg": 0.302,
+          "obp": 0.377,
+          "slg": 0.388,
+          "ops": 0.765,
+          "hitter_bb_k": 0.6712328767123288,
+          "season": 2021,
+          "label": "2021"
+        },
+        {
+          "avg": 0.242,
+          "obp": 0.324,
+          "slg": 0.323,
+          "ops": 0.647,
+          "hitter_bb_k": 0.5238095238095238,
+          "season": 2020,
+          "label": "2020"
+        },
+        {
+          "avg": 0.135,
+          "obp": 0.237,
+          "slg": 0.154,
+          "ops": 0.391,
+          "hitter_bb_k": 0.4375,
+          "season": 2018,
+          "label": "2018"
+        },
+        {
+          "avg": 0.0,
+          "obp": 0.0,
+          "slg": 0.0,
+          "ops": 0.0,
+          "hitter_bb_k": 0.0,
+          "season": 2017,
+          "label": "2017"
+        }
+      ],
+      "months": [
+        {
+          "avg": null,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": null,
+          "label": "25.07",
+          "periodValue": "2025-07",
+          "hasData": false
+        },
+        {
+          "avg": null,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": null,
+          "label": "25.08",
+          "periodValue": "2025-08",
+          "hasData": false
+        },
+        {
+          "avg": null,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": null,
+          "label": "25.09",
+          "periodValue": "2025-09",
+          "hasData": false
+        },
+        {
+          "avg": null,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": null,
+          "label": "25.10",
+          "periodValue": "2025-10",
+          "hasData": false
+        },
+        {
+          "avg": null,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": null,
+          "label": "25.11",
+          "periodValue": "2025-11",
+          "hasData": false
+        },
+        {
+          "avg": null,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": null,
+          "label": "25.12",
+          "periodValue": "2025-12",
+          "hasData": false
+        },
+        {
+          "avg": null,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": null,
+          "label": "26.01",
+          "periodValue": "2026-01",
+          "hasData": false
+        },
+        {
+          "avg": null,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": null,
+          "label": "26.02",
+          "periodValue": "2026-02",
+          "hasData": false
+        },
+        {
+          "avg": 0.333,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": null,
+          "label": "26.03",
+          "periodValue": "2026-03",
+          "hasData": true
+        },
+        {
+          "avg": 0.452,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": 1.7,
+          "label": "26.04",
+          "periodValue": "2026-04",
+          "hasData": true
+        },
+        {
+          "avg": 0.258,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": 1.1428571428571428,
+          "label": "26.05",
+          "periodValue": "2026-05",
+          "hasData": true
+        },
+        {
+          "avg": 0.359,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": 1.75,
+          "label": "26.06",
+          "periodValue": "2026-06",
+          "hasData": true
+        }
+      ],
+      "tables": {
+        "basic": {
+          "headers": [
+            "시즌",
+            "타율",
+            "출루율",
+            "장타율",
+            "OPS",
+            "안타",
+            "홈런",
+            "볼삼비",
+            "도루"
+          ],
+          "rows": [
+            [
+              2026,
+              ".355",
+              ".459",
+              ".470",
+              ".929",
+              "83",
+              "3",
+              "1.64",
+              "5"
+            ],
+            [
+              2025,
+              ".274",
+              ".384",
+              ".381",
+              ".765",
+              "124",
+              "7",
+              "0.85",
+              "5"
+            ],
+            [
+              2024,
+              ".301",
+              ".380",
+              ".411",
+              ".791",
+              "147",
+              "10",
+              "0.74",
+              "13"
+            ],
+            [
+              2023,
+              ".266",
+              ".347",
+              ".366",
+              ".713",
+              "122",
+              "9",
+              "1.04",
+              "4"
+            ],
+            [
+              2022,
+              ".298",
+              ".375",
+              ".374",
+              ".749",
+              "147",
+              "2",
+              "0.74",
+              "12"
+            ],
+            [
+              2021,
+              ".302",
+              ".377",
+              ".388",
+              ".765",
+              "123",
+              "4",
+              "0.67",
+              "12"
+            ],
+            [
+              2020,
+              ".242",
+              ".324",
+              ".323",
+              ".647",
+              "24",
+              "2",
+              "0.52",
+              "1"
+            ],
+            [
+              2018,
+              ".135",
+              ".237",
+              ".154",
+              ".391",
+              "7",
+              "0",
+              "0.44",
+              "0"
+            ],
+            [
+              2017,
+              ".000",
+              ".000",
+              ".000",
+              ".000",
+              "0",
+              "0",
+              "0.00",
+              "0"
+            ]
+          ]
+        },
+        "advanced": {
+          "headers": [
+            "시즌",
+            "타석",
+            "볼넷",
+            "삼진",
+            "타석당 투구수",
+            "순장타율",
+            "GPA",
+            "추정 득점"
+          ],
+          "rows": [
+            [
+              2026,
+              "283",
+              "46",
+              "28",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2025,
+              "538",
+              "79",
+              "93",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2024,
+              "564",
+              "64",
+              "86",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2023,
+              "529",
+              "58",
+              "56",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2022,
+              "564",
+              "60",
+              "81",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2021,
+              "471",
+              "49",
+              "73",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2020,
+              "112",
+              "11",
+              "21",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2018,
+              "59",
+              "7",
+              "16",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2017,
+              "4",
+              "0",
+              "2",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ]
+          ]
+        },
+        "value": {
+          "headers": [
+            "시즌",
+            "도루",
+            "도루 실패",
+            "도루 성공률",
+            "실책",
+            "수비율",
+            "자살",
+            "보살",
+            "WAR"
+          ],
+          "rows": [
+            [
+              2026,
+              "5",
+              "2",
+              "71.4%",
+              "8",
+              "미수집",
+              "미수집",
+              "미수집",
+              "공식 미제공"
+            ],
+            [
+              2025,
+              "5",
+              "6",
+              "45.5%",
+              "20",
+              "미수집",
+              "미수집",
+              "미수집",
+              "공식 미제공"
+            ],
+            [
+              2024,
+              "13",
+              "3",
+              "81.2%",
+              "23",
+              "미수집",
+              "미수집",
+              "미수집",
+              "공식 미제공"
+            ],
+            [
+              2023,
+              "4",
+              "1",
+              "80.0%",
+              "19",
+              "미수집",
+              "미수집",
+              "미수집",
+              "공식 미제공"
+            ],
+            [
+              2022,
+              "12",
+              "8",
+              "60.0%",
+              "24",
+              "미수집",
+              "미수집",
+              "미수집",
+              "공식 미제공"
+            ],
+            [
+              2021,
+              "12",
+              "5",
+              "70.6%",
+              "23",
+              "미수집",
+              "미수집",
+              "미수집",
+              "공식 미제공"
+            ],
+            [
+              2020,
+              "1",
+              "1",
+              "50.0%",
+              "4",
+              "미수집",
+              "미수집",
+              "미수집",
+              "공식 미제공"
+            ],
+            [
+              2018,
+              "0",
+              "0",
+              "미수집",
+              "6",
+              "미수집",
+              "미수집",
+              "미수집",
+              "공식 미제공"
+            ],
+            [
+              2017,
+              "0",
+              "0",
+              "미수집",
+              "0",
+              "미수집",
+              "미수집",
+              "미수집",
+              "공식 미제공"
+            ]
+          ]
+        }
+      },
+      "servantGroups": [
+        {
+          "title": "타격 결과",
+          "items": [
+            {
+              "label": "타율",
+              "value": ".355",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "출루율",
+              "value": ".459",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "장타율",
+              "value": ".470",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "OPS",
+              "value": ".929",
+              "note": "KBO 공식 기록"
+            }
+          ]
+        },
+        {
+          "title": "타석 접근",
+          "items": [
+            {
+              "label": "볼넷",
+              "value": "46",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "삼진",
+              "value": "28",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "볼삼비",
+              "value": "1.64",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "타석당 투구수",
+              "value": "4.22",
+              "note": "KBO 공식 기록"
+            }
+          ]
+        },
+        {
+          "title": "주루",
+          "items": [
+            {
+              "label": "도루",
+              "value": "5",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "도루 실패",
+              "value": "2",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "도루 성공률",
+              "value": "71.4%",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "주루사",
+              "value": "1",
+              "note": "KBO 공식 기록"
+            }
+          ]
+        },
+        {
+          "title": "수비",
+          "items": [
+            {
+              "label": "실책",
+              "value": "8",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "수비율",
+              "value": ".968",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "자살",
+              "value": "103",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "보살",
+              "value": "138",
+              "note": "KBO 공식 기록"
+            }
+          ]
+        },
+        {
+          "title": "상황별",
+          "items": [
+            {
+              "label": "주자상황별",
+              "value": "1,3루 1.000",
+              "note": "타율 최고"
+            },
+            {
+              "label": "볼카운트별",
+              "value": "3-1 .571",
+              "note": "타율 최고"
+            },
+            {
+              "label": "이닝별",
+              "value": "6회 .500",
+              "note": "타율 최고"
+            },
+            {
+              "label": "타순별",
+              "value": "7번타자 .500",
+              "note": "타율 최고"
+            }
+          ]
+        }
+      ],
+      "insights": [
+        "박성한은 대표 지표 기준으로 OPS .929를 기록 중입니다.",
+        "전년 대비 ops는 +.164 변했고, 방향은 개선입니다.",
+        "월별 합계는 KBO 일자별 기록의 각 월 합계 행을 사용했습니다."
+      ],
+      "detailInsights": [
+        "박성한의 상세 화면은 KBO 공식 월별 합계와 상황별 타격 기록을 기준으로 구성했습니다.",
+        "주자상황별 타율은 1,3루 구간에서 1.000로 가장 높습니다.",
+        "타구속도, 하드힛, wRC+, WAR는 현재 공식 수집 범위에 없어 표시하지 않고, 추후 허가된 데이터로 보강합니다."
+      ],
+      "dataNeeds": [
+        "WAR, wRC+, RAA는 공식 기록실에 없어 자동 수집하지 않음",
+        "타구속도, 하드힛, 배럴은 허가된 트래킹 데이터 필요",
+        "수비 범위와 송구 지표는 공식/라이선스 데이터 확인 필요"
+      ]
+    },
+    {
+      "id": "kim_joowon",
+      "name": "김주원",
+      "type": "hitter",
+      "team": "NC 다이노스",
+      "teamShort": "NC",
+      "position": "내야수",
+      "positionGroup": "내야수",
+      "roleGroup": "infielder",
+      "profileCode": "ID 51907",
+      "kboPlayerId": 51907,
+      "kboDetailUrl": "https://www.koreabaseball.com/Record/Player/HitterDetail/Basic.aspx?playerId=51907",
+      "dataBadge": "KBO 공식 기록 · 2026-06-14 수집",
+      "summary": "김주원의 현재 공식 기록은 OPS .864, 타율 .300, 출루율 .382입니다. 타격 결과와 함께 주루·수비 기록을 같이 보도록 연결했습니다.",
+      "metrics": [
+        {
+          "metricId": "avg",
+          "label": "타율",
+          "value": ".300",
+          "note": "상위 60%"
+        },
+        {
+          "metricId": "obp",
+          "label": "출루율",
+          "value": ".382",
+          "note": "상위 60%"
+        },
+        {
+          "metricId": "slg",
+          "label": "장타율",
+          "value": ".482",
+          "note": "상위 60%"
+        },
+        {
+          "metricId": "ops",
+          "label": "OPS",
+          "value": ".864",
+          "note": "상위 80%"
+        },
+        {
+          "metricId": "hitter_bb_k",
+          "label": "볼삼비",
+          "value": "0.62",
+          "note": "상위 100%"
+        }
+      ],
+      "league": [
+        {
+          "metricId": "avg",
+          "label": "타율",
+          "value": 41,
+          "rankLabel": "상위 60%",
+          "rawValue": ".300"
+        },
+        {
+          "metricId": "obp",
+          "label": "출루율",
+          "value": 41,
+          "rankLabel": "상위 60%",
+          "rawValue": ".382"
+        },
+        {
+          "metricId": "slg",
+          "label": "장타율",
+          "value": 41,
+          "rankLabel": "상위 60%",
+          "rawValue": ".482"
+        },
+        {
+          "metricId": "ops",
+          "label": "OPS",
+          "value": 21,
+          "rankLabel": "상위 80%",
+          "rawValue": ".864"
+        },
+        {
+          "metricId": "hitter_bb_k",
+          "label": "볼삼비",
+          "value": 4,
+          "rankLabel": "상위 100%",
+          "rawValue": "0.62"
+        }
+      ],
+      "leagueContext": "KBO 공식 공개 기록 기반 · 수집된 리그 표본 기준",
+      "detailContext": "KBO 선수 상세 월별·상황별 기록 기준",
+      "chartMetrics": [
+        {
+          "key": "avg",
+          "label": "타율"
+        },
+        {
+          "key": "obp",
+          "label": "출루율"
+        },
+        {
+          "key": "slg",
+          "label": "장타율"
+        },
+        {
+          "key": "ops",
+          "label": "OPS"
+        },
+        {
+          "key": "hitter_bb_k",
+          "label": "볼삼비"
+        }
+      ],
+      "seasons": [
+        {
+          "avg": 0.3,
+          "obp": 0.382,
+          "slg": 0.482,
+          "ops": 0.864,
+          "hitter_bb_k": 0.6216216216216216,
+          "season": 2026,
+          "label": "2026"
+        },
+        {
+          "avg": 0.289,
+          "obp": 0.379,
+          "slg": 0.451,
+          "ops": 0.8300000000000001,
+          "hitter_bb_k": 0.5675675675675675,
+          "season": 2025,
+          "label": "2025"
+        },
+        {
+          "avg": 0.252,
+          "obp": 0.371,
+          "slg": 0.379,
+          "ops": 0.75,
+          "hitter_bb_k": 0.4594594594594595,
+          "season": 2024,
+          "label": "2024"
+        },
+        {
+          "avg": 0.233,
+          "obp": 0.328,
+          "slg": 0.34,
+          "ops": 0.668,
+          "hitter_bb_k": 0.41509433962264153,
+          "season": 2023,
+          "label": "2023"
+        },
+        {
+          "avg": 0.223,
+          "obp": 0.331,
+          "slg": 0.388,
+          "ops": 0.7190000000000001,
+          "hitter_bb_k": 0.33707865168539325,
+          "season": 2022,
+          "label": "2022"
+        },
+        {
+          "avg": 0.241,
+          "obp": 0.316,
+          "slg": 0.386,
+          "ops": 0.702,
+          "hitter_bb_k": 0.2982456140350877,
+          "season": 2021,
+          "label": "2021"
+        }
+      ],
+      "months": [
+        {
+          "avg": null,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": null,
+          "label": "25.07",
+          "periodValue": "2025-07",
+          "hasData": false
+        },
+        {
+          "avg": null,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": null,
+          "label": "25.08",
+          "periodValue": "2025-08",
+          "hasData": false
+        },
+        {
+          "avg": null,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": null,
+          "label": "25.09",
+          "periodValue": "2025-09",
+          "hasData": false
+        },
+        {
+          "avg": null,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": null,
+          "label": "25.10",
+          "periodValue": "2025-10",
+          "hasData": false
+        },
+        {
+          "avg": null,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": null,
+          "label": "25.11",
+          "periodValue": "2025-11",
+          "hasData": false
+        },
+        {
+          "avg": null,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": null,
+          "label": "25.12",
+          "periodValue": "2025-12",
+          "hasData": false
+        },
+        {
+          "avg": null,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": null,
+          "label": "26.01",
+          "periodValue": "2026-01",
+          "hasData": false
+        },
+        {
+          "avg": null,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": null,
+          "label": "26.02",
+          "periodValue": "2026-02",
+          "hasData": false
+        },
+        {
+          "avg": 0.167,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": 0.5,
+          "label": "26.03",
+          "periodValue": "2026-03",
+          "hasData": true
+        },
+        {
+          "avg": 0.274,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": 0.5,
+          "label": "26.04",
+          "periodValue": "2026-04",
+          "hasData": true
+        },
+        {
+          "avg": 0.348,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": 0.8181818181818182,
+          "label": "26.05",
+          "periodValue": "2026-05",
+          "hasData": true
+        },
+        {
+          "avg": 0.294,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": 0.6666666666666666,
+          "label": "26.06",
+          "periodValue": "2026-06",
+          "hasData": true
+        }
+      ],
+      "tables": {
+        "basic": {
+          "headers": [
+            "시즌",
+            "타율",
+            "출루율",
+            "장타율",
+            "OPS",
+            "안타",
+            "홈런",
+            "볼삼비",
+            "도루"
+          ],
+          "rows": [
+            [
+              2026,
+              ".300",
+              ".382",
+              ".482",
+              ".864",
+              "74",
+              "12",
+              "0.62",
+              "17"
+            ],
+            [
+              2025,
+              ".289",
+              ".379",
+              ".451",
+              ".830",
+              "156",
+              "15",
+              "0.57",
+              "44"
+            ],
+            [
+              2024,
+              ".252",
+              ".371",
+              ".379",
+              ".750",
+              "97",
+              "9",
+              "0.46",
+              "16"
+            ],
+            [
+              2023,
+              ".233",
+              ".328",
+              ".340",
+              ".668",
+              "94",
+              "10",
+              "0.42",
+              "15"
+            ],
+            [
+              2022,
+              ".223",
+              ".331",
+              ".388",
+              ".719",
+              "61",
+              "10",
+              "0.34",
+              "10"
+            ],
+            [
+              2021,
+              ".241",
+              ".316",
+              ".386",
+              ".702",
+              "40",
+              "5",
+              "0.30",
+              "6"
+            ]
+          ]
+        },
+        "advanced": {
+          "headers": [
+            "시즌",
+            "타석",
+            "볼넷",
+            "삼진",
+            "타석당 투구수",
+            "순장타율",
+            "GPA",
+            "추정 득점"
+          ],
+          "rows": [
+            [
+              2026,
+              "286",
+              "23",
+              "37",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2025,
+              "624",
+              "63",
+              "111",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2024,
+              "475",
+              "51",
+              "111",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2023,
+              "474",
+              "44",
+              "106",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2022,
+              "326",
+              "30",
+              "89",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2021,
+              "189",
+              "17",
+              "57",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ]
+          ]
+        },
+        "value": {
+          "headers": [
+            "시즌",
+            "도루",
+            "도루 실패",
+            "도루 성공률",
+            "실책",
+            "수비율",
+            "자살",
+            "보살",
+            "WAR"
+          ],
+          "rows": [
+            [
+              2026,
+              "17",
+              "2",
+              "89.5%",
+              "9",
+              "미수집",
+              "미수집",
+              "미수집",
+              "공식 미제공"
+            ],
+            [
+              2025,
+              "44",
+              "11",
+              "80.0%",
+              "29",
+              "미수집",
+              "미수집",
+              "미수집",
+              "공식 미제공"
+            ],
+            [
+              2024,
+              "16",
+              "6",
+              "72.7%",
+              "18",
+              "미수집",
+              "미수집",
+              "미수집",
+              "공식 미제공"
+            ],
+            [
+              2023,
+              "15",
+              "3",
+              "83.3%",
+              "30",
+              "미수집",
+              "미수집",
+              "미수집",
+              "공식 미제공"
+            ],
+            [
+              2022,
+              "10",
+              "3",
+              "76.9%",
+              "11",
+              "미수집",
+              "미수집",
+              "미수집",
+              "공식 미제공"
+            ],
+            [
+              2021,
+              "6",
+              "2",
+              "75.0%",
+              "12",
+              "미수집",
+              "미수집",
+              "미수집",
+              "공식 미제공"
+            ]
+          ]
+        }
+      },
+      "servantGroups": [
+        {
+          "title": "타격 결과",
+          "items": [
+            {
+              "label": "타율",
+              "value": ".300",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "출루율",
+              "value": ".382",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "장타율",
+              "value": ".482",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "OPS",
+              "value": ".864",
+              "note": "KBO 공식 기록"
+            }
+          ]
+        },
+        {
+          "title": "타석 접근",
+          "items": [
+            {
+              "label": "볼넷",
+              "value": "23",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "삼진",
+              "value": "37",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "볼삼비",
+              "value": "0.62",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "타석당 투구수",
+              "value": "3.88",
+              "note": "KBO 공식 기록"
+            }
+          ]
+        },
+        {
+          "title": "주루",
+          "items": [
+            {
+              "label": "도루",
+              "value": "17",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "도루 실패",
+              "value": "2",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "도루 성공률",
+              "value": "89.5%",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "주루사",
+              "value": "5",
+              "note": "KBO 공식 기록"
+            }
+          ]
+        },
+        {
+          "title": "수비",
+          "items": [
+            {
+              "label": "실책",
+              "value": "9",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "수비율",
+              "value": ".967",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "자살",
+              "value": "93",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "보살",
+              "value": "167",
+              "note": "KBO 공식 기록"
+            }
+          ]
+        },
+        {
+          "title": "상황별",
+          "items": [
+            {
+              "label": "주자상황별",
+              "value": "1,3루 .429",
+              "note": "타율 최고"
+            },
+            {
+              "label": "볼카운트별",
+              "value": "3-1 .500",
+              "note": "타율 최고"
+            },
+            {
+              "label": "이닝별",
+              "value": "3회 .389",
+              "note": "타율 최고"
+            },
+            {
+              "label": "타순별",
+              "value": "2번타자 .333",
+              "note": "타율 최고"
+            }
+          ]
+        }
+      ],
+      "insights": [
+        "김주원은 대표 지표 기준으로 OPS .864를 기록 중입니다.",
+        "전년 대비 ops는 +.034 변했고, 방향은 개선입니다.",
+        "월별 합계는 KBO 일자별 기록의 각 월 합계 행을 사용했습니다."
+      ],
+      "detailInsights": [
+        "김주원의 상세 화면은 KBO 공식 월별 합계와 상황별 타격 기록을 기준으로 구성했습니다.",
+        "주자상황별 타율은 1,3루 구간에서 .429로 가장 높습니다.",
+        "타구속도, 하드힛, wRC+, WAR는 현재 공식 수집 범위에 없어 표시하지 않고, 추후 허가된 데이터로 보강합니다."
+      ],
+      "dataNeeds": [
+        "WAR, wRC+, RAA는 공식 기록실에 없어 자동 수집하지 않음",
+        "타구속도, 하드힛, 배럴은 허가된 트래킹 데이터 필요",
+        "수비 범위와 송구 지표는 공식/라이선스 데이터 확인 필요"
+      ]
+    },
+    {
+      "id": "kim_jinuk",
+      "name": "김진욱",
+      "type": "pitcher",
+      "team": "롯데 자이언츠",
+      "teamShort": "롯데",
+      "position": "선발 투수",
+      "positionGroup": "선발 투수",
+      "roleGroup": "starter",
+      "profileCode": "ID 51516",
+      "kboPlayerId": 51516,
+      "kboDetailUrl": "https://www.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=51516",
+      "dataBadge": "KBO 공식 기록 · 2026-06-14 수집",
+      "summary": "김진욱의 현재 공식 기록은 ERA 3.20, WHIP 1.17, 이닝 70.3입니다. 투구 결과와 월별·상황별 흐름을 함께 보도록 연결했습니다.",
+      "metrics": [
+        {
+          "metricId": "era",
+          "label": "방어율",
+          "value": "3.20",
+          "note": "공식 기록"
+        },
+        {
+          "metricId": "ip",
+          "label": "이닝",
+          "value": "70.3",
+          "note": "공식 기록"
+        },
+        {
+          "metricId": "whip",
+          "label": "WHIP",
+          "value": "1.17",
+          "note": "공식 기록"
+        },
+        {
+          "metricId": "pitcher_strikeouts",
+          "label": "탈삼진",
+          "value": "54",
+          "note": "공식 기록"
+        },
+        {
+          "metricId": "pitcher_k_bb",
+          "label": "K/BB",
+          "value": "2.70",
+          "note": "공식 기록"
+        }
+      ],
+      "league": [
+        {
+          "metricId": "era",
+          "label": "방어율",
+          "value": null,
+          "rankLabel": "비교 준비중",
+          "rawValue": "3.20"
+        },
+        {
+          "metricId": "ip",
+          "label": "이닝",
+          "value": null,
+          "rankLabel": "비교 준비중",
+          "rawValue": "70.3"
+        },
+        {
+          "metricId": "whip",
+          "label": "WHIP",
+          "value": null,
+          "rankLabel": "비교 준비중",
+          "rawValue": "1.17"
+        },
+        {
+          "metricId": "pitcher_strikeouts",
+          "label": "탈삼진",
+          "value": null,
+          "rankLabel": "비교 준비중",
+          "rawValue": "54"
+        },
+        {
+          "metricId": "pitcher_k_bb",
+          "label": "K/BB",
+          "value": null,
+          "rankLabel": "비교 준비중",
+          "rawValue": "2.70"
+        }
+      ],
+      "leagueContext": "KBO 공식 공개 기록 기반 · 수집된 리그 표본 기준",
+      "detailContext": "KBO 선수 상세 월별·상황별 기록 기준",
+      "chartMetrics": [
+        {
+          "key": "era",
+          "label": "방어율"
+        },
+        {
+          "key": "ip",
+          "label": "이닝"
+        },
+        {
+          "key": "whip",
+          "label": "WHIP"
+        },
+        {
+          "key": "pitcher_strikeouts",
+          "label": "탈삼진"
+        },
+        {
+          "key": "pitcher_k_bb",
+          "label": "K/BB"
+        }
+      ],
+      "seasons": [
+        {
+          "era": 3.2,
+          "ip": 70.33333333333333,
+          "whip": null,
+          "pitcher_strikeouts": 54.0,
+          "pitcher_k_bb": 2.7,
+          "season": 2026,
+          "label": "2026"
+        },
+        {
+          "era": 10.0,
+          "ip": 27.0,
+          "whip": null,
+          "pitcher_strikeouts": 24.0,
+          "pitcher_k_bb": 1.5,
+          "season": 2025,
+          "label": "2025"
+        },
+        {
+          "era": 5.31,
+          "ip": 84.66666666666667,
+          "whip": null,
+          "pitcher_strikeouts": 87.0,
+          "pitcher_k_bb": 1.9772727272727273,
+          "season": 2024,
+          "label": "2024"
+        },
+        {
+          "era": 6.44,
+          "ip": 36.333333333333336,
+          "whip": null,
+          "pitcher_strikeouts": 35.0,
+          "pitcher_k_bb": 1.206896551724138,
+          "season": 2023,
+          "label": "2023"
+        },
+        {
+          "era": 6.36,
+          "ip": 46.66666666666666,
+          "whip": null,
+          "pitcher_strikeouts": 52.0,
+          "pitcher_k_bb": 1.4857142857142858,
+          "season": 2022,
+          "label": "2022"
+        },
+        {
+          "era": 6.31,
+          "ip": 45.66666666666666,
+          "whip": null,
+          "pitcher_strikeouts": 45.0,
+          "pitcher_k_bb": 0.9183673469387755,
+          "season": 2021,
+          "label": "2021"
+        }
+      ],
+      "months": [
+        {
+          "era": null,
+          "ip": null,
+          "whip": null,
+          "pitcher_strikeouts": null,
+          "pitcher_k_bb": null,
+          "label": "25.07",
+          "periodValue": "2025-07",
+          "hasData": false
+        },
+        {
+          "era": null,
+          "ip": null,
+          "whip": null,
+          "pitcher_strikeouts": null,
+          "pitcher_k_bb": null,
+          "label": "25.08",
+          "periodValue": "2025-08",
+          "hasData": false
+        },
+        {
+          "era": null,
+          "ip": null,
+          "whip": null,
+          "pitcher_strikeouts": null,
+          "pitcher_k_bb": null,
+          "label": "25.09",
+          "periodValue": "2025-09",
+          "hasData": false
+        },
+        {
+          "era": null,
+          "ip": null,
+          "whip": null,
+          "pitcher_strikeouts": null,
+          "pitcher_k_bb": null,
+          "label": "25.10",
+          "periodValue": "2025-10",
+          "hasData": false
+        },
+        {
+          "era": null,
+          "ip": null,
+          "whip": null,
+          "pitcher_strikeouts": null,
+          "pitcher_k_bb": null,
+          "label": "25.11",
+          "periodValue": "2025-11",
+          "hasData": false
+        },
+        {
+          "era": null,
+          "ip": null,
+          "whip": null,
+          "pitcher_strikeouts": null,
+          "pitcher_k_bb": null,
+          "label": "25.12",
+          "periodValue": "2025-12",
+          "hasData": false
+        },
+        {
+          "era": null,
+          "ip": null,
+          "whip": null,
+          "pitcher_strikeouts": null,
+          "pitcher_k_bb": null,
+          "label": "26.01",
+          "periodValue": "2026-01",
+          "hasData": false
+        },
+        {
+          "era": null,
+          "ip": null,
+          "whip": null,
+          "pitcher_strikeouts": null,
+          "pitcher_k_bb": null,
+          "label": "26.02",
+          "periodValue": "2026-02",
+          "hasData": false
+        },
+        {
+          "era": null,
+          "ip": null,
+          "whip": null,
+          "pitcher_strikeouts": null,
+          "pitcher_k_bb": null,
+          "label": "26.03",
+          "periodValue": "2026-03",
+          "hasData": false
+        },
+        {
+          "era": 2.76,
+          "ip": 29.33333333333333,
+          "whip": null,
+          "pitcher_strikeouts": 30.0,
+          "pitcher_k_bb": 2.727272727272727,
+          "label": "26.04",
+          "periodValue": "2026-04",
+          "hasData": true
+        },
+        {
+          "era": 3.99,
+          "ip": 29.33333333333333,
+          "whip": null,
+          "pitcher_strikeouts": 18.0,
+          "pitcher_k_bb": 3.0,
+          "label": "26.05",
+          "periodValue": "2026-05",
+          "hasData": true
+        },
+        {
+          "era": 2.31,
+          "ip": 11.666666666666666,
+          "whip": null,
+          "pitcher_strikeouts": 6.0,
+          "pitcher_k_bb": 2.0,
+          "label": "26.06",
+          "periodValue": "2026-06",
+          "hasData": true
+        }
+      ],
+      "tables": {
+        "basic": {
+          "headers": [
+            "시즌",
+            "방어율",
+            "이닝",
+            "WHIP",
+            "탈삼진",
+            "볼넷",
+            "K/BB",
+            "세이브"
+          ],
+          "rows": [
+            [
+              2026,
+              "3.20",
+              "70.3",
+              "미수집",
+              "54",
+              "20",
+              "2.70",
+              "0"
+            ],
+            [
+              2025,
+              "10.00",
+              "27.0",
+              "미수집",
+              "24",
+              "16",
+              "1.50",
+              "0"
+            ],
+            [
+              2024,
+              "5.31",
+              "84.7",
+              "미수집",
+              "87",
+              "44",
+              "1.98",
+              "0"
+            ],
+            [
+              2023,
+              "6.44",
+              "36.3",
+              "미수집",
+              "35",
+              "29",
+              "1.21",
+              "0"
+            ],
+            [
+              2022,
+              "6.36",
+              "46.7",
+              "미수집",
+              "52",
+              "35",
+              "1.49",
+              "0"
+            ],
+            [
+              2021,
+              "6.31",
+              "45.7",
+              "미수집",
+              "45",
+              "49",
+              "0.92",
+              "0"
+            ]
+          ]
+        },
+        "advanced": {
+          "headers": [
+            "시즌",
+            "상대 타자",
+            "투구수",
+            "피타율",
+            "퀄리티스타트",
+            "블론세이브",
+            "폭투",
+            "보크"
+          ],
+          "rows": [
+            [
+              2026,
+              "296",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2025,
+              "136",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2024,
+              "388",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2023,
+              "177",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2022,
+              "227",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2021,
+              "227",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ]
+          ]
+        },
+        "value": {
+          "headers": [
+            "시즌",
+            "등판",
+            "선발 등판",
+            "세이브",
+            "홀드",
+            "퀄리티스타트",
+            "승",
+            "패",
+            "WAR"
+          ],
+          "rows": [
+            [
+              2026,
+              "12",
+              "미수집",
+              "0",
+              "0",
+              "미수집",
+              "3",
+              "3",
+              "공식 미제공"
+            ],
+            [
+              2025,
+              "14",
+              "미수집",
+              "0",
+              "0",
+              "미수집",
+              "1",
+              "3",
+              "공식 미제공"
+            ],
+            [
+              2024,
+              "19",
+              "미수집",
+              "0",
+              "0",
+              "미수집",
+              "4",
+              "3",
+              "공식 미제공"
+            ],
+            [
+              2023,
+              "50",
+              "미수집",
+              "0",
+              "8",
+              "미수집",
+              "2",
+              "1",
+              "공식 미제공"
+            ],
+            [
+              2022,
+              "14",
+              "미수집",
+              "0",
+              "0",
+              "미수집",
+              "2",
+              "5",
+              "공식 미제공"
+            ],
+            [
+              2021,
+              "39",
+              "미수집",
+              "0",
+              "8",
+              "미수집",
+              "4",
+              "6",
+              "공식 미제공"
+            ]
+          ]
+        }
+      },
+      "servantGroups": [
+        {
+          "title": "실점 억제",
+          "items": [
+            {
+              "label": "방어율",
+              "value": "3.20",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "WHIP",
+              "value": "1.17",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "피타율",
+              "value": ".232",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "자책점",
+              "value": "25",
+              "note": "KBO 공식 기록"
+            }
+          ]
+        },
+        {
+          "title": "구위 결과",
+          "items": [
+            {
+              "label": "탈삼진",
+              "value": "54",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "K/BB",
+              "value": "2.70",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "K/9",
+              "value": "6.91",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "피홈런",
+              "value": "8",
+              "note": "KBO 공식 기록"
+            }
+          ]
+        },
+        {
+          "title": "역할",
+          "items": [
+            {
+              "label": "등판",
+              "value": "12",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "선발 등판",
+              "value": "12",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "이닝",
+              "value": "70.3",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "세이브",
+              "value": "0",
+              "note": "KBO 공식 기록"
+            }
+          ]
+        },
+        {
+          "title": "제구",
+          "items": [
+            {
+              "label": "볼넷",
+              "value": "20",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "BB/9",
+              "value": "2.56",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "폭투",
+              "value": "1",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "보크",
+              "value": "0",
+              "note": "KBO 공식 기록"
+            }
+          ]
+        },
+        {
+          "title": "상황별",
+          "items": [
+            {
+              "label": "주자상황별",
+              "value": "2루 .150",
+              "note": "피안타율 최저"
+            },
+            {
+              "label": "볼카운트별",
+              "value": "2-0 .000",
+              "note": "피안타율 최저"
+            },
+            {
+              "label": "이닝별",
+              "value": "1회 .167",
+              "note": "피안타율 최저"
+            },
+            {
+              "label": "타순별",
+              "value": "5번타자 .063",
+              "note": "피안타율 최저"
+            }
+          ]
+        }
+      ],
+      "insights": [
+        "김진욱은 대표 지표 기준으로 ERA 3.20, K/BB 2.70를 기록 중입니다.",
+        "전년 대비 era는 -6.80 변했고, 방향은 개선입니다.",
+        "최근 월별 흐름은 26.05 대비 26.06에 -1.68 변화했고, 방향은 개선입니다."
+      ],
+      "detailInsights": [
+        "김진욱의 상세 화면은 KBO 공식 월별 합계와 상황별 피안타 기록을 기준으로 구성했습니다.",
+        "주자상황별 피안타율은 2루 구간에서 .150로 가장 낮습니다.",
+        "구종, 무브먼트, 릴리스, 팔각도는 현재 공식 수집 범위에 없어 표시하지 않고, 추후 PTS/ABS 라이선스 데이터로 보강합니다."
+      ],
+      "dataNeeds": [
+        "구종, 구속, 무브먼트, 릴리스는 허가된 PTS/ABS 데이터 필요",
+        "팔각도와 익스텐션은 공식/라이선스 데이터 확인 필요",
+        "WAR, ERA+, RAA는 공식 기록실에 없어 자동 수집하지 않음"
+      ]
+    },
+    {
+      "id": "kim_doyoung",
+      "name": "김도영",
+      "type": "hitter",
+      "team": "KIA 타이거즈",
+      "teamShort": "KIA",
+      "position": "내야수",
+      "positionGroup": "내야수",
+      "roleGroup": "infielder",
+      "profileCode": "ID 52605",
+      "kboPlayerId": 52605,
+      "kboDetailUrl": "https://www.koreabaseball.com/Record/Player/HitterDetail/Basic.aspx?playerId=52605",
+      "dataBadge": "KBO 공식 기록 · 2026-06-14 수집",
+      "summary": "김도영의 현재 공식 기록은 OPS .950, 타율 .277, 출루율 .379입니다. 타격 결과와 함께 주루·수비 기록을 같이 보도록 연결했습니다.",
+      "metrics": [
+        {
+          "metricId": "avg",
+          "label": "타율",
+          "value": ".277",
+          "note": "상위 80%"
+        },
+        {
+          "metricId": "obp",
+          "label": "출루율",
+          "value": ".379",
+          "note": "상위 80%"
+        },
+        {
+          "metricId": "slg",
+          "label": "장타율",
+          "value": ".571",
+          "note": "상위 20%"
+        },
+        {
+          "metricId": "ops",
+          "label": "OPS",
+          "value": ".950",
+          "note": "상위 40%"
+        },
+        {
+          "metricId": "hitter_bb_k",
+          "label": "볼삼비",
+          "value": "0.80",
+          "note": "상위 40%"
+        }
+      ],
+      "league": [
+        {
+          "metricId": "avg",
+          "label": "타율",
+          "value": 21,
+          "rankLabel": "상위 80%",
+          "rawValue": ".277"
+        },
+        {
+          "metricId": "obp",
+          "label": "출루율",
+          "value": 21,
+          "rankLabel": "상위 80%",
+          "rawValue": ".379"
+        },
+        {
+          "metricId": "slg",
+          "label": "장타율",
+          "value": 81,
+          "rankLabel": "상위 20%",
+          "rawValue": ".571"
+        },
+        {
+          "metricId": "ops",
+          "label": "OPS",
+          "value": 61,
+          "rankLabel": "상위 40%",
+          "rawValue": ".950"
+        },
+        {
+          "metricId": "hitter_bb_k",
+          "label": "볼삼비",
+          "value": 61,
+          "rankLabel": "상위 40%",
+          "rawValue": "0.80"
+        }
+      ],
+      "leagueContext": "KBO 공식 공개 기록 기반 · 수집된 리그 표본 기준",
+      "detailContext": "KBO 선수 상세 월별·상황별 기록 기준",
+      "chartMetrics": [
+        {
+          "key": "avg",
+          "label": "타율"
+        },
+        {
+          "key": "obp",
+          "label": "출루율"
+        },
+        {
+          "key": "slg",
+          "label": "장타율"
+        },
+        {
+          "key": "ops",
+          "label": "OPS"
+        },
+        {
+          "key": "hitter_bb_k",
+          "label": "볼삼비"
+        }
+      ],
+      "seasons": [
+        {
+          "avg": 0.277,
+          "obp": 0.379,
+          "slg": 0.571,
+          "ops": 0.95,
+          "hitter_bb_k": 0.7954545454545454,
+          "season": 2026,
+          "label": "2026"
+        },
+        {
+          "avg": 0.309,
+          "obp": 0.361,
+          "slg": 0.582,
+          "ops": 0.943,
+          "hitter_bb_k": 0.43478260869565216,
+          "season": 2025,
+          "label": "2025"
+        },
+        {
+          "avg": 0.347,
+          "obp": 0.42,
+          "slg": 0.647,
+          "ops": 1.067,
+          "hitter_bb_k": 0.6,
+          "season": 2024,
+          "label": "2024"
+        },
+        {
+          "avg": 0.303,
+          "obp": 0.371,
+          "slg": 0.453,
+          "ops": 0.8240000000000001,
+          "hitter_bb_k": 0.6129032258064516,
+          "season": 2023,
+          "label": "2023"
+        },
+        {
+          "avg": 0.237,
+          "obp": 0.312,
+          "slg": 0.362,
+          "ops": 0.6739999999999999,
+          "hitter_bb_k": 0.3548387096774194,
+          "season": 2022,
+          "label": "2022"
+        }
+      ],
+      "months": [
+        {
+          "avg": null,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": null,
+          "label": "25.07",
+          "periodValue": "2025-07",
+          "hasData": false
+        },
+        {
+          "avg": null,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": null,
+          "label": "25.08",
+          "periodValue": "2025-08",
+          "hasData": false
+        },
+        {
+          "avg": null,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": null,
+          "label": "25.09",
+          "periodValue": "2025-09",
+          "hasData": false
+        },
+        {
+          "avg": null,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": null,
+          "label": "25.10",
+          "periodValue": "2025-10",
+          "hasData": false
+        },
+        {
+          "avg": null,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": null,
+          "label": "25.11",
+          "periodValue": "2025-11",
+          "hasData": false
+        },
+        {
+          "avg": null,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": null,
+          "label": "25.12",
+          "periodValue": "2025-12",
+          "hasData": false
+        },
+        {
+          "avg": null,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": null,
+          "label": "26.01",
+          "periodValue": "2026-01",
+          "hasData": false
+        },
+        {
+          "avg": null,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": null,
+          "label": "26.02",
+          "periodValue": "2026-02",
+          "hasData": false
+        },
+        {
+          "avg": 0.417,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": 3.0,
+          "label": "26.03",
+          "periodValue": "2026-03",
+          "hasData": true
+        },
+        {
+          "avg": 0.234,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": 0.7777777777777778,
+          "label": "26.04",
+          "periodValue": "2026-04",
+          "hasData": true
+        },
+        {
+          "avg": 0.278,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": 0.7222222222222222,
+          "label": "26.05",
+          "periodValue": "2026-05",
+          "hasData": true
+        },
+        {
+          "avg": 0.333,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": 0.7142857142857143,
+          "label": "26.06",
+          "periodValue": "2026-06",
+          "hasData": true
+        }
+      ],
+      "tables": {
+        "basic": {
+          "headers": [
+            "시즌",
+            "타율",
+            "출루율",
+            "장타율",
+            "OPS",
+            "안타",
+            "홈런",
+            "볼삼비",
+            "도루"
+          ],
+          "rows": [
+            [
+              2026,
+              ".277",
+              ".379",
+              ".571",
+              ".950",
+              "66",
+              "19",
+              "0.80",
+              "3"
+            ],
+            [
+              2025,
+              ".309",
+              ".361",
+              ".582",
+              ".943",
+              "34",
+              "7",
+              "0.43",
+              "3"
+            ],
+            [
+              2024,
+              ".347",
+              ".420",
+              ".647",
+              "1.067",
+              "189",
+              "38",
+              "0.60",
+              "40"
+            ],
+            [
+              2023,
+              ".303",
+              ".371",
+              ".453",
+              ".824",
+              "103",
+              "7",
+              "0.61",
+              "25"
+            ],
+            [
+              2022,
+              ".237",
+              ".312",
+              ".362",
+              ".674",
+              "53",
+              "3",
+              "0.35",
+              "13"
+            ]
+          ]
+        },
+        "advanced": {
+          "headers": [
+            "시즌",
+            "타석",
+            "볼넷",
+            "삼진",
+            "타석당 투구수",
+            "순장타율",
+            "GPA",
+            "추정 득점"
+          ],
+          "rows": [
+            [
+              2026,
+              "280",
+              "35",
+              "44",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2025,
+              "122",
+              "10",
+              "23",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2024,
+              "625",
+              "66",
+              "110",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2023,
+              "385",
+              "38",
+              "62",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2022,
+              "254",
+              "22",
+              "62",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ]
+          ]
+        },
+        "value": {
+          "headers": [
+            "시즌",
+            "도루",
+            "도루 실패",
+            "도루 성공률",
+            "실책",
+            "수비율",
+            "자살",
+            "보살",
+            "WAR"
+          ],
+          "rows": [
+            [
+              2026,
+              "3",
+              "0",
+              "100.0%",
+              "3",
+              "미수집",
+              "미수집",
+              "미수집",
+              "공식 미제공"
+            ],
+            [
+              2025,
+              "3",
+              "0",
+              "100.0%",
+              "5",
+              "미수집",
+              "미수집",
+              "미수집",
+              "공식 미제공"
+            ],
+            [
+              2024,
+              "40",
+              "4",
+              "90.9%",
+              "30",
+              "미수집",
+              "미수집",
+              "미수집",
+              "공식 미제공"
+            ],
+            [
+              2023,
+              "25",
+              "4",
+              "86.2%",
+              "13",
+              "미수집",
+              "미수집",
+              "미수집",
+              "공식 미제공"
+            ],
+            [
+              2022,
+              "13",
+              "3",
+              "81.2%",
+              "13",
+              "미수집",
+              "미수집",
+              "미수집",
+              "공식 미제공"
+            ]
+          ]
+        }
+      },
+      "servantGroups": [
+        {
+          "title": "타격 결과",
+          "items": [
+            {
+              "label": "타율",
+              "value": ".277",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "출루율",
+              "value": ".379",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "장타율",
+              "value": ".571",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "OPS",
+              "value": ".950",
+              "note": "KBO 공식 기록"
+            }
+          ]
+        },
+        {
+          "title": "타석 접근",
+          "items": [
+            {
+              "label": "볼넷",
+              "value": "35",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "삼진",
+              "value": "44",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "볼삼비",
+              "value": "0.80",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "타석당 투구수",
+              "value": "3.54",
+              "note": "KBO 공식 기록"
+            }
+          ]
+        },
+        {
+          "title": "주루",
+          "items": [
+            {
+              "label": "도루",
+              "value": "3",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "도루 실패",
+              "value": "0",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "도루 성공률",
+              "value": "100.0%",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "주루사",
+              "value": "0",
+              "note": "KBO 공식 기록"
+            }
+          ]
+        },
+        {
+          "title": "수비",
+          "items": [
+            {
+              "label": "실책",
+              "value": "3",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "수비율",
+              "value": ".979",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "자살",
+              "value": "41",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "보살",
+              "value": "97",
+              "note": "KBO 공식 기록"
+            }
+          ]
+        },
+        {
+          "title": "상황별",
+          "items": [
+            {
+              "label": "주자상황별",
+              "value": "만루 .600",
+              "note": "타율 최고"
+            },
+            {
+              "label": "볼카운트별",
+              "value": "3-1 .556",
+              "note": "타율 최고"
+            },
+            {
+              "label": "이닝별",
+              "value": "2회 .714",
+              "note": "타율 최고"
+            },
+            {
+              "label": "타순별",
+              "value": "4번타자 .304",
+              "note": "타율 최고"
+            }
+          ]
+        }
+      ],
+      "insights": [
+        "김도영은 대표 지표 기준으로 OPS .950를 기록 중입니다.",
+        "전년 대비 ops는 +.007 변했고, 방향은 개선입니다.",
+        "월별 합계는 KBO 일자별 기록의 각 월 합계 행을 사용했습니다."
+      ],
+      "detailInsights": [
+        "김도영의 상세 화면은 KBO 공식 월별 합계와 상황별 타격 기록을 기준으로 구성했습니다.",
+        "주자상황별 타율은 만루 구간에서 .600로 가장 높습니다.",
+        "타구속도, 하드힛, wRC+, WAR는 현재 공식 수집 범위에 없어 표시하지 않고, 추후 허가된 데이터로 보강합니다."
+      ],
+      "dataNeeds": [
+        "WAR, wRC+, RAA는 공식 기록실에 없어 자동 수집하지 않음",
+        "타구속도, 하드힛, 배럴은 허가된 트래킹 데이터 필요",
+        "수비 범위와 송구 지표는 공식/라이선스 데이터 확인 필요"
+      ]
+    },
+    {
+      "id": "sim_woojun",
+      "name": "심우준",
+      "type": "hitter",
+      "team": "한화 이글스",
+      "teamShort": "한화",
+      "position": "내야수",
+      "positionGroup": "내야수",
+      "roleGroup": "infielder",
+      "profileCode": "ID 64006",
+      "kboPlayerId": 64006,
+      "kboDetailUrl": "https://www.koreabaseball.com/Record/Player/HitterDetail/Basic.aspx?playerId=64006",
+      "dataBadge": "KBO 공식 기록 · 2026-06-14 수집",
+      "summary": "심우준의 현재 공식 기록은 OPS .737, 타율 .272, 출루율 .376입니다. 타격 결과와 함께 주루·수비 기록을 같이 보도록 연결했습니다.",
+      "metrics": [
+        {
+          "metricId": "avg",
+          "label": "타율",
+          "value": ".272",
+          "note": "상위 100%"
+        },
+        {
+          "metricId": "obp",
+          "label": "출루율",
+          "value": ".376",
+          "note": "상위 100%"
+        },
+        {
+          "metricId": "slg",
+          "label": "장타율",
+          "value": ".361",
+          "note": "상위 100%"
+        },
+        {
+          "metricId": "ops",
+          "label": "OPS",
+          "value": ".737",
+          "note": "상위 100%"
+        },
+        {
+          "metricId": "hitter_bb_k",
+          "label": "볼삼비",
+          "value": "0.74",
+          "note": "상위 80%"
+        }
+      ],
+      "league": [
+        {
+          "metricId": "avg",
+          "label": "타율",
+          "value": 4,
+          "rankLabel": "상위 100%",
+          "rawValue": ".272"
+        },
+        {
+          "metricId": "obp",
+          "label": "출루율",
+          "value": 4,
+          "rankLabel": "상위 100%",
+          "rawValue": ".376"
+        },
+        {
+          "metricId": "slg",
+          "label": "장타율",
+          "value": 4,
+          "rankLabel": "상위 100%",
+          "rawValue": ".361"
+        },
+        {
+          "metricId": "ops",
+          "label": "OPS",
+          "value": 4,
+          "rankLabel": "상위 100%",
+          "rawValue": ".737"
+        },
+        {
+          "metricId": "hitter_bb_k",
+          "label": "볼삼비",
+          "value": 21,
+          "rankLabel": "상위 80%",
+          "rawValue": "0.74"
+        }
+      ],
+      "leagueContext": "KBO 공식 공개 기록 기반 · 수집된 리그 표본 기준",
+      "detailContext": "KBO 선수 상세 월별·상황별 기록 기준",
+      "chartMetrics": [
+        {
+          "key": "avg",
+          "label": "타율"
+        },
+        {
+          "key": "obp",
+          "label": "출루율"
+        },
+        {
+          "key": "slg",
+          "label": "장타율"
+        },
+        {
+          "key": "ops",
+          "label": "OPS"
+        },
+        {
+          "key": "hitter_bb_k",
+          "label": "볼삼비"
+        }
+      ],
+      "seasons": [
+        {
+          "avg": 0.272,
+          "obp": 0.376,
+          "slg": 0.361,
+          "ops": 0.737,
+          "hitter_bb_k": 0.7352941176470589,
+          "season": 2026,
+          "label": "2026"
+        },
+        {
+          "avg": 0.231,
+          "obp": 0.287,
+          "slg": 0.3,
+          "ops": 0.587,
+          "hitter_bb_k": 0.3469387755102041,
+          "season": 2025,
+          "label": "2025"
+        },
+        {
+          "avg": 0.266,
+          "obp": 0.337,
+          "slg": 0.343,
+          "ops": 0.68,
+          "hitter_bb_k": 0.5862068965517241,
+          "season": 2024,
+          "label": "2024"
+        },
+        {
+          "avg": 0.24,
+          "obp": 0.316,
+          "slg": 0.302,
+          "ops": 0.618,
+          "hitter_bb_k": 0.5733333333333334,
+          "season": 2022,
+          "label": "2022"
+        },
+        {
+          "avg": 0.268,
+          "obp": 0.323,
+          "slg": 0.371,
+          "ops": 0.694,
+          "hitter_bb_k": 0.49230769230769234,
+          "season": 2021,
+          "label": "2021"
+        },
+        {
+          "avg": 0.235,
+          "obp": 0.291,
+          "slg": 0.3,
+          "ops": 0.591,
+          "hitter_bb_k": 0.37755102040816324,
+          "season": 2020,
+          "label": "2020"
+        },
+        {
+          "avg": 0.279,
+          "obp": 0.328,
+          "slg": 0.34,
+          "ops": 0.668,
+          "hitter_bb_k": 0.3382352941176471,
+          "season": 2019,
+          "label": "2019"
+        },
+        {
+          "avg": 0.259,
+          "obp": 0.304,
+          "slg": 0.371,
+          "ops": 0.675,
+          "hitter_bb_k": 0.3448275862068966,
+          "season": 2018,
+          "label": "2018"
+        },
+        {
+          "avg": 0.287,
+          "obp": 0.314,
+          "slg": 0.395,
+          "ops": 0.7090000000000001,
+          "hitter_bb_k": 0.13793103448275862,
+          "season": 2017,
+          "label": "2017"
+        },
+        {
+          "avg": 0.242,
+          "obp": 0.264,
+          "slg": 0.326,
+          "ops": 0.5900000000000001,
+          "hitter_bb_k": 0.2,
+          "season": 2016,
+          "label": "2016"
+        },
+        {
+          "avg": 0.169,
+          "obp": 0.181,
+          "slg": 0.239,
+          "ops": 0.42,
+          "hitter_bb_k": 0.05714285714285714,
+          "season": 2015,
+          "label": "2015"
+        }
+      ],
+      "months": [
+        {
+          "avg": null,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": null,
+          "label": "25.07",
+          "periodValue": "2025-07",
+          "hasData": false
+        },
+        {
+          "avg": null,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": null,
+          "label": "25.08",
+          "periodValue": "2025-08",
+          "hasData": false
+        },
+        {
+          "avg": null,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": null,
+          "label": "25.09",
+          "periodValue": "2025-09",
+          "hasData": false
+        },
+        {
+          "avg": null,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": null,
+          "label": "25.10",
+          "periodValue": "2025-10",
+          "hasData": false
+        },
+        {
+          "avg": null,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": null,
+          "label": "25.11",
+          "periodValue": "2025-11",
+          "hasData": false
+        },
+        {
+          "avg": null,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": null,
+          "label": "25.12",
+          "periodValue": "2025-12",
+          "hasData": false
+        },
+        {
+          "avg": null,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": null,
+          "label": "26.01",
+          "periodValue": "2026-01",
+          "hasData": false
+        },
+        {
+          "avg": null,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": null,
+          "label": "26.02",
+          "periodValue": "2026-02",
+          "hasData": false
+        },
+        {
+          "avg": 0.273,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": 0.5,
+          "label": "26.03",
+          "periodValue": "2026-03",
+          "hasData": true
+        },
+        {
+          "avg": 0.268,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": 0.5384615384615384,
+          "label": "26.04",
+          "periodValue": "2026-04",
+          "hasData": true
+        },
+        {
+          "avg": 0.294,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": 1.1818181818181819,
+          "label": "26.05",
+          "periodValue": "2026-05",
+          "hasData": true
+        },
+        {
+          "avg": 0.235,
+          "obp": null,
+          "slg": null,
+          "ops": null,
+          "hitter_bb_k": 0.5,
+          "label": "26.06",
+          "periodValue": "2026-06",
+          "hasData": true
+        }
+      ],
+      "tables": {
+        "basic": {
+          "headers": [
+            "시즌",
+            "타율",
+            "출루율",
+            "장타율",
+            "OPS",
+            "안타",
+            "홈런",
+            "볼삼비",
+            "도루"
+          ],
+          "rows": [
+            [
+              2026,
+              ".272",
+              ".376",
+              ".361",
+              ".737",
+              "46",
+              "3",
+              "0.74",
+              "13"
+            ],
+            [
+              2025,
+              ".231",
+              ".287",
+              ".300",
+              ".587",
+              "57",
+              "2",
+              "0.35",
+              "11"
+            ],
+            [
+              2024,
+              ".266",
+              ".337",
+              ".343",
+              ".680",
+              "45",
+              "3",
+              "0.59",
+              "7"
+            ],
+            [
+              2022,
+              ".240",
+              ".316",
+              ".302",
+              ".618",
+              "93",
+              "4",
+              "0.57",
+              "23"
+            ],
+            [
+              2021,
+              ".268",
+              ".323",
+              ".371",
+              ".694",
+              "109",
+              "6",
+              "0.49",
+              "16"
+            ],
+            [
+              2020,
+              ".235",
+              ".291",
+              ".300",
+              ".591",
+              "112",
+              "3",
+              "0.38",
+              "35"
+            ],
+            [
+              2019,
+              ".279",
+              ".328",
+              ".340",
+              ".668",
+              "109",
+              "3",
+              "0.34",
+              "24"
+            ],
+            [
+              2018,
+              ".259",
+              ".304",
+              ".371",
+              ".675",
+              "95",
+              "4",
+              "0.34",
+              "11"
+            ],
+            [
+              2017,
+              ".287",
+              ".314",
+              ".395",
+              ".709",
+              "82",
+              "4",
+              "0.14",
+              "18"
+            ],
+            [
+              2016,
+              ".242",
+              ".264",
+              ".326",
+              ".590",
+              "57",
+              "3",
+              "0.20",
+              "17"
+            ],
+            [
+              2015,
+              ".169",
+              ".181",
+              ".239",
+              ".420",
+              "24",
+              "1",
+              "0.06",
+              "5"
+            ]
+          ]
+        },
+        "advanced": {
+          "headers": [
+            "시즌",
+            "타석",
+            "볼넷",
+            "삼진",
+            "타석당 투구수",
+            "순장타율",
+            "GPA",
+            "추정 득점"
+          ],
+          "rows": [
+            [
+              2026,
+              "201",
+              "25",
+              "34",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2025,
+              "275",
+              "17",
+              "49",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2024,
+              "192",
+              "17",
+              "29",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2022,
+              "449",
+              "43",
+              "75",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2021,
+              "460",
+              "32",
+              "65",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2020,
+              "535",
+              "37",
+              "98",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2019,
+              "433",
+              "23",
+              "68",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2018,
+              "403",
+              "20",
+              "58",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2017,
+              "303",
+              "8",
+              "58",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2016,
+              "251",
+              "8",
+              "40",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ],
+            [
+              2015,
+              "146",
+              "2",
+              "35",
+              "미수집",
+              "미수집",
+              "미수집",
+              "미수집"
+            ]
+          ]
+        },
+        "value": {
+          "headers": [
+            "시즌",
+            "도루",
+            "도루 실패",
+            "도루 성공률",
+            "실책",
+            "수비율",
+            "자살",
+            "보살",
+            "WAR"
+          ],
+          "rows": [
+            [
+              2026,
+              "13",
+              "1",
+              "92.9%",
+              "9",
+              "미수집",
+              "미수집",
+              "미수집",
+              "공식 미제공"
+            ],
+            [
+              2025,
+              "11",
+              "1",
+              "91.7%",
+              "7",
+              "미수집",
+              "미수집",
+              "미수집",
+              "공식 미제공"
+            ],
+            [
+              2024,
+              "7",
+              "1",
+              "87.5%",
+              "8",
+              "미수집",
+              "미수집",
+              "미수집",
+              "공식 미제공"
+            ],
+            [
+              2022,
+              "23",
+              "2",
+              "92.0%",
+              "16",
+              "미수집",
+              "미수집",
+              "미수집",
+              "공식 미제공"
+            ],
+            [
+              2021,
+              "16",
+              "6",
+              "72.7%",
+              "19",
+              "미수집",
+              "미수집",
+              "미수집",
+              "공식 미제공"
+            ],
+            [
+              2020,
+              "35",
+              "11",
+              "76.1%",
+              "21",
+              "미수집",
+              "미수집",
+              "미수집",
+              "공식 미제공"
+            ],
+            [
+              2019,
+              "24",
+              "3",
+              "88.9%",
+              "11",
+              "미수집",
+              "미수집",
+              "미수집",
+              "공식 미제공"
+            ],
+            [
+              2018,
+              "11",
+              "11",
+              "50.0%",
+              "13",
+              "미수집",
+              "미수집",
+              "미수집",
+              "공식 미제공"
+            ],
+            [
+              2017,
+              "18",
+              "5",
+              "78.3%",
+              "19",
+              "미수집",
+              "미수집",
+              "미수집",
+              "공식 미제공"
+            ],
+            [
+              2016,
+              "17",
+              "1",
+              "94.4%",
+              "13",
+              "미수집",
+              "미수집",
+              "미수집",
+              "공식 미제공"
+            ],
+            [
+              2015,
+              "5",
+              "2",
+              "71.4%",
+              "10",
+              "미수집",
+              "미수집",
+              "미수집",
+              "공식 미제공"
+            ]
+          ]
+        }
+      },
+      "servantGroups": [
+        {
+          "title": "타격 결과",
+          "items": [
+            {
+              "label": "타율",
+              "value": ".272",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "출루율",
+              "value": ".376",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "장타율",
+              "value": ".361",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "OPS",
+              "value": ".737",
+              "note": "KBO 공식 기록"
+            }
+          ]
+        },
+        {
+          "title": "타석 접근",
+          "items": [
+            {
+              "label": "볼넷",
+              "value": "25",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "삼진",
+              "value": "34",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "볼삼비",
+              "value": "0.74",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "타석당 투구수",
+              "value": "4.21",
+              "note": "KBO 공식 기록"
+            }
+          ]
+        },
+        {
+          "title": "주루",
+          "items": [
+            {
+              "label": "도루",
+              "value": "13",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "도루 실패",
+              "value": "1",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "도루 성공률",
+              "value": "92.9%",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "주루사",
+              "value": "0",
+              "note": "KBO 공식 기록"
+            }
+          ]
+        },
+        {
+          "title": "수비",
+          "items": [
+            {
+              "label": "실책",
+              "value": "9",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "수비율",
+              "value": ".962",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "자살",
+              "value": "86",
+              "note": "KBO 공식 기록"
+            },
+            {
+              "label": "보살",
+              "value": "140",
+              "note": "KBO 공식 기록"
+            }
+          ]
+        },
+        {
+          "title": "상황별",
+          "items": [
+            {
+              "label": "주자상황별",
+              "value": "1,3루 .444",
+              "note": "타율 최고"
+            },
+            {
+              "label": "볼카운트별",
+              "value": "3-1 .667",
+              "note": "타율 최고"
+            },
+            {
+              "label": "이닝별",
+              "value": "연장 1.000",
+              "note": "타율 최고"
+            },
+            {
+              "label": "타순별",
+              "value": "9번타자 .275",
+              "note": "타율 최고"
+            }
+          ]
+        }
+      ],
+      "insights": [
+        "심우준은 대표 지표 기준으로 OPS .737를 기록 중입니다.",
+        "전년 대비 ops는 +.150 변했고, 방향은 개선입니다.",
+        "월별 합계는 KBO 일자별 기록의 각 월 합계 행을 사용했습니다."
+      ],
+      "detailInsights": [
+        "심우준의 상세 화면은 KBO 공식 월별 합계와 상황별 타격 기록을 기준으로 구성했습니다.",
+        "주자상황별 타율은 1,3루 구간에서 .444로 가장 높습니다.",
+        "타구속도, 하드힛, wRC+, WAR는 현재 공식 수집 범위에 없어 표시하지 않고, 추후 허가된 데이터로 보강합니다."
+      ],
+      "dataNeeds": [
+        "WAR, wRC+, RAA는 공식 기록실에 없어 자동 수집하지 않음",
+        "타구속도, 하드힛, 배럴은 허가된 트래킹 데이터 필요",
+        "수비 범위와 송구 지표는 공식/라이선스 데이터 확인 필요"
+      ]
+    }
+  ]
+}
