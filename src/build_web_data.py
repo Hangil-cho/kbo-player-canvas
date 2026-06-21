@@ -88,12 +88,43 @@ PITCHER_CHART_METRICS = [
     ("pitcher_k_bb", "K/BB"),
 ]
 
+DERIVED_METRIC_IDS = {
+    "hitter_bb_pct",
+    "hitter_k_pct",
+    "babip",
+    "hr_pa",
+    "pitcher_k_pct",
+    "pitcher_bb_pct",
+    "k_minus_bb_pct",
+    "k9",
+    "bb9",
+    "h9",
+    "hr9",
+    "fip",
+    "babip_allowed",
+    "lob_pct",
+    "opponent_ops",
+    "ip_per_start",
+}
+
 HITTER_BASIC_TABLE = ["avg", "obp", "slg", "ops", "hits", "home_runs", "hitter_bb_k", "sb"]
 PITCHER_BASIC_TABLE = ["era", "ip", "whip", "pitcher_strikeouts", "pitcher_walks", "pitcher_k_bb", "saves"]
-HITTER_ADVANCED_TABLE = ["pa", "hitter_bb", "hitter_so", "pitches_per_pa", "iso", "gpa", "xr"]
-PITCHER_ADVANCED_TABLE = ["total_batters_faced", "pitch_count", "opponent_avg", "qs", "blown_saves", "wild_pitches", "balks"]
+HITTER_ADVANCED_TABLE = ["pa", "hitter_bb_pct", "hitter_k_pct", "hitter_bb_k", "pitches_per_pa", "iso", "babip", "hr_pa", "xr", "gpa"]
+PITCHER_ADVANCED_TABLE = [
+    "total_batters_faced",
+    "pitch_count",
+    "pitcher_k_pct",
+    "pitcher_bb_pct",
+    "k_minus_bb_pct",
+    "h9",
+    "hr9",
+    "fip",
+    "babip_allowed",
+    "lob_pct",
+    "opponent_ops",
+]
 HITTER_VALUE_TABLE = ["sb", "cs", "sb_pct", "errors", "fielding_pct", "putouts", "assists"]
-PITCHER_VALUE_TABLE = ["games_pitched", "games_started", "saves", "holds", "qs", "pitcher_wins", "pitcher_losses"]
+PITCHER_VALUE_TABLE = ["games_pitched", "games_started", "ip_per_start", "saves", "holds", "qs", "pitcher_wins", "pitcher_losses"]
 
 
 @dataclass
@@ -108,9 +139,10 @@ class DataBundle:
 def main() -> None:
     bundle = load_data()
     catalog = build_catalog_lookup(bundle.metric_catalog)
-    league_lookup = build_league_lookup(bundle.metrics, bundle.metric_catalog)
+    league_constants = build_league_constants(bundle.metrics)
+    league_lookup = build_league_lookup(bundle.metrics, bundle.metric_catalog, league_constants)
     players = [
-        build_player_payload(row, bundle, catalog, league_lookup)
+        build_player_payload(row, bundle, catalog, league_lookup, league_constants)
         for _, row in bundle.directory.iterrows()
     ]
 
@@ -144,7 +176,25 @@ def build_catalog_lookup(catalog: pd.DataFrame) -> dict[str, dict[str, Any]]:
     return {row["metric_id"]: row.to_dict() for _, row in catalog.iterrows()}
 
 
-def build_league_lookup(metrics: pd.DataFrame, catalog: pd.DataFrame) -> dict[str, dict[str, Any]]:
+def build_league_constants(metrics: pd.DataFrame) -> dict[str, float]:
+    pivot = season_metric_pivot(metrics)
+    if pivot.empty:
+        return {}
+    totals = {metric_id: pd.to_numeric(pivot[metric_id], errors="coerce").sum() for metric_id in pivot.columns}
+    ip = totals.get("ip")
+    if not ip:
+        return {}
+    league_era = safe_ratio(totals.get("pitcher_earned_runs"), ip, multiplier=9)
+    fip_base = fip_without_constant(totals)
+    constants = {}
+    if league_era is not None:
+        constants["league_era"] = league_era
+    if league_era is not None and fip_base is not None:
+        constants["fip_constant"] = league_era - fip_base
+    return constants
+
+
+def season_metric_pivot(metrics: pd.DataFrame) -> pd.DataFrame:
     league = metrics[
         (metrics["period_type"].eq("season"))
         & (metrics["period_value"].astype(str).eq(str(SEASON)))
@@ -152,9 +202,9 @@ def build_league_lookup(metrics: pd.DataFrame, catalog: pd.DataFrame) -> dict[st
         & (metrics["external_player_name"].notna())
     ].copy()
     if league.empty:
-        return {}
+        return pd.DataFrame()
 
-    pivot = (
+    return (
         league.sort_values(["external_player_name", "team", "metric_id", "source_key"])
         .drop_duplicates(["external_player_name", "team", "metric_id"])
         .pivot_table(
@@ -164,7 +214,14 @@ def build_league_lookup(metrics: pd.DataFrame, catalog: pd.DataFrame) -> dict[st
             aggfunc="first",
         )
     )
-    pivot = add_derived_metrics(pivot)
+
+
+def build_league_lookup(metrics: pd.DataFrame, catalog: pd.DataFrame, league_constants: dict[str, float]) -> dict[str, dict[str, Any]]:
+    pivot = season_metric_pivot(metrics)
+    if pivot.empty:
+        return {}
+
+    pivot = add_derived_metrics(pivot, league_constants)
     direction = catalog.set_index("metric_id")["rank_direction"].to_dict()
     lookup = {}
     for metric_id in pivot.columns:
@@ -179,18 +236,19 @@ def build_player_payload(
     bundle: DataBundle,
     catalog: dict[str, dict[str, Any]],
     league_lookup: dict[str, dict[str, Any]],
+    league_constants: dict[str, float],
 ) -> dict[str, Any]:
     player_id = player["player_id"]
     player_type = player["player_type"]
     metric_df = bundle.metrics[bundle.metrics["player_id"].eq(player_id)].copy()
-    current = current_metric_values(metric_df)
-    seasons = build_season_values(metric_df)
-    months = build_season_month_values(metric_df, current)
+    current = current_metric_values(metric_df, league_constants)
+    seasons = build_season_values(metric_df, league_constants)
+    months = build_season_month_values(metric_df, current, league_constants)
     situations = bundle.situations[bundle.situations["player_id"].eq(player_id)].copy()
 
     rep_metrics = HITTER_REP_METRICS if player_type == "hitter" else PITCHER_REP_METRICS
     chart_metrics = HITTER_CHART_METRICS if player_type == "hitter" else PITCHER_CHART_METRICS
-    current = ensure_derived(current)
+    current = ensure_derived(current, league_constants)
 
     return {
         "id": player_id,
@@ -221,7 +279,7 @@ def build_player_payload(
     }
 
 
-def current_metric_values(metric_df: pd.DataFrame) -> dict[str, float | None]:
+def current_metric_values(metric_df: pd.DataFrame, league_constants: dict[str, float]) -> dict[str, float | None]:
     current = {}
     season_rows = metric_df[
         metric_df["period_type"].eq("season") & metric_df["period_value"].astype(str).eq(str(SEASON))
@@ -232,10 +290,10 @@ def current_metric_values(metric_df: pd.DataFrame) -> dict[str, float | None]:
     season_rows = season_rows.sort_values(["metric_id", "priority", "source_key"])
     for metric_id, rows in season_rows.groupby("metric_id"):
         current[metric_id] = first_number(rows["value"].tolist())
-    return ensure_derived(current)
+    return ensure_derived(current, league_constants)
 
 
-def build_season_values(metric_df: pd.DataFrame) -> list[dict[str, Any]]:
+def build_season_values(metric_df: pd.DataFrame, league_constants: dict[str, float]) -> list[dict[str, Any]]:
     season_rows = metric_df[
         metric_df["period_type"].eq("season")
         & metric_df["source_key"].eq("player_detail_total")
@@ -244,16 +302,23 @@ def build_season_values(metric_df: pd.DataFrame) -> list[dict[str, Any]]:
     rows = []
     for period_value, group in season_rows.groupby("period_value"):
         values = metric_group_to_dict(group)
-        values = ensure_derived(values)
+        values = ensure_derived(values, league_constants)
         values["season"] = int(period_value)
         values["label"] = str(period_value)
         rows.append(values)
     return sorted(rows, key=lambda item: item["season"], reverse=True)
 
 
-def build_season_month_values(metric_df: pd.DataFrame, current: dict[str, Any]) -> list[dict[str, Any]]:
+def build_season_month_values(
+    metric_df: pd.DataFrame,
+    current: dict[str, Any],
+    league_constants: dict[str, float],
+) -> list[dict[str, Any]]:
     monthly = metric_df[metric_df["period_type"].eq("month")].copy()
-    month_values = {period: ensure_derived(metric_group_to_dict(group)) for period, group in monthly.groupby("period_value")}
+    month_values = {
+        period: ensure_derived(metric_group_to_dict(group), league_constants)
+        for period, group in monthly.groupby("period_value")
+    }
 
     months = []
     for month in range(1, 13):
@@ -291,14 +356,29 @@ def metric_group_to_dict(group: pd.DataFrame) -> dict[str, float | None]:
     return values
 
 
-def ensure_derived(values: dict[str, Any]) -> dict[str, Any]:
+def ensure_derived(values: dict[str, Any], league_constants: dict[str, float] | None = None) -> dict[str, Any]:
+    league_constants = league_constants or {}
     values = dict(values)
     if values.get("ops") is None and values.get("obp") is not None and values.get("slg") is not None:
         values["ops"] = values["obp"] + values["slg"]
     if values.get("hitter_bb_k") is None:
         values["hitter_bb_k"] = safe_ratio(values.get("hitter_bb"), values.get("hitter_so"))
+    if values.get("hitter_bb_pct") is None:
+        values["hitter_bb_pct"] = safe_ratio(values.get("hitter_bb"), values.get("pa"), multiplier=100)
+    if values.get("hitter_k_pct") is None:
+        values["hitter_k_pct"] = safe_ratio(values.get("hitter_so"), values.get("pa"), multiplier=100)
+    if values.get("hr_pa") is None:
+        values["hr_pa"] = safe_ratio(values.get("home_runs"), values.get("pa"), multiplier=100)
+    if values.get("babip") is None:
+        values["babip"] = hitter_babip(values)
     if values.get("pitcher_k_bb") is None:
         values["pitcher_k_bb"] = safe_ratio(values.get("pitcher_strikeouts"), values.get("pitcher_walks"))
+    if values.get("pitcher_k_pct") is None:
+        values["pitcher_k_pct"] = safe_ratio(values.get("pitcher_strikeouts"), values.get("total_batters_faced"), multiplier=100)
+    if values.get("pitcher_bb_pct") is None:
+        values["pitcher_bb_pct"] = safe_ratio(values.get("pitcher_walks"), values.get("total_batters_faced"), multiplier=100)
+    if values.get("k_minus_bb_pct") is None:
+        values["k_minus_bb_pct"] = subtract_numbers(values.get("pitcher_k_pct"), values.get("pitcher_bb_pct"))
     if values.get("sb_pct") is None:
         attempts = none_to_zero(values.get("sb")) + none_to_zero(values.get("cs"))
         values["sb_pct"] = safe_ratio(values.get("sb"), attempts, multiplier=100)
@@ -306,15 +386,99 @@ def ensure_derived(values: dict[str, Any]) -> dict[str, Any]:
         values["k9"] = safe_ratio(values.get("pitcher_strikeouts"), values.get("ip"), multiplier=9)
     if values.get("bb9") is None:
         values["bb9"] = safe_ratio(values.get("pitcher_walks"), values.get("ip"), multiplier=9)
+    if values.get("h9") is None:
+        values["h9"] = safe_ratio(values.get("pitcher_hits_allowed"), values.get("ip"), multiplier=9)
+    if values.get("hr9") is None:
+        values["hr9"] = safe_ratio(values.get("pitcher_home_runs_allowed"), values.get("ip"), multiplier=9)
+    if values.get("fip") is None:
+        fip_base = fip_without_constant(values)
+        if fip_base is not None and league_constants.get("fip_constant") is not None:
+            values["fip"] = fip_base + league_constants["fip_constant"]
+    if values.get("babip_allowed") is None:
+        values["babip_allowed"] = pitcher_babip_allowed(values)
+    if values.get("lob_pct") is None:
+        values["lob_pct"] = lob_pct(values)
+    if values.get("opponent_ops") is None:
+        values["opponent_ops"] = opponent_ops(values)
+    if values.get("ip_per_start") is None:
+        values["ip_per_start"] = safe_ratio(values.get("ip"), values.get("games_started"))
     return values
 
 
-def add_derived_metrics(pivot: pd.DataFrame) -> pd.DataFrame:
+def add_derived_metrics(pivot: pd.DataFrame, league_constants: dict[str, float]) -> pd.DataFrame:
     pivot = pivot.copy()
     if {"hitter_bb", "hitter_so"}.issubset(pivot.columns):
         pivot["hitter_bb_k"] = pivot["hitter_bb"] / pivot["hitter_so"].replace(0, pd.NA)
+    if {"hitter_bb", "pa"}.issubset(pivot.columns):
+        pivot["hitter_bb_pct"] = pivot["hitter_bb"] / pivot["pa"].replace(0, pd.NA) * 100
+    if {"hitter_so", "pa"}.issubset(pivot.columns):
+        pivot["hitter_k_pct"] = pivot["hitter_so"] / pivot["pa"].replace(0, pd.NA) * 100
+    if {"home_runs", "pa"}.issubset(pivot.columns):
+        pivot["hr_pa"] = pivot["home_runs"] / pivot["pa"].replace(0, pd.NA) * 100
+    if {"hits", "home_runs", "ab", "hitter_so", "sacrifice_flies"}.issubset(pivot.columns):
+        denominator = pivot["ab"] - pivot["hitter_so"] - pivot["home_runs"] + pivot["sacrifice_flies"]
+        pivot["babip"] = (pivot["hits"] - pivot["home_runs"]) / denominator.replace(0, pd.NA)
     if {"pitcher_strikeouts", "pitcher_walks"}.issubset(pivot.columns):
         pivot["pitcher_k_bb"] = pivot["pitcher_strikeouts"] / pivot["pitcher_walks"].replace(0, pd.NA)
+    if {"pitcher_strikeouts", "total_batters_faced"}.issubset(pivot.columns):
+        pivot["pitcher_k_pct"] = pivot["pitcher_strikeouts"] / pivot["total_batters_faced"].replace(0, pd.NA) * 100
+    if {"pitcher_walks", "total_batters_faced"}.issubset(pivot.columns):
+        pivot["pitcher_bb_pct"] = pivot["pitcher_walks"] / pivot["total_batters_faced"].replace(0, pd.NA) * 100
+    if {"pitcher_k_pct", "pitcher_bb_pct"}.issubset(pivot.columns):
+        pivot["k_minus_bb_pct"] = pivot["pitcher_k_pct"] - pivot["pitcher_bb_pct"]
+    if {"pitcher_hits_allowed", "ip"}.issubset(pivot.columns):
+        pivot["h9"] = pivot["pitcher_hits_allowed"] / pivot["ip"].replace(0, pd.NA) * 9
+    if {"pitcher_home_runs_allowed", "ip"}.issubset(pivot.columns):
+        pivot["hr9"] = pivot["pitcher_home_runs_allowed"] / pivot["ip"].replace(0, pd.NA) * 9
+    if {"pitcher_home_runs_allowed", "pitcher_walks", "pitcher_hbp_allowed", "pitcher_strikeouts", "ip"}.issubset(pivot.columns):
+        fip_base = (
+            13 * pivot["pitcher_home_runs_allowed"]
+            + 3 * (pivot["pitcher_walks"] + pivot["pitcher_hbp_allowed"])
+            - 2 * pivot["pitcher_strikeouts"]
+        ) / pivot["ip"].replace(0, pd.NA)
+        if league_constants.get("fip_constant") is not None:
+            pivot["fip"] = fip_base + league_constants["fip_constant"]
+    if {"pitcher_hits_allowed", "pitcher_home_runs_allowed", "total_batters_faced", "pitcher_walks", "pitcher_hbp_allowed", "pitcher_sac_allowed", "pitcher_strikeouts"}.issubset(pivot.columns):
+        denominator = (
+            pivot["total_batters_faced"]
+            - pivot["pitcher_walks"]
+            - pivot["pitcher_hbp_allowed"]
+            - pivot["pitcher_sac_allowed"]
+            - pivot["pitcher_strikeouts"]
+            - pivot["pitcher_home_runs_allowed"]
+        )
+        pivot["babip_allowed"] = (pivot["pitcher_hits_allowed"] - pivot["pitcher_home_runs_allowed"]) / denominator.replace(0, pd.NA)
+    if {"pitcher_hits_allowed", "pitcher_walks", "pitcher_hbp_allowed", "pitcher_runs", "pitcher_home_runs_allowed"}.issubset(pivot.columns):
+        denominator = pivot["pitcher_hits_allowed"] + pivot["pitcher_walks"] + pivot["pitcher_hbp_allowed"] - 1.4 * pivot["pitcher_home_runs_allowed"]
+        pivot["lob_pct"] = (pivot["pitcher_hits_allowed"] + pivot["pitcher_walks"] + pivot["pitcher_hbp_allowed"] - pivot["pitcher_runs"]) / denominator.replace(0, pd.NA) * 100
+    if {
+        "pitcher_hits_allowed",
+        "doubles_allowed",
+        "triples_allowed",
+        "pitcher_home_runs_allowed",
+        "pitcher_walks",
+        "pitcher_hbp_allowed",
+        "pitcher_sac_allowed",
+        "pitcher_sf_allowed",
+        "total_batters_faced",
+    }.issubset(pivot.columns):
+        at_bats = (
+            pivot["total_batters_faced"]
+            - pivot["pitcher_walks"]
+            - pivot["pitcher_hbp_allowed"]
+            - pivot["pitcher_sac_allowed"]
+            - pivot["pitcher_sf_allowed"]
+        )
+        total_bases = pivot["pitcher_hits_allowed"] + pivot["doubles_allowed"] + 2 * pivot["triples_allowed"] + 3 * pivot["pitcher_home_runs_allowed"]
+        opponent_obp = (
+            pivot["pitcher_hits_allowed"]
+            + pivot["pitcher_walks"]
+            + pivot["pitcher_hbp_allowed"]
+        ) / (at_bats + pivot["pitcher_walks"] + pivot["pitcher_hbp_allowed"] + pivot["pitcher_sf_allowed"]).replace(0, pd.NA)
+        opponent_slg = total_bases / at_bats.replace(0, pd.NA)
+        pivot["opponent_ops"] = opponent_obp + opponent_slg
+    if {"ip", "games_started"}.issubset(pivot.columns):
+        pivot["ip_per_start"] = pivot["ip"] / pivot["games_started"].replace(0, pd.NA)
     return pivot
 
 
@@ -412,17 +576,19 @@ def build_detail_groups(
 ) -> list[dict[str, Any]]:
     if player["player_type"] == "hitter":
         return [
-            detail_group("타격 결과", ["avg", "obp", "slg", "ops"], current, catalog),
-            detail_group("타석 접근", ["hitter_bb", "hitter_so", "hitter_bb_k", "pitches_per_pa"], current, catalog),
+            detail_group("타격 결과", ["avg", "obp", "slg", "ops", "iso"], current, catalog),
+            detail_group("타석 접근", ["hitter_bb_pct", "hitter_k_pct", "hitter_bb_k", "pitches_per_pa"], current, catalog),
+            detail_group("장타·인플레이 대체 지표", ["extra_base_hits", "hr_pa", "babip", "ground_air_ratio"], current, catalog),
             detail_group("주루", ["sb", "cs", "sb_pct", "out_on_base"], current, catalog),
             detail_group("수비", ["errors", "fielding_pct", "putouts", "assists"], current, catalog),
             situation_group("상황별", player["player_type"], situations),
         ]
     return [
-        detail_group("실점 억제", ["era", "whip", "opponent_avg", "pitcher_earned_runs"], current, catalog),
-        detail_group("구위 결과", ["pitcher_strikeouts", "pitcher_k_bb", "k9", "pitcher_home_runs_allowed"], current, catalog),
-        detail_group("역할", ["games_pitched", "games_started", "ip", "saves"], current, catalog),
-        detail_group("제구", ["pitcher_walks", "bb9", "wild_pitches", "balks"], current, catalog),
+        detail_group("실점 통제", ["era", "fip", "whip", "opponent_avg", "opponent_ops"], current, catalog),
+        detail_group("구위 결과", ["pitcher_k_pct", "k_minus_bb_pct", "k9", "h9", "hr9"], current, catalog),
+        detail_group("인플레이·잔루", ["babip_allowed", "lob_pct", "pitcher_go_ao", "pitcher_gdp"], current, catalog),
+        detail_group("역할", ["games_pitched", "games_started", "ip", "ip_per_start", "saves"], current, catalog),
+        detail_group("제구", ["pitcher_bb_pct", "bb9", "wild_pitches", "balks"], current, catalog),
         situation_group("상황별", player["player_type"], situations),
     ]
 
@@ -434,11 +600,19 @@ def detail_group(title: str, metric_ids: list[str], current: dict[str, Any], cat
             {
                 "label": metric_label(metric_id, catalog.get(metric_id, {})),
                 "value": format_metric(metric_id, current.get(metric_id)),
-                "note": "KBO 공식 기록" if current.get(metric_id) is not None else "미수집",
+                "note": detail_metric_note(metric_id, current.get(metric_id)),
             }
             for metric_id in metric_ids
         ],
     }
+
+
+def detail_metric_note(metric_id: str, value: Any) -> str:
+    if value is None:
+        return "미수집"
+    if metric_id in DERIVED_METRIC_IDS:
+        return "공식 기록 기반 계산"
+    return "KBO 공식 기록"
 
 
 def situation_group(title: str, player_type: str, situations: pd.DataFrame) -> dict[str, Any]:
@@ -589,6 +763,12 @@ def metric_label(metric_id: str, info: dict[str, Any]) -> str:
         "pitcher_k_bb": "K/BB",
         "k9": "K/9",
         "bb9": "BB/9",
+        "h9": "H/9",
+        "hr9": "HR/9",
+        "hr_pa": "HR/PA",
+        "k_minus_bb_pct": "K-BB%",
+        "opponent_ops": "상대 OPS",
+        "ip_per_start": "IP/GS",
         "war": "WAR",
     }
     return fallback.get(metric_id) or str(info.get("metric_name_kr") or info.get("metric_name_en") or metric_id)
@@ -600,13 +780,13 @@ def format_metric(metric_id: str, value: Any) -> str:
         if metric_id == "war":
             return "공식 미제공"
         return "미수집"
-    if metric_id in {"avg", "obp", "slg", "ops", "iso", "gpa", "risp_avg", "opponent_avg", "fielding_pct"}:
+    if metric_id in {"avg", "obp", "slg", "ops", "iso", "gpa", "risp_avg", "opponent_avg", "fielding_pct", "babip", "babip_allowed", "opponent_ops"}:
         return f"{value:.3f}".replace("0.", ".")
-    if metric_id in {"era", "whip", "hitter_bb_k", "pitcher_k_bb", "k9", "bb9", "pitches_per_pa"}:
+    if metric_id in {"era", "whip", "hitter_bb_k", "pitcher_k_bb", "k9", "bb9", "h9", "hr9", "fip", "pitches_per_pa", "ip_per_start"}:
         return f"{value:.2f}"
     if metric_id in {"ip", "defense_innings"}:
         return f"{value:.1f}"
-    if metric_id.endswith("_pct") or metric_id in {"sb_pct", "catcher_cs_pct"}:
+    if metric_id.endswith("_pct") or metric_id in {"sb_pct", "catcher_cs_pct", "hr_pa"}:
         return f"{value:.1f}%"
     return f"{int(round(value))}" if abs(value - round(value)) < 0.00001 else f"{value:.1f}"
 
@@ -638,9 +818,85 @@ def clean_number(value: Any) -> float | None:
 def safe_ratio(numerator: Any, denominator: Any, multiplier: float = 1) -> float | None:
     numerator = clean_number(numerator)
     denominator = clean_number(denominator)
-    if numerator is None or denominator in {None, 0}:
+    if numerator is None or denominator is None or denominator <= 0:
         return None
     return numerator / denominator * multiplier
+
+
+def subtract_numbers(left: Any, right: Any) -> float | None:
+    left = clean_number(left)
+    right = clean_number(right)
+    if left is None or right is None:
+        return None
+    return left - right
+
+
+def hitter_babip(values: dict[str, Any]) -> float | None:
+    numerator = subtract_numbers(values.get("hits"), values.get("home_runs"))
+    denominator = (
+        none_to_zero(values.get("ab"))
+        - none_to_zero(values.get("hitter_so"))
+        - none_to_zero(values.get("home_runs"))
+        + none_to_zero(values.get("sacrifice_flies"))
+    )
+    return safe_ratio(numerator, denominator)
+
+
+def pitcher_babip_allowed(values: dict[str, Any]) -> float | None:
+    numerator = subtract_numbers(values.get("pitcher_hits_allowed"), values.get("pitcher_home_runs_allowed"))
+    denominator = (
+        none_to_zero(values.get("total_batters_faced"))
+        - none_to_zero(values.get("pitcher_walks"))
+        - none_to_zero(values.get("pitcher_hbp_allowed"))
+        - none_to_zero(values.get("pitcher_sac_allowed"))
+        - none_to_zero(values.get("pitcher_strikeouts"))
+        - none_to_zero(values.get("pitcher_home_runs_allowed"))
+    )
+    return safe_ratio(numerator, denominator)
+
+
+def fip_without_constant(values: dict[str, Any]) -> float | None:
+    home_runs = clean_number(values.get("pitcher_home_runs_allowed"))
+    walks = clean_number(values.get("pitcher_walks"))
+    hbp = clean_number(values.get("pitcher_hbp_allowed"))
+    strikeouts = clean_number(values.get("pitcher_strikeouts"))
+    innings = clean_number(values.get("ip"))
+    if None in {home_runs, walks, hbp, strikeouts, innings} or innings <= 0:
+        return None
+    return (13 * home_runs + 3 * (walks + hbp) - 2 * strikeouts) / innings
+
+
+def lob_pct(values: dict[str, Any]) -> float | None:
+    hits = clean_number(values.get("pitcher_hits_allowed"))
+    walks = clean_number(values.get("pitcher_walks"))
+    hbp = clean_number(values.get("pitcher_hbp_allowed"))
+    runs = clean_number(values.get("pitcher_runs"))
+    home_runs = clean_number(values.get("pitcher_home_runs_allowed"))
+    if None in {hits, walks, hbp, runs, home_runs}:
+        return None
+    denominator = hits + walks + hbp - 1.4 * home_runs
+    return safe_ratio(hits + walks + hbp - runs, denominator, multiplier=100)
+
+
+def opponent_ops(values: dict[str, Any]) -> float | None:
+    hits = clean_number(values.get("pitcher_hits_allowed"))
+    doubles = clean_number(values.get("doubles_allowed"))
+    triples = clean_number(values.get("triples_allowed"))
+    home_runs = clean_number(values.get("pitcher_home_runs_allowed"))
+    walks = clean_number(values.get("pitcher_walks"))
+    hbp = clean_number(values.get("pitcher_hbp_allowed"))
+    sacrifices = clean_number(values.get("pitcher_sac_allowed"))
+    sacrifice_flies = clean_number(values.get("pitcher_sf_allowed"))
+    total_batters = clean_number(values.get("total_batters_faced"))
+    if None in {hits, doubles, triples, home_runs, walks, hbp, sacrifices, sacrifice_flies, total_batters}:
+        return None
+    at_bats = total_batters - walks - hbp - sacrifices - sacrifice_flies
+    total_bases = hits + doubles + 2 * triples + 3 * home_runs
+    obp = safe_ratio(hits + walks + hbp, at_bats + walks + hbp + sacrifice_flies)
+    slg = safe_ratio(total_bases, at_bats)
+    if obp is None or slg is None:
+        return None
+    return obp + slg
 
 
 def none_to_zero(value: Any) -> float:
