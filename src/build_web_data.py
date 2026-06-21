@@ -185,7 +185,7 @@ def build_player_payload(
     metric_df = bundle.metrics[bundle.metrics["player_id"].eq(player_id)].copy()
     current = current_metric_values(metric_df)
     seasons = build_season_values(metric_df)
-    months = build_recent_month_values(metric_df, current)
+    months = build_season_month_values(metric_df, current)
     situations = bundle.situations[bundle.situations["player_id"].eq(player_id)].copy()
 
     rep_metrics = HITTER_REP_METRICS if player_type == "hitter" else PITCHER_REP_METRICS
@@ -251,16 +251,13 @@ def build_season_values(metric_df: pd.DataFrame) -> list[dict[str, Any]]:
     return sorted(rows, key=lambda item: item["season"], reverse=True)
 
 
-def build_recent_month_values(metric_df: pd.DataFrame, current: dict[str, Any]) -> list[dict[str, Any]]:
+def build_season_month_values(metric_df: pd.DataFrame, current: dict[str, Any]) -> list[dict[str, Any]]:
     monthly = metric_df[metric_df["period_type"].eq("month")].copy()
     month_values = {period: ensure_derived(metric_group_to_dict(group)) for period, group in monthly.groupby("period_value")}
 
     months = []
-    start = date(SEASON - 1, 7, 1)
-    for offset in range(12):
-        month_number = start.month + offset
-        year = start.year + (month_number - 1) // 12
-        month = (month_number - 1) % 12 + 1
+    for month in range(1, 13):
+        year = SEASON
         period = f"{year}-{month:02d}"
         values = month_values.get(period, {})
         row = {"periodValue": period, "label": f"{str(year)[-2:]}.{month:02d}", "hasData": bool(values)}
