@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": 2026,
-    "generatedAt": "2026-06-21T22:27:24",
+    "generatedAt": "2026-06-21T22:32:05",
     "source": "KBO official public records",
     "playerCount": 10,
     "metricRowCount": 7364
@@ -163,26 +163,6 @@
       ],
       "months": [
         {
-          "era": null,
-          "ip": null,
-          "whip": null,
-          "pitcher_strikeouts": null,
-          "pitcher_k_bb": null,
-          "label": "26.01",
-          "periodValue": "2026-01",
-          "hasData": false
-        },
-        {
-          "era": null,
-          "ip": null,
-          "whip": null,
-          "pitcher_strikeouts": null,
-          "pitcher_k_bb": null,
-          "label": "26.02",
-          "periodValue": "2026-02",
-          "hasData": false
-        },
-        {
           "era": 0.0,
           "ip": 2.6666666666666665,
           "whip": null,
@@ -221,66 +201,6 @@
           "label": "26.06",
           "periodValue": "2026-06",
           "hasData": true
-        },
-        {
-          "era": null,
-          "ip": null,
-          "whip": null,
-          "pitcher_strikeouts": null,
-          "pitcher_k_bb": null,
-          "label": "26.07",
-          "periodValue": "2026-07",
-          "hasData": false
-        },
-        {
-          "era": null,
-          "ip": null,
-          "whip": null,
-          "pitcher_strikeouts": null,
-          "pitcher_k_bb": null,
-          "label": "26.08",
-          "periodValue": "2026-08",
-          "hasData": false
-        },
-        {
-          "era": null,
-          "ip": null,
-          "whip": null,
-          "pitcher_strikeouts": null,
-          "pitcher_k_bb": null,
-          "label": "26.09",
-          "periodValue": "2026-09",
-          "hasData": false
-        },
-        {
-          "era": null,
-          "ip": null,
-          "whip": null,
-          "pitcher_strikeouts": null,
-          "pitcher_k_bb": null,
-          "label": "26.10",
-          "periodValue": "2026-10",
-          "hasData": false
-        },
-        {
-          "era": null,
-          "ip": null,
-          "whip": null,
-          "pitcher_strikeouts": null,
-          "pitcher_k_bb": null,
-          "label": "26.11",
-          "periodValue": "2026-11",
-          "hasData": false
-        },
-        {
-          "era": null,
-          "ip": null,
-          "whip": null,
-          "pitcher_strikeouts": null,
-          "pitcher_k_bb": null,
-          "label": "26.12",
-          "periodValue": "2026-12",
-          "hasData": false
         }
       ],
       "tables": {
@@ -800,26 +720,6 @@
       ],
       "months": [
         {
-          "era": null,
-          "ip": null,
-          "whip": null,
-          "pitcher_strikeouts": null,
-          "pitcher_k_bb": null,
-          "label": "26.01",
-          "periodValue": "2026-01",
-          "hasData": false
-        },
-        {
-          "era": null,
-          "ip": null,
-          "whip": null,
-          "pitcher_strikeouts": null,
-          "pitcher_k_bb": null,
-          "label": "26.02",
-          "periodValue": "2026-02",
-          "hasData": false
-        },
-        {
           "era": 9.0,
           "ip": 3.0,
           "whip": null,
@@ -848,76 +748,6 @@
           "label": "26.05",
           "periodValue": "2026-05",
           "hasData": true
-        },
-        {
-          "era": null,
-          "ip": null,
-          "whip": null,
-          "pitcher_strikeouts": null,
-          "pitcher_k_bb": null,
-          "label": "26.06",
-          "periodValue": "2026-06",
-          "hasData": false
-        },
-        {
-          "era": null,
-          "ip": null,
-          "whip": null,
-          "pitcher_strikeouts": null,
-          "pitcher_k_bb": null,
-          "label": "26.07",
-          "periodValue": "2026-07",
-          "hasData": false
-        },
-        {
-          "era": null,
-          "ip": null,
-          "whip": null,
-          "pitcher_strikeouts": null,
-          "pitcher_k_bb": null,
-          "label": "26.08",
-          "periodValue": "2026-08",
-          "hasData": false
-        },
-        {
-          "era": null,
-          "ip": null,
-          "whip": null,
-          "pitcher_strikeouts": null,
-          "pitcher_k_bb": null,
-          "label": "26.09",
-          "periodValue": "2026-09",
-          "hasData": false
-        },
-        {
-          "era": null,
-          "ip": null,
-          "whip": null,
-          "pitcher_strikeouts": null,
-          "pitcher_k_bb": null,
-          "label": "26.10",
-          "periodValue": "2026-10",
-          "hasData": false
-        },
-        {
-          "era": null,
-          "ip": null,
-          "whip": null,
-          "pitcher_strikeouts": null,
-          "pitcher_k_bb": null,
-          "label": "26.11",
-          "periodValue": "2026-11",
-          "hasData": false
-        },
-        {
-          "era": null,
-          "ip": null,
-          "whip": null,
-          "pitcher_strikeouts": null,
-          "pitcher_k_bb": null,
-          "label": "26.12",
-          "periodValue": "2026-12",
-          "hasData": false
         }
       ],
       "tables": {
@@ -1526,26 +1356,6 @@
       ],
       "months": [
         {
-          "avg": null,
-          "obp": null,
-          "slg": null,
-          "ops": null,
-          "hitter_bb_k": null,
-          "label": "26.01",
-          "periodValue": "2026-01",
-          "hasData": false
-        },
-        {
-          "avg": null,
-          "obp": null,
-          "slg": null,
-          "ops": null,
-          "hitter_bb_k": null,
-          "label": "26.02",
-          "periodValue": "2026-02",
-          "hasData": false
-        },
-        {
           "avg": 0.308,
           "obp": null,
           "slg": null,
@@ -1584,66 +1394,6 @@
           "label": "26.06",
           "periodValue": "2026-06",
           "hasData": true
-        },
-        {
-          "avg": null,
-          "obp": null,
-          "slg": null,
-          "ops": null,
-          "hitter_bb_k": null,
-          "label": "26.07",
-          "periodValue": "2026-07",
-          "hasData": false
-        },
-        {
-          "avg": null,
-          "obp": null,
-          "slg": null,
-          "ops": null,
-          "hitter_bb_k": null,
-          "label": "26.08",
-          "periodValue": "2026-08",
-          "hasData": false
-        },
-        {
-          "avg": null,
-          "obp": null,
-          "slg": null,
-          "ops": null,
-          "hitter_bb_k": null,
-          "label": "26.09",
-          "periodValue": "2026-09",
-          "hasData": false
-        },
-        {
-          "avg": null,
-          "obp": null,
-          "slg": null,
-          "ops": null,
-          "hitter_bb_k": null,
-          "label": "26.10",
-          "periodValue": "2026-10",
-          "hasData": false
-        },
-        {
-          "avg": null,
-          "obp": null,
-          "slg": null,
-          "ops": null,
-          "hitter_bb_k": null,
-          "label": "26.11",
-          "periodValue": "2026-11",
-          "hasData": false
-        },
-        {
-          "avg": null,
-          "obp": null,
-          "slg": null,
-          "ops": null,
-          "hitter_bb_k": null,
-          "label": "26.12",
-          "periodValue": "2026-12",
-          "hasData": false
         }
       ],
       "tables": {
@@ -2293,26 +2043,6 @@
       ],
       "months": [
         {
-          "avg": null,
-          "obp": null,
-          "slg": null,
-          "ops": null,
-          "hitter_bb_k": null,
-          "label": "26.01",
-          "periodValue": "2026-01",
-          "hasData": false
-        },
-        {
-          "avg": null,
-          "obp": null,
-          "slg": null,
-          "ops": null,
-          "hitter_bb_k": null,
-          "label": "26.02",
-          "periodValue": "2026-02",
-          "hasData": false
-        },
-        {
           "avg": 0.364,
           "obp": null,
           "slg": null,
@@ -2331,86 +2061,6 @@
           "label": "26.04",
           "periodValue": "2026-04",
           "hasData": true
-        },
-        {
-          "avg": null,
-          "obp": null,
-          "slg": null,
-          "ops": null,
-          "hitter_bb_k": null,
-          "label": "26.05",
-          "periodValue": "2026-05",
-          "hasData": false
-        },
-        {
-          "avg": null,
-          "obp": null,
-          "slg": null,
-          "ops": null,
-          "hitter_bb_k": null,
-          "label": "26.06",
-          "periodValue": "2026-06",
-          "hasData": false
-        },
-        {
-          "avg": null,
-          "obp": null,
-          "slg": null,
-          "ops": null,
-          "hitter_bb_k": null,
-          "label": "26.07",
-          "periodValue": "2026-07",
-          "hasData": false
-        },
-        {
-          "avg": null,
-          "obp": null,
-          "slg": null,
-          "ops": null,
-          "hitter_bb_k": null,
-          "label": "26.08",
-          "periodValue": "2026-08",
-          "hasData": false
-        },
-        {
-          "avg": null,
-          "obp": null,
-          "slg": null,
-          "ops": null,
-          "hitter_bb_k": null,
-          "label": "26.09",
-          "periodValue": "2026-09",
-          "hasData": false
-        },
-        {
-          "avg": null,
-          "obp": null,
-          "slg": null,
-          "ops": null,
-          "hitter_bb_k": null,
-          "label": "26.10",
-          "periodValue": "2026-10",
-          "hasData": false
-        },
-        {
-          "avg": null,
-          "obp": null,
-          "slg": null,
-          "ops": null,
-          "hitter_bb_k": null,
-          "label": "26.11",
-          "periodValue": "2026-11",
-          "hasData": false
-        },
-        {
-          "avg": null,
-          "obp": null,
-          "slg": null,
-          "ops": null,
-          "hitter_bb_k": null,
-          "label": "26.12",
-          "periodValue": "2026-12",
-          "hasData": false
         }
       ],
       "tables": {
@@ -2881,36 +2531,6 @@
       ],
       "months": [
         {
-          "era": null,
-          "ip": null,
-          "whip": null,
-          "pitcher_strikeouts": null,
-          "pitcher_k_bb": null,
-          "label": "26.01",
-          "periodValue": "2026-01",
-          "hasData": false
-        },
-        {
-          "era": null,
-          "ip": null,
-          "whip": null,
-          "pitcher_strikeouts": null,
-          "pitcher_k_bb": null,
-          "label": "26.02",
-          "periodValue": "2026-02",
-          "hasData": false
-        },
-        {
-          "era": null,
-          "ip": null,
-          "whip": null,
-          "pitcher_strikeouts": null,
-          "pitcher_k_bb": null,
-          "label": "26.03",
-          "periodValue": "2026-03",
-          "hasData": false
-        },
-        {
           "era": 4.11,
           "ip": 15.333333333333334,
           "whip": null,
@@ -2939,66 +2559,6 @@
           "label": "26.06",
           "periodValue": "2026-06",
           "hasData": true
-        },
-        {
-          "era": null,
-          "ip": null,
-          "whip": null,
-          "pitcher_strikeouts": null,
-          "pitcher_k_bb": null,
-          "label": "26.07",
-          "periodValue": "2026-07",
-          "hasData": false
-        },
-        {
-          "era": null,
-          "ip": null,
-          "whip": null,
-          "pitcher_strikeouts": null,
-          "pitcher_k_bb": null,
-          "label": "26.08",
-          "periodValue": "2026-08",
-          "hasData": false
-        },
-        {
-          "era": null,
-          "ip": null,
-          "whip": null,
-          "pitcher_strikeouts": null,
-          "pitcher_k_bb": null,
-          "label": "26.09",
-          "periodValue": "2026-09",
-          "hasData": false
-        },
-        {
-          "era": null,
-          "ip": null,
-          "whip": null,
-          "pitcher_strikeouts": null,
-          "pitcher_k_bb": null,
-          "label": "26.10",
-          "periodValue": "2026-10",
-          "hasData": false
-        },
-        {
-          "era": null,
-          "ip": null,
-          "whip": null,
-          "pitcher_strikeouts": null,
-          "pitcher_k_bb": null,
-          "label": "26.11",
-          "periodValue": "2026-11",
-          "hasData": false
-        },
-        {
-          "era": null,
-          "ip": null,
-          "whip": null,
-          "pitcher_strikeouts": null,
-          "pitcher_k_bb": null,
-          "label": "26.12",
-          "periodValue": "2026-12",
-          "hasData": false
         }
       ],
       "tables": {
@@ -3629,26 +3189,6 @@
       ],
       "months": [
         {
-          "avg": null,
-          "obp": null,
-          "slg": null,
-          "ops": null,
-          "hitter_bb_k": null,
-          "label": "26.01",
-          "periodValue": "2026-01",
-          "hasData": false
-        },
-        {
-          "avg": null,
-          "obp": null,
-          "slg": null,
-          "ops": null,
-          "hitter_bb_k": null,
-          "label": "26.02",
-          "periodValue": "2026-02",
-          "hasData": false
-        },
-        {
           "avg": 0.333,
           "obp": null,
           "slg": null,
@@ -3687,66 +3227,6 @@
           "label": "26.06",
           "periodValue": "2026-06",
           "hasData": true
-        },
-        {
-          "avg": null,
-          "obp": null,
-          "slg": null,
-          "ops": null,
-          "hitter_bb_k": null,
-          "label": "26.07",
-          "periodValue": "2026-07",
-          "hasData": false
-        },
-        {
-          "avg": null,
-          "obp": null,
-          "slg": null,
-          "ops": null,
-          "hitter_bb_k": null,
-          "label": "26.08",
-          "periodValue": "2026-08",
-          "hasData": false
-        },
-        {
-          "avg": null,
-          "obp": null,
-          "slg": null,
-          "ops": null,
-          "hitter_bb_k": null,
-          "label": "26.09",
-          "periodValue": "2026-09",
-          "hasData": false
-        },
-        {
-          "avg": null,
-          "obp": null,
-          "slg": null,
-          "ops": null,
-          "hitter_bb_k": null,
-          "label": "26.10",
-          "periodValue": "2026-10",
-          "hasData": false
-        },
-        {
-          "avg": null,
-          "obp": null,
-          "slg": null,
-          "ops": null,
-          "hitter_bb_k": null,
-          "label": "26.11",
-          "periodValue": "2026-11",
-          "hasData": false
-        },
-        {
-          "avg": null,
-          "obp": null,
-          "slg": null,
-          "ops": null,
-          "hitter_bb_k": null,
-          "label": "26.12",
-          "periodValue": "2026-12",
-          "hasData": false
         }
       ],
       "tables": {
@@ -4391,26 +3871,6 @@
       ],
       "months": [
         {
-          "avg": null,
-          "obp": null,
-          "slg": null,
-          "ops": null,
-          "hitter_bb_k": null,
-          "label": "26.01",
-          "periodValue": "2026-01",
-          "hasData": false
-        },
-        {
-          "avg": null,
-          "obp": null,
-          "slg": null,
-          "ops": null,
-          "hitter_bb_k": null,
-          "label": "26.02",
-          "periodValue": "2026-02",
-          "hasData": false
-        },
-        {
           "avg": 0.167,
           "obp": null,
           "slg": null,
@@ -4449,66 +3909,6 @@
           "label": "26.06",
           "periodValue": "2026-06",
           "hasData": true
-        },
-        {
-          "avg": null,
-          "obp": null,
-          "slg": null,
-          "ops": null,
-          "hitter_bb_k": null,
-          "label": "26.07",
-          "periodValue": "2026-07",
-          "hasData": false
-        },
-        {
-          "avg": null,
-          "obp": null,
-          "slg": null,
-          "ops": null,
-          "hitter_bb_k": null,
-          "label": "26.08",
-          "periodValue": "2026-08",
-          "hasData": false
-        },
-        {
-          "avg": null,
-          "obp": null,
-          "slg": null,
-          "ops": null,
-          "hitter_bb_k": null,
-          "label": "26.09",
-          "periodValue": "2026-09",
-          "hasData": false
-        },
-        {
-          "avg": null,
-          "obp": null,
-          "slg": null,
-          "ops": null,
-          "hitter_bb_k": null,
-          "label": "26.10",
-          "periodValue": "2026-10",
-          "hasData": false
-        },
-        {
-          "avg": null,
-          "obp": null,
-          "slg": null,
-          "ops": null,
-          "hitter_bb_k": null,
-          "label": "26.11",
-          "periodValue": "2026-11",
-          "hasData": false
-        },
-        {
-          "avg": null,
-          "obp": null,
-          "slg": null,
-          "ops": null,
-          "hitter_bb_k": null,
-          "label": "26.12",
-          "periodValue": "2026-12",
-          "hasData": false
         }
       ],
       "tables": {
@@ -5057,36 +4457,6 @@
       ],
       "months": [
         {
-          "era": null,
-          "ip": null,
-          "whip": null,
-          "pitcher_strikeouts": null,
-          "pitcher_k_bb": null,
-          "label": "26.01",
-          "periodValue": "2026-01",
-          "hasData": false
-        },
-        {
-          "era": null,
-          "ip": null,
-          "whip": null,
-          "pitcher_strikeouts": null,
-          "pitcher_k_bb": null,
-          "label": "26.02",
-          "periodValue": "2026-02",
-          "hasData": false
-        },
-        {
-          "era": null,
-          "ip": null,
-          "whip": null,
-          "pitcher_strikeouts": null,
-          "pitcher_k_bb": null,
-          "label": "26.03",
-          "periodValue": "2026-03",
-          "hasData": false
-        },
-        {
           "era": 2.76,
           "ip": 29.33333333333333,
           "whip": null,
@@ -5115,66 +4485,6 @@
           "label": "26.06",
           "periodValue": "2026-06",
           "hasData": true
-        },
-        {
-          "era": null,
-          "ip": null,
-          "whip": null,
-          "pitcher_strikeouts": null,
-          "pitcher_k_bb": null,
-          "label": "26.07",
-          "periodValue": "2026-07",
-          "hasData": false
-        },
-        {
-          "era": null,
-          "ip": null,
-          "whip": null,
-          "pitcher_strikeouts": null,
-          "pitcher_k_bb": null,
-          "label": "26.08",
-          "periodValue": "2026-08",
-          "hasData": false
-        },
-        {
-          "era": null,
-          "ip": null,
-          "whip": null,
-          "pitcher_strikeouts": null,
-          "pitcher_k_bb": null,
-          "label": "26.09",
-          "periodValue": "2026-09",
-          "hasData": false
-        },
-        {
-          "era": null,
-          "ip": null,
-          "whip": null,
-          "pitcher_strikeouts": null,
-          "pitcher_k_bb": null,
-          "label": "26.10",
-          "periodValue": "2026-10",
-          "hasData": false
-        },
-        {
-          "era": null,
-          "ip": null,
-          "whip": null,
-          "pitcher_strikeouts": null,
-          "pitcher_k_bb": null,
-          "label": "26.11",
-          "periodValue": "2026-11",
-          "hasData": false
-        },
-        {
-          "era": null,
-          "ip": null,
-          "whip": null,
-          "pitcher_strikeouts": null,
-          "pitcher_k_bb": null,
-          "label": "26.12",
-          "periodValue": "2026-12",
-          "hasData": false
         }
       ],
       "tables": {
@@ -5707,26 +5017,6 @@
       ],
       "months": [
         {
-          "avg": null,
-          "obp": null,
-          "slg": null,
-          "ops": null,
-          "hitter_bb_k": null,
-          "label": "26.01",
-          "periodValue": "2026-01",
-          "hasData": false
-        },
-        {
-          "avg": null,
-          "obp": null,
-          "slg": null,
-          "ops": null,
-          "hitter_bb_k": null,
-          "label": "26.02",
-          "periodValue": "2026-02",
-          "hasData": false
-        },
-        {
           "avg": 0.417,
           "obp": null,
           "slg": null,
@@ -5765,66 +5055,6 @@
           "label": "26.06",
           "periodValue": "2026-06",
           "hasData": true
-        },
-        {
-          "avg": null,
-          "obp": null,
-          "slg": null,
-          "ops": null,
-          "hitter_bb_k": null,
-          "label": "26.07",
-          "periodValue": "2026-07",
-          "hasData": false
-        },
-        {
-          "avg": null,
-          "obp": null,
-          "slg": null,
-          "ops": null,
-          "hitter_bb_k": null,
-          "label": "26.08",
-          "periodValue": "2026-08",
-          "hasData": false
-        },
-        {
-          "avg": null,
-          "obp": null,
-          "slg": null,
-          "ops": null,
-          "hitter_bb_k": null,
-          "label": "26.09",
-          "periodValue": "2026-09",
-          "hasData": false
-        },
-        {
-          "avg": null,
-          "obp": null,
-          "slg": null,
-          "ops": null,
-          "hitter_bb_k": null,
-          "label": "26.10",
-          "periodValue": "2026-10",
-          "hasData": false
-        },
-        {
-          "avg": null,
-          "obp": null,
-          "slg": null,
-          "ops": null,
-          "hitter_bb_k": null,
-          "label": "26.11",
-          "periodValue": "2026-11",
-          "hasData": false
-        },
-        {
-          "avg": null,
-          "obp": null,
-          "slg": null,
-          "ops": null,
-          "hitter_bb_k": null,
-          "label": "26.12",
-          "periodValue": "2026-12",
-          "hasData": false
         }
       ],
       "tables": {
@@ -6386,26 +5616,6 @@
       ],
       "months": [
         {
-          "avg": null,
-          "obp": null,
-          "slg": null,
-          "ops": null,
-          "hitter_bb_k": null,
-          "label": "26.01",
-          "periodValue": "2026-01",
-          "hasData": false
-        },
-        {
-          "avg": null,
-          "obp": null,
-          "slg": null,
-          "ops": null,
-          "hitter_bb_k": null,
-          "label": "26.02",
-          "periodValue": "2026-02",
-          "hasData": false
-        },
-        {
           "avg": 0.273,
           "obp": null,
           "slg": null,
@@ -6444,66 +5654,6 @@
           "label": "26.06",
           "periodValue": "2026-06",
           "hasData": true
-        },
-        {
-          "avg": null,
-          "obp": null,
-          "slg": null,
-          "ops": null,
-          "hitter_bb_k": null,
-          "label": "26.07",
-          "periodValue": "2026-07",
-          "hasData": false
-        },
-        {
-          "avg": null,
-          "obp": null,
-          "slg": null,
-          "ops": null,
-          "hitter_bb_k": null,
-          "label": "26.08",
-          "periodValue": "2026-08",
-          "hasData": false
-        },
-        {
-          "avg": null,
-          "obp": null,
-          "slg": null,
-          "ops": null,
-          "hitter_bb_k": null,
-          "label": "26.09",
-          "periodValue": "2026-09",
-          "hasData": false
-        },
-        {
-          "avg": null,
-          "obp": null,
-          "slg": null,
-          "ops": null,
-          "hitter_bb_k": null,
-          "label": "26.10",
-          "periodValue": "2026-10",
-          "hasData": false
-        },
-        {
-          "avg": null,
-          "obp": null,
-          "slg": null,
-          "ops": null,
-          "hitter_bb_k": null,
-          "label": "26.11",
-          "periodValue": "2026-11",
-          "hasData": false
-        },
-        {
-          "avg": null,
-          "obp": null,
-          "slg": null,
-          "ops": null,
-          "hitter_bb_k": null,
-          "label": "26.12",
-          "periodValue": "2026-12",
-          "hasData": false
         }
       ],
       "tables": {

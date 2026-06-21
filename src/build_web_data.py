@@ -267,8 +267,11 @@ def build_season_month_values(metric_df: pd.DataFrame, current: dict[str, Any]) 
     if not any(row["hasData"] for row in months):
         row = {"periodValue": str(SEASON), "label": str(SEASON), "hasData": True}
         row.update(current)
-        months[-1] = row
-    return months
+        return [row]
+
+    first_data_index = next(index for index, row in enumerate(months) if row["hasData"])
+    last_data_index = len(months) - 1 - next(index for index, row in enumerate(reversed(months)) if row["hasData"])
+    return months[first_data_index : last_data_index + 1]
 
 
 def build_chart_rows(rows: list[dict[str, Any]], chart_metrics: list[tuple[str, str]]) -> list[dict[str, Any]]:
